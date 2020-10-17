@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/css/style2.css">
+    <script type="text/javascript" src="../Assets/script/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-anim" onmouseover="typewriter()" onmouseout="untypewriter()">
+                <div class="black-circle"></div>
+                <div class="yellow-circle"></div>
+                <p class="sans-serif-font logo-Li" id="typedtext">Li.</p>
+            </div>
+
+            <div class="wrap-collabsible">
+                <input id="collapsible" class="toggle" type="checkbox">
+                <label for="collapsible" class="lbl-toggle">
+                    <img src="../Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                </label>
+                <div class="collapsible-content">
+                    <div class="content-inner">
+                        <nav class="nav-container">
+                            <a class="nav-a" href="../index.html">Me</a>
+                            <a class="nav-a" href="../Design.html">Design</a>
+                            <a class="nav-a" href="../Philosophy.html">Philosophy</a>
+                            <a class="nav-a" href="../projects.html">Projects</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-content nav-container" id="menu-button">
+                <a class="nav-a" href="../index.html">Me</a>
+                <a class="nav-a" href="../Design.html">Design</a>
+                <a class="nav-a" href="../Philosophy.html">Philosophy</a>
+                <a class="nav-a" href="../projects.html">Projects</a>
+            </div>
+
+            <div class="resume-button-div" onclick="downloadResume(1)">
+                <div class="black-outline-button"></div>
+                <button class="yellow-outline-button">Resume</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="article" id="to-top">
+        <div class="p-hover-img img-div">
+            <img class="project-img img-div" alt="" src="../Assets/Images/Projects/Hardware/Hardware-main.jpg"> 
+        </div>
+       
+        <div class="article-div">
+            <div class="article-header">
+                <h1 class="sans-serif-font article-title">Hackathon Hardware Sign Out System</h1>
+                <div><p class="article-date">April 2020 - Present</p></div>
+            </div>
+
+            <div class="article-content">
+                
+                <p>I had the honor of being the lead director of MakeUofT 2020, a hardware hackathon (“makeathon”) at the University of Toronto. We hosted 300 students over a weekend and provided these hackers with 5000+ items of hardware, as well as mentors and workshops to help them use it. After working with MakeUofT for the last 2 years, I saw the inefficient process we distributed hardware, and I wanted to fix it. </p>
+                <br>
+
+                <p>Issues with a standard sign out site we used were:</p>
+                <ul>
+                    <li>Hackers ordered hardware on the spot and waited up to 2 hours before our team was able to package it. They wasted time standing in line and losing hacking time. </li>
+                    <li>There were no items limit, allowing hackers to make unreasonable requests and hogging up the more popular pieces</li>
+                    <li> We were unable to cancel or edit parts of an order and although we did not provide them all the pieces they requested, it messed up numbers in our database in which we had to fix manually on the spot</li>
+                    <li>No ways to indicate hardware is broken or lost when hackers return them</li>
+                    <li>Hard to add new items to the database on the fly</li>
+                </ul>
+                <br>
+                <p>The site was designed with Material-UI elements, as we used React to develop the front-end. A very plain color palette was used, as we intend to make our site open source, and I wanted each event to customize the site's branding.</p>
+                <br>
+                <p>The participant side has an ecommerce flow. I was inspired by sites I used for online shopping, such as H&M and Frank and Oak. The admin side aimed to condense all the tasks our team had to do onto one page so that more time could be spent packaging hardware.</p>
+
+                
+                <h2 class="serif-font article-h2">View My Prototype</h2>
+                <nav class="article-files sans-serif-font">
+                    <a href="https://www.figma.com/proto/1bYQy6ioaZwxPD9w6D47jW/Hardware-signout-site?node-id=810%3A10548&viewport=242%2C327%2C0.02515229769051075&scaling=min-zoom" target="_blank">Desktop</a>
+                </nav>
+                <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <img class="logo" src="../Assets/Images/Logo/White.png">
+            <div class="creds">
+                <p class="hear-from-you serif-font">I'd love to hear from you</p> 
+                <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
+                <p class="creds-email">lisasa.li@mail.utoronto.ca</p>
+            </div>
+            <a href="#to-top"><u class="sans-serif-font" style="font-size: 20px; align-self: center;">Back to top</u></a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
