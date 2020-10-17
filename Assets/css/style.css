@@ -573,6 +573,7 @@ footer {
     object-position: top right;
     height: 100%;
     width: 45vw;
+    position: sticky;
 } 
 
 .project-img1 {
