@@ -1,0 +1,811 @@
+/* General things */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'futurabold';
+    src: url('../Fonts/futura-bold-03-webfont.woff2') format('woff2'),
+         url('../Fonts/futura-bold-03-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'futuramedium';
+    src: url('../Fonts/futura-medium-01-webfont.woff2') format('woff2'),
+         url('../Fonts/futura-medium-01-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'futuracondensed_extrabold';
+    src: url('../Fonts/futura-condensedextrabold-05-webfont.woff2') format('woff2'),
+         url('../Fonts/futura-condensedextrabold-05-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'futuracondensed_medium';
+    src: url('../Fonts/futura-condensedmedium-04-webfont.woff2') format('woff2'),
+         url('../Fonts/futura-condensedmedium-04-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* @font-face {
+    font-family: 'futuramedium_italic';
+    src: url('../Fonts/futura-mediumitalic-02-webfont.woff2') format('woff2'),
+         url('../Fonts/futura-mediumitalic-02-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    height: 100%;
+	margin: 0 auto;
+    color: #333333;
+    background: #F6F5F1;
+}
+
+strong, b { font-weight: bold; }
+
+i { font-style: oblique; }
+
+sup {
+    vertical-align: super;
+    font-size: smaller;
+    font-weight: 600;
+}
+
+textarea, select, input, button { outline: none; }
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sans-serif-font {
+    font-family: "futuramedium", "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.serif-font {
+    font-family: "Playfair Display", "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 64px;
+}
+
+button {
+    cursor: pointer;
+    font-family: "futurabold", "Poppins", sans-serif;
+    font-weight: 900;
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    box-sizing: border-box;
+	height: 50px;
+    width: 400px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+/* Button style 1: Solid yellow */
+.yellow-button {
+    border: 1px solid #F5BA23;
+    background-color: #F5BA23;
+    margin: 40px auto auto;
+    padding: 13px 0px;
+}
+
+.yellow-button:hover {
+    background-color: #CC9408;
+    border-color: #CC9408;
+}
+
+/* Button style 2: 2 overlapping borders */
+
+/* Regular black-yellow (by) button div */
+.by-button-div {
+    position: relative;
+    width: 402px;
+    margin-top: 40px; 
+}
+
+/* Resume black-yellow button div */
+.resume-button-div {
+    cursor: pointer;
+    position: relative;
+    width: 151px;
+    align-self: center;
+}
+
+.yellow-outline-button {
+	width: calc(100% - 2px);
+	border: 2px solid #F5BA23;
+    background-color: #fff;
+    padding: 11px 0px;
+}
+
+.black-outline-button {
+    position: absolute;
+    box-sizing: border-box;
+	height: 50px;
+	width: calc(100% - 2px);
+	border: 2px solid #333;
+    margin-top: -2px;
+    margin-left: -2px;
+    z-index: 1;
+    /* -ms-transform: translate 2s; /* IE 9
+    -webkit-transform: translate 2s; Safari */
+    transition: all .2s; /* Standard syntax */
+}
+
+.black-outline-button:hover {
+	-ms-transform: translate(2px,2px); /* IE 9 */
+    -webkit-transform: translate(2px,2px); /* Safari */
+    transform: translate(2px,2px); /* Standard syntax */
+}
+
+/* HEADER + FOOTER */
+
+header {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: auto;
+    padding: 7px 20px;
+    border-top: 5px solid #333;
+    z-index: 100;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.header-container {
+    display: grid;
+    grid-template-areas: "logo menuNav resume";
+    grid-template-columns: 65px auto 150px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo-anim { 
+    grid-area: logo;
+    justify-self: start;
+}
+.menu-content { 
+    grid-area: menuNav;
+    justify-self: center;
+}
+.resume-button-div { 
+    grid-area: resume;
+    justify-self: end;
+}
+
+/* Logo things */
+
+/* The div whose width increases with hover */
+.logo-anim {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    /* -webkit-transition: width 1s; */
+}
+
+.black-circle {
+    position: absolute;
+    box-sizing: border-box;
+    width: calc(100% - 2px);
+    height: 63px;
+    border-radius: 100px;
+    border: 3px solid #333;
+    background: none;
+}
+
+.yellow-circle {
+    width: calc(100% - 2px);
+    box-sizing: border-box;
+    height: 63px;
+    border-radius: 100px;
+    border: 3px solid #F5BA23;
+    z-index: -1;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+/* .logo-anim:hover { width: 150px; }
+.logo-anim:active { width: 150px; } */
+
+/* Logo text */
+.logo-Li {
+    font-family: "futurabold", "Poppins", sans-serif;
+    position: absolute;
+    top: 0;
+    font-size: 28px;
+    padding: 14px 16px;
+    font-weight: 900;
+}
+
+/* Navigation */
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    font-family: "futuramedium", "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+}
+
+.nav-a { 
+    padding: 20px 0px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.nav-a:hover {
+    color: #A17400;
+    letter-spacing: 1px;
+}
+
+.nav-a:active { color: #A17400; }
+
+:target::before {
+    content: "";
+    display: block;
+    height: 80px; 
+    /* fixed header height */
+    margin: -80px 0 0; 
+    /* negative fixed header height */
+}
+
+/* Menu things */
+.wrap-collabsible {
+    margin: 15px auto 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.lbl-toggle {
+    display: block;
+    cursor: pointer;
+    display: flex;
+}
+
+input[type='checkbox'] { display: none; }
+
+.collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content { max-height: 350px; }
+
+.collapsible-content .content-inner { padding: 10px; }
+/* End of menu things */
+
+
+/* Footer */
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    color: #fff;
+    background-color: #333333;
+    font-size: 14px; 
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.creds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hear-from-you {
+    font-size: 36px;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+}
+
+.creds-email {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.logo { height: 65px; }
+
+/* END OF HEADER + FOOTER */
+
+
+
+/* NAME DIV (BOX 1) */
+
+/* Yellow background */
+.name-div {
+    background-color: #F5BA23;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 73%);
+}
+
+/* div surrounding text */
+.name-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding-top: 20px;
+    margin: auto;
+}
+
+.name-text {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+}
+
+.Lisa-div {
+    background-color: #fff;
+    padding: 15px 55px;
+    align-self: center;
+    font-family: "futurabold", "Poppins", sans-serif;
+	font-size: 108px;
+    text-transform: uppercase;
+    margin: 0px 15px;
+    font-weight: 900;
+}
+
+.Li-div {
+    align-self: flex-end;
+}
+
+#Lisa {
+    position: absolute;
+    color: #333;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #333;
+}
+
+#Lisa1 {
+    color: #F5BA23;
+    z-index: -1;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+#Li {
+    position: absolute;
+    color: #333;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #333;
+}
+
+#Li1 {
+    color: #333;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #F5BA23;
+    z-index: -1;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+
+.portrait {
+    height: 371px;
+    margin-top: 40px;
+}
+/* END OF NAME DIV (BOX 1) */
+
+
+
+/* GENERAL THINGS FOR DIV BOXES */
+
+/* When title is on the left. Needs an outer div that has a white background with width: 100% */
+.ltr-div-content { 
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+/* When title is on the right. */
+.rtl-div { 
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: auto;
+}
+
+/* When backround is on the white. */
+.white-div {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 10px 30px;
+}
+
+/* END OF GENERAL THINGS FOR DIV BOXES */
+
+
+
+/* INTRO DIV (BOX 2) */
+
+.intro-title {
+    font-size: 78px;
+    padding-top: 40px;
+}
+
+
+.intro-text, .design-text {
+    width: 55%;
+    line-height: 30px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.landing-h2 {
+    display: table-caption;
+    padding: 60px 10px 80px;
+    text-align: center;
+}
+
+/* END OF INTRO DIV (BOX 2) */
+
+
+
+/* DESIGN DIV (BOX 3) */
+
+.design-div {
+    -webkit-clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+}
+
+/* END OF DESIGN DIV (BOX 3) */
+
+
+
+/* PROJECTS DIV (BOX 5) */
+
+.project-h2 {
+     padding: 30px;
+}
+
+.projects-div {
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project-group {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.project-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.project-list {
+    margin: 0px auto;
+    padding: 30px 0px 120px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-list li {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 30px;
+}
+
+.purple-title {
+    color: #5426A7;
+}
+
+.blue-title {
+    color: #1C749A;
+}
+
+.project-list li:hover {
+    color: #A17400;
+}
+
+.hover-img {
+    width: 45vw;
+    display: flex;
+    align-content: stretch;
+    background-color: #F6F5F1;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.project-img {
+    object-fit: cover;
+    object-position: top right;
+    height: 100%;
+    width: 45vw;
+} 
+
+.project-img1 {
+    object-position: center;
+} 
+
+.project-img2 {
+    object-position: top center;
+} 
+
+.p-hover-img {
+    height: calc(100vh - 86px);
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 86px;
+    background-color: #F6F5F1;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+}
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+}
+
+/* END OF PROJECTS DIV (BOX 5)  */
+
+/* ERROR PAGE */
+
+
+.error-background {
+    background-color: #F5BA23;
+}
+
+.error-div {
+    font-size: 20vw;
+}
+
+.error-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.error-msg {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.error-button {
+    background-color: #fff;
+}
+
+/* END OF ERROR PAGE */
+
+
+@media (max-width: 700px) {
+    .header-container{
+        width: 90%;
+        padding-bottom: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        justify-content: space-between; 
+        width: 90%;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+
+    .wrap-collabsible { 
+        grid-area: menuNav;
+        justify-self: center;
+        margin: auto;
+    }
+
+    .menu-dropdown { display: inline-block; }
+
+    .menu-content {
+        display: none;
+    }
+    .wrap-collabsible {
+        display: inline;
+    }
+
+    .nav-container {
+        padding: 7px 0px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-a { padding: 15px 8px; }
+    
+    .footer-container {
+        min-height: 300px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .name-div {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+    }
+
+    .name-content { padding: 30px 0px; }
+
+    .name-text {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin: auto;
+    }
+
+    .Lisa-div { align-self: flex-start; }
+
+    .error-div {
+        align-self: center;
+        margin-top: 20%;
+    }
+
+    .Li-div {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    .portrait { display: none; }
+
+    .intro-text, .design-text {
+        width: 90%;
+        align-self: center;
+        padding: 0px 0px 30px;
+    }
+
+    .design-text {
+        padding-bottom: 100px;
+    }
+
+    .design-div {
+        -webkit-clip-path: polygon(0 4%, 100% 0, 100% 96%, 0 100%);
+        clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+    }
+
+    .ltr-div-content, .rtl-div, .projects-div, .white-div {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .projects-content {
+        align-self: flex-start;
+    }
+
+    .ltr-div-content, .rtl-div, .projects-content { width: 90%; }
+
+    .landing-h2, .projects-title, .design-title  {
+        margin: 0px;
+        padding: 50px 0px 30px;
+    }
+
+    .project-list {
+        width: 90%;
+        padding: 0px;
+        align-items: center;
+    }
+    
+    .by-button-div {
+        margin: 40px auto 60px; 
+        /* margin: 40px 30px 60px 30px; */
+    }
+
+    .hover-img {
+        width: 90vw;
+        height: 400px;
+    }
+
+    .project-hover-img {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+        width: 100vw;
+        height: 40vh;
+        top: 133px;
+        z-index: 2;
+    }
+
+    .project-img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        object-position: top center;
+    }
+
+    .resume-button-div { margin-top: 10px; }
+    .resume-grid { display: none; }
+}
+
+
+@media (max-width: 500px) {
+    .Lisa-div, .Li-div {
+        font-size: 22vw; 
+        align-self: center;
+    }
+
+    .by-button-div, .yellow-button { width: 80vw; }
+}
+
+@media (max-width: 420px) {
+    .header-container {
+        grid-template-areas: "logo resume"
+                             "menuNav menuNav";
+        grid-template-columns: 50% 50%;
+    }
+    .resume-button-div { justify-self: end; }
+
+    .wrap-collabsible { 
+        grid-area: menuNav;
+        justify-self: center;
+        margin: 20px auto auto;
+    }
+
+}
+
+@media (max-width: 310px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .wrap-collabsible { margin: 20px auto 15px; }
+
+    /* body { font-size: 5vw; } */
+}
+
+

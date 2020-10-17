@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../Assets/css/style2.css">
+    <script type="text/javascript" src="../Assets/script/script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-anim" onmouseover="typewriter()" onmouseout="untypewriter()">
+                <div class="black-circle"></div>
+                <div class="yellow-circle"></div>
+                <p class="sans-serif-font logo-Li" id="typedtext">Li.</p>
+            </div>
+
+            <div class="wrap-collabsible">
+                <input id="collapsible" class="toggle" type="checkbox">
+                <label for="collapsible" class="lbl-toggle">
+                    <img src="../Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                </label>
+                <div class="collapsible-content">
+                    <div class="content-inner">
+                        <nav class="nav-container">
+                            <a class="nav-a" href="../index.html">Me</a>
+                            <a class="nav-a" href="../Design.html">Design</a>
+                            <a class="nav-a" href="../Philosophy.html">Philosophy</a>
+                            <a class="nav-a" href="../projects.html">Projects</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-content nav-container" id="menu-button">
+                <a class="nav-a" href="../index.html">Me</a>
+                <a class="nav-a" href="../Design.html">Design</a>
+                <a class="nav-a" href="../Philosophy.html">Philosophy</a>
+                <a class="nav-a" href="../projects.html">Projects</a>
+            </div>
+
+            <div class="resume-button-div" onclick="downloadResume(1)">
+                <div class="black-outline-button"></div>
+                <button class="yellow-outline-button">Resume</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="article" id="to-top">
+        <div class="p-hover-img img-div">
+            <img class="project-img img-div project-img2" alt="" src="../Assets/Images/Projects/frosh/frosh-main.jpg"> 
+        </div>
+       
+        <div class="article-div">
+            <div class="article-header">
+                <h1 class="sans-serif-font article-title">UofT F!rosh Week Orientation Committee - Graphics Co-chair </h1>
+                <p class="article-date">May - Septemper 2018</p>
+            </div>
+
+            <div class="article-content">
+                <p>The University of Toronto F!rosh Week 1T8 (2018) is the Faculty of Engineering's official student-run orientation week. As Canada's oldest engineering school, there's a rich history of unique events, traditions, and school spirit which we introduce to to help orient and welcome the incoming first years. So why is the exclamation mark in the word F!rosh? Everyone's so excited that even the exclamation couldn't wait until the end of the word.</p>
+                <br>
+                <p>Under the Marketing Committee, I was the chair of the Graphics sub-committee, along with my girl Karen Zhao. For the duration of the summer, we simultaneously worked on projects for other subcommittees to create designs to reach a particular audience.</p>
+                <br>
+                <h2 class="serif-font article-h2">Responsibilities</h2>
+                <ul>
+                    <li>Logo and branding for the 2018 year and theme: SPY!</li>
+                    <li>T-shirt designs for the incoming Frosh, executives, subcommittee chairs, F!rosh Week leadurs (purposely spelled "leedur"), first aid team (Skule Patrol), photography and video.</li>
+                    <li>Flyers and posters for some of the 18 events over 7 days.</li>
+                    <li>Merchandise designs for some of the 19 (20?) subcommittees.</li>
+                    <li>Marketable content for social media for Facebook, Snapchat, and Instagram.</li>
+                    <li>Attend bi-weekly briefings to update the committee on our ongoing projects and progress.</li>
+                </ul>
+                <br>
+
+                <h2 class="serif-font article-h2">My Work</h2>
+                <div id="article-carousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#article-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#article-carousel" data-slide-to="1"></li>
+                        <li data-target="#article-carousel" data-slide-to="2"></li>
+                        <li data-target="#article-carousel" data-slide-to="3"></li>
+                        <li data-target="#article-carousel" data-slide-to="4"></li>
+                        <li data-target="#article-carousel" data-slide-to="5"></li>
+                        <li data-target="#article-carousel" data-slide-to="6"></li>
+                        <li data-target="#article-carousel" data-slide-to="7"></li>
+                    </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../Assets/Images/Projects/frosh/1T8 Logo.jpg" alt="Logo" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/frosh-shirt.jpg" alt="Frosh Shirt" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/leedur-shirt.jpg" alt="Leedur Shirt" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/sc-shirt.jpg" alt="Subcommitee Shirt" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/exec-shirt.jpg" alt="Executive Shirt" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/Cup Logo.jpg" alt="Cup Logo" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/Skule Patrol Logo.jpg" alt="Skule Patrol (First Aid) Logo" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../Assets/Images/Projects/frosh/patch.jpg" alt="Patch" width="1100" height="500">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#article-carousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#article-carousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+
+                <p></p>
+                <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <img class="logo" src="../Assets/Images/Logo/White.png">
+            <div class="creds">
+                <p class="hear-from-you serif-font">I'd love to hear from you</p> 
+                <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
+                <p class="creds-email">lisasa.li@mail.utoronto.ca</p>
+            </div>
+            <a href="#to-top"><u class="sans-serif-font" style="font-size: 20px; align-self: center;">Back to top</u></a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
