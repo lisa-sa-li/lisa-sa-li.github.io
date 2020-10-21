@@ -1,5 +1,5 @@
 function showProjectImg(name, number) {
-    var img = document.getElementById("project-img");
+    let img = document.getElementById("project-img");
 
     if (number == 0) { img.style.objectPosition = "top right"; }
     else if (number == 1) { img.style.objectPosition = "center"; }
@@ -7,43 +7,24 @@ function showProjectImg(name, number) {
     img.src = "Assets/Images/Projects/HoverImg/"+ name + ".jpg";
 }
 
-// set up text to print, each item in array is new line
-var animateText = "sa Li.";
-var textPos = 0; // initialise text position
-var initContents = ''; // initialise contents variable
-var timeOutId = 0;
-var firstTime = true;
+// Work in progress
+// function showArticleImgs() {
+//     let article_div = document.getElementById("article-div");
+//     console.log("article_div.scrollTop", article_div.scrollTop)
+//     console.log("article_div.scrollHeight", article_div.scrollHeight)
 
-function typewriter() {
-    if (firstTime) {
-        initContents =  "Li";
-        var destination = document.getElementById("typedtext");
-        destination.innerHTML = initContents + animateText.substring(0, textPos);
-        if ( textPos < animateText.length) {
-            textPos++;
-            timeOutId = setTimeout("typewriter()", 130);
-        } 
-        else if (textPos == animateText.length) {
-            firstTime = false;    
-        }
-    }
-}
+//     let images = ["Aweary", "Aweary-1"]
+//     const num_images = images.length
 
-function untypewriter() {
-    while (timeOutId--) {
-        clearTimeout(timeOutId);
-        console.log(timeOutId);
-    }
-    setTimeout("timerL()", 130);
-}
+//     let img = document.getElementById("project-img");
 
-function timerL() {
-    var destination = document.getElementById("typedtext");
-    destination.innerHTML = "Li.";
-    textPos = 0;
-    firstTime = true; 
-}
+//     let img_index = article_div.scrollTop % (article_div.scrollHeight / num_images)
+//     console.log("img_index", img_index)
 
+
+//     img.src = "../Assets/Images/Projects/Aweary/"+ images[img_index] + ".jpg";    
+//     // setInterval(showArticleImgs(images), 100000);
+// }
 
 /* Menu */
 let myLabels = document.querySelectorAll('.lbl-toggle');
@@ -61,26 +42,26 @@ Array.from(myLabels).forEach(label => {
 
 
 function preloadImg() {
-    var imageList = ["AMS.jpg", "Bike.jpg", "Blackboard.jpg", "Cats.jpg", "Frosh.jpg", "Gameification.jpg", "HOIR.jpg", "HWR.jpg", "iCBT.jpg", "LecExt.jpg", "Matboard.jpg", "QuicKnife.jpg", "Skulebook.jpg", "StepRight.jpg"];
-    var path = "Assets/Images/Projects/HoverImg/";
-    for (var i = 0; i < imageList.length; i++) {
-        var imageObject = new Image();
+    let imageList = ["Hardware.jpg", "Coda.jpg", "Aweary.jpg", "NewHacks.jpg", "Trendr.jpg", "AMS.jpg", "Bike.jpg", "Blackboard.jpg", "Cats.jpg", "Frosh.jpg", "Gameification.jpg", "HOIR.jpg", "HWR.jpg", "iCBT.jpg", "LecExt.jpg", "Matboard.jpg", "QuicKnife.jpg", "Skulebook.jpg", "StepRight.jpg"];
+    let path = "Assets/Images/Projects/HoverImg/";
+    for (let i = 0; i < imageList.length; i++) {
+        let imageObject = new Image();
         imageObject.src = path + imageList[i];
     }
 }
 
 function downloadResume(layer) {
-    var path;
+    let path;
 
     if (layer == 0) { path = "Assets"; }
     else if (layer == 1) { path = "../Assets"; }
     else if (layer == 2) { path = "../../Assets"; }
 
-    var url = path + "/resume.pdf";
-    var a = document.createElement("a");
+    let url = path + "/resume.pdf";
+    let a = document.createElement("a");
     a.href = url;
     a.setAttribute("Download", "Lisa Li Resume");
-    var b = document.createEvent("MouseEvents");
+    let b = document.createEvent("MouseEvents");
     b.initEvent("click", false, true);
     a.dispatchEvent(b);
     return false;
