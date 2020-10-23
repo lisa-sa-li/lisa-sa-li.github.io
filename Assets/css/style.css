@@ -37,30 +37,6 @@ time, mark, audio, video {
     font-style: normal;
 }
 
-/* @font-face {
-    font-family: 'futuracondensed_extrabold';
-    src: url('../Fonts/futura-condensedextrabold-05-webfont.woff2') format('woff2'),
-         url('../Fonts/futura-condensedextrabold-05-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'futuracondensed_medium';
-    src: url('../Fonts/futura-condensedmedium-04-webfont.woff2') format('woff2'),
-         url('../Fonts/futura-condensedmedium-04-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-/* @font-face {
-    font-family: 'futuramedium_italic';
-    src: url('../Fonts/futura-mediumitalic-02-webfont.woff2') format('woff2'),
-         url('../Fonts/futura-mediumitalic-02-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-} */
-
 body {
     font-family: 'Muli', sans-serif;
     font-size: 20px;
@@ -145,6 +121,23 @@ button {
     align-self: center;
 }
 
+
+@media (max-width: 700px) {
+    .resume-button-div {
+        width: 100px;
+        align-self: start;
+    }
+
+    .resume-button-div .yellow-outline-button, 
+    .resume-button-div .black-outline-button{
+        height: 45px;
+    }
+
+    .resume-button-div button {
+        font-size: 14px;;
+    }
+}
+
 .yellow-outline-button {
 	width: calc(100% - 2px);
 	border: 2px solid #F5BA23;
@@ -161,8 +154,6 @@ button {
     margin-top: -2px;
     margin-left: -2px;
     z-index: 1;
-    /* -ms-transform: translate 2s; /* IE 9
-    -webkit-transform: translate 2s; Safari */
     transition: all .2s; /* Standard syntax */
 }
 
@@ -196,10 +187,6 @@ header {
     margin: auto;
 }
 
-.logo-anim { 
-    grid-area: logo;
-    justify-self: start;
-}
 .menu-content { 
     grid-area: menuNav;
     justify-self: center;
@@ -216,7 +203,8 @@ header {
     position: relative;
     width: 65px;
     height: 65px;
-    /* -webkit-transition: width 1s; */
+    grid-area: logo;
+    justify-self: start;
 }
 
 .black-circle {
@@ -240,9 +228,6 @@ header {
     margin-left: 2px;
 }
 
-/* .logo-anim:hover { width: 150px; }
-.logo-anim:active { width: 150px; } */
-
 /* Logo text */
 .logo-Li {
     font-family: "futurabold", "Poppins", sans-serif;
@@ -251,6 +236,29 @@ header {
     font-size: 28px;
     padding: 14px 16px;
     font-weight: 900;
+}
+
+@media (max-width: 700px) {
+    .logo-anim {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .black-circle, .yellow-circle {
+        width: calc(100% - 2px);
+        height: 43px;
+    }
+    
+    /* Logo text */
+    .logo-Li {
+        font-size: 16px;
+        padding: 12px 13px;
+    }
+
+    .header-container {
+        grid-template-columns: 50px auto 100px;
+    }
+
 }
 
 /* Navigation */
@@ -513,7 +521,7 @@ footer {
 /* PROJECTS DIV (BOX 5) */
 
 .project-h2 {
-     padding: 30px;
+    padding: 30px;
 }
 
 .projects-div {
@@ -632,11 +640,6 @@ footer {
 
 
 @media (max-width: 700px) {
-    .header-container{
-        width: 90%;
-        padding-bottom: 10px;
-    }
-
     .footer-container {
         flex-direction: column;
         justify-content: space-between; 
@@ -648,7 +651,7 @@ footer {
     .wrap-collabsible { 
         grid-area: menuNav;
         justify-self: center;
-        margin: auto;
+        margin: 10px auto auto;
     }
 
     .menu-dropdown { display: inline-block; }
@@ -711,7 +714,7 @@ footer {
     }
 
     .design-text {
-        padding-bottom: 100px;
+        padding-bottom: 0;
     }
 
     .design-div {
@@ -736,6 +739,20 @@ footer {
         padding: 50px 0px 30px;
     }
 
+    .landing-h2 {
+        display: inline-block;
+        font-size: 30px;
+        padding-top: 55px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    .intro-text, .design-text {
+        line-height: 25px;
+    }
+   
     .project-list {
         width: 90%;
         padding: 0px;
@@ -744,7 +761,6 @@ footer {
     
     .by-button-div {
         margin: 40px auto 60px; 
-        /* margin: 40px 30px 60px 30px; */
     }
 
     .hover-img {
@@ -756,7 +772,7 @@ footer {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
         width: 100vw;
         height: 40vh;
-        top: 133px;
+        top: 50px;
         z-index: 2;
     }
 
@@ -767,7 +783,6 @@ footer {
         object-position: top center;
     }
 
-    .resume-button-div { margin-top: 10px; }
     .resume-grid { display: none; }
 }
 
@@ -780,33 +795,3 @@ footer {
 
     .by-button-div, .yellow-button { width: 80vw; }
 }
-
-@media (max-width: 420px) {
-    .header-container {
-        grid-template-areas: "logo resume"
-                             "menuNav menuNav";
-        grid-template-columns: 50% 50%;
-    }
-    .resume-button-div { justify-self: end; }
-
-    .wrap-collabsible { 
-        grid-area: menuNav;
-        justify-self: center;
-        margin: 20px auto auto;
-    }
-
-}
-
-@media (max-width: 310px) {
-    .header-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center
-    }
-
-    .wrap-collabsible { margin: 20px auto 15px; }
-
-    /* body { font-size: 5vw; } */
-}
-
-
