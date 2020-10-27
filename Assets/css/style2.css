@@ -178,6 +178,12 @@
     font-weight: bold; 
 }
 
+
+.video-label {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
 .article-h2 {
     font-size: 30px;
     font-weight: bold;
