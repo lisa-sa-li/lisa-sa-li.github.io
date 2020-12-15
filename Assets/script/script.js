@@ -1,30 +1,20 @@
 function showProjectImg(name, number) {
     let img = document.getElementById("project-img");
-
-    if (number == 0) { img.style.objectPosition = "top right"; }
-    else if (number == 1) { img.style.objectPosition = "center"; }
-    else if (number == 2) { img.style.objectPosition = "top center"; }
-    img.src = "Assets/Images/Projects/HoverImg/"+ name + ".jpg";
+    switch(number) {
+        case 0:
+            img.style.objectPosition = "top right"
+            break;
+        case 1:
+            img.style.objectPosition = "center";
+            break;
+        case 2:
+            img.style.objectPosition = "top center";
+            break;
+        default:
+            break;
+    }
+    img.src = `Assets/Images/Projects/HoverImg/${name}.jpg`;
 }
-
-// Work in progress
-// function showArticleImgs() {
-//     let article_div = document.getElementById("article-div");
-//     console.log("article_div.scrollTop", article_div.scrollTop)
-//     console.log("article_div.scrollHeight", article_div.scrollHeight)
-
-//     let images = ["Aweary", "Aweary-1"]
-//     const num_images = images.length
-
-//     let img = document.getElementById("project-img");
-
-//     let img_index = article_div.scrollTop % (article_div.scrollHeight / num_images)
-//     console.log("img_index", img_index)
-
-
-//     img.src = "../Assets/Images/Projects/Aweary/"+ images[img_index] + ".jpg";    
-//     // setInterval(showArticleImgs(images), 100000);
-// }
 
 /* Menu */
 let myLabels = document.querySelectorAll('.lbl-toggle');
@@ -50,17 +40,16 @@ function preloadImg() {
     }
 }
 
-function downloadResume(layer) {
-    let path;
+function downloadResume(layer, resumeType) {
+    if (!["UX", "Software"].includes(resumeType) || ![0, 1, 2].includes(layer)) {
+        return;
+    }
 
-    if (layer == 0) { path = "Assets"; }
-    else if (layer == 1) { path = "../Assets"; }
-    else if (layer == 2) { path = "../../Assets"; }
-
-    let url = path + "/resume.pdf";
+    let path = "../".repeat(layer)+ "Assets";
+    let url = `${path}/Lisa Li Resume - ${resumeType}.pdf`;
     let a = document.createElement("a");
     a.href = url;
-    a.setAttribute("Download", "Lisa Li Resume");
+    a.setAttribute("Download", `Lisa Li ${resumeType} Resume`);
     let b = document.createEvent("MouseEvents");
     b.initEvent("click", false, true);
     a.dispatchEvent(b);
@@ -68,6 +57,6 @@ function downloadResume(layer) {
 }
 
 function goToPage(name) {
-    window.location.href = "projects/" + name + ".html";
+    window.location.href = `projects/${name}.html`;
 }
 
