@@ -62,6 +62,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img project-img1 img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/cats/cats-main.jpg"> 
@@ -88,19 +95,18 @@
                 <h2 class="serif-font article-h2">Engineering Design Decisions</h2>
                 <ul>
                     <li>The center of the bridge featured an inverted truss design to minimize view obstruction and feature the beautiful surroundings of the bridge. To provide dimensional contrast, the ends of the bridge are non-inverted.</li>
-                         <img class="article-img" alt="" src="../Assets/Images/Projects/cats/cats-rendering.jpg"> 
+                         <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/cats/cats-rendering.jpg"> 
                     <li>After observing the lived experiences of pedestrians and cyclists using the bridge during our field investigation, we increased the width of the proposed plan to more than 150% of the current bridge to accommodate both cyclists and pedestrians.</li>
                     <li>
                         A Pratt design was chosen for its symmetrical and aesthetically pleasing trusses. This was chosen over a K or bowstring truss in order to minimize the obstructions caused by the structure.
-                        <img class="article-img md-img" alt="" src="../Assets/Images/Projects/cats/cats-truss.jpg"> 
+                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/cats/cats-truss.jpg"> 
                     </li>
                     <li>
                         To improve the lighting of the bridge's two dim lamps, the proposed design included 60 lights to be installed in the deck along both sides of the span, which are able to change colours for special occasions.
-                        <img class="article-img md-img" alt="" src="../Assets/Images/Projects/cats/cats-night.jpg">
+                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/cats/cats-night.jpg">
                     </li>
                     <li>
                         A childproof steel railing was been chosen as it is aesthetically pleasing, safe for pedestrians, and cost-effective. This was implemented improve functionality of the bridge, as well as decrease the accessory cost.
-                        <img class="article-img" alt="" src="../Assets/Images/Projects/cats/cats-piechart.jpg">
                     </li>
                 </ul>
                 <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>

@@ -62,6 +62,13 @@
             </div>
         </div>
     </header>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
 
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
@@ -143,8 +150,7 @@
                 </ul>
                 <br>
                 <p>With this, I generated a user persona for each stakeholder. </p>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-1.jpg">
-
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-1.jpg">
 
                 <h2 class="serif-font article-h2">Goal</h2>
                 <p>Shorten the time of the initial hardware rush as much as possible while still providing teams with a reasonable amount of hardware.</p>
@@ -161,10 +167,10 @@
             <div class="article-content">
                 <h2 class="serif-font article-h2">Outcome</h2>
                 <p>Time was the most valuable to all parties. I knew that the underlying issue was with our hardware flow. No amount of additional technical tools and resources could speed up the process if everyone ordered right as hacking began. Step one was to redesign our hardware pickup flow.</p>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-2.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-2.jpg">
                 <br>
                 <p>My first idea was what I called the “Fast Food Flow”. It feels like the experience one has at McDonald’s. They go up to the cashier, the cashier enters info onto their interface, and once the order is complete in the back, the customer picks it up.</p>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-3.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-3.jpg">
                 
                 <p>After consulting with both the tech team and the web development team, the following pros and cons were decided upon</p>
                 <br>
@@ -184,7 +190,7 @@
                 <br>
 
                 <p>My second, and final, idea was what I called the “eCommerceFlow”. Both sides have a front end. The hacker is able to view inventory on the site and add to their cart. The tech team then views orders, and is able to reject and accept parts of orders. </p>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-4.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-4.jpg">
                 <br>
                 <p>Pros</p>
                 <ul>
@@ -210,9 +216,9 @@
                 <p>Ultimately, it was the web team that pushed for the eCommerce Flow. Despite the fact that there was a lot more work for them, they wanted to put in the work at the beginning so we could use the product for years to come. </p>
                 <br>
                 <p>The final design aimed to alleviate all the issues that we faced in the last 2 years. The hacker flow was aimed to give participants sufficient time to check out a fair amount of hardware. The admin side aimed to condense all the tasks our team had to do onto one page so that more time could be spent packaging hardware.</p>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-5.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-5.jpg">
                 <p>I decided to make my wireframes the final product! It made sense as we planned on making the site open source, and branding is very specific and important for hackathons. The site was designed with Material-UI elements, as we used React to develop the front-end and Django template for the backend. This allowed us to set variables that those forking our website could alter. Sass was used to control colors, fonts, and sizes. Material UI allows for even finer design details, such as button styles, shadows, and much more.</p>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-6.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-6.jpg">
             </div>
         </div>
     </div>
@@ -263,11 +269,11 @@
                 </ul>
                 <br>
                 <p>My first design iterations tried to use color coding to indicate limits on groups of or individual hardware. Items with predetermined limits had a colored bulb next to their name. The meaning of the color is indicated by a legend on the inventory page, and also written under the “Constraints” section on the product overview card.</p>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-7.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-7.jpg">
                 <p>In my initial user test, 100% of users found the color coding and legend to be confusing. 60% did not connect the associate of the color to the legend at all. I decided to scrap this idea and instead focus on the “Tags” heading I placed on the card. </p>
                 <br>
                 <p>In the new design, “Tags” were renamed to “Categories”. Items with certain limits on them will be under a category such as “MCU_limit_3”. Categories can also be filtered on the inventory page for a quicker glimpse of what a team is able to check out.</p>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-8.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-8.jpg">
                 <p>In the video below, you can see the flow for checking out the Arduino again. Note that the Arduino has 2 constraints: “Max 1 of this item” and “Max 3 of items under the category ‘MCU_limit_3’”. The quantity dropdown will only show quantities that they team is allowed to check out. In this case, the team has not checked out an Arduino yet and so the dropdown only allows them to select a quantity on 1.</p>
                 <br>
                 <div class="video-div">
@@ -412,7 +418,7 @@
                 <p>One flaw I discovered was on the inventory page which I myself was developing. My design featured the filter on a sticky card next to the items. However, I discovered that if the card exceeded the height of the screen, an area of the card would be hidden below the screen. I revised page design in which the filter takes up a full height on the screen and the cart is scrollable if there is overflow.</p>
                 <br>
                 <p class="video-label">Old inventory filter</p>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-9.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-9.jpg">
 
                 <div class="video-div">
                     <label for="prototype-video" class="video-label">Updated inventory filter (in production)</label>
@@ -422,7 +428,7 @@
                 </div>
                 <br>
                 <p>One change I made specifically to make the developer’s life easier was the modifying the text structure of the product overview card. My initial design was in a two-column grid system in order to condense the information on the card. As development began, I realized that this design isn't fully responsive as it may look too squished on smaller screens. And although the difference in work wasn't too big, I didn't want the developer to set up the grid. I then revised the design such that all all the text was in one column. I ended up preferring this layout because the addition of white space made it easier to take in all the information on the card.</p>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Hardware/hardware-10.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Hardware/hardware-10.jpg">
 
                 <h2 class="serif-font article-h2">What's next?</h2>
                 <p>I’m excited to hold usability tests with the final product. Originally, the plan was that members of our team would hold a mock hackathon in order to test the system.</p>

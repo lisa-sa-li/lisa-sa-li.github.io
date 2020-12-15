@@ -63,6 +63,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/HWR/HWR-main.jpg"> 
@@ -99,7 +106,7 @@
         <div class="article-div">
             <div class="article-content">
                 <h2 class="serif-font article-h2">Information Architecture</h2>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/HWR/HWR-flow.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HWR/HWR-flow.jpg">
             </div>
         </div>
     </div>
@@ -114,8 +121,8 @@
                 <ul>
                     <li>
                         On the list of articles shown, a small description was included with the image and title. Based on user testing, this was prefered over an image and title without the text with the number one indicated reasons that users wanted a quick summary of the article they'd be clicking.
-                        <img class="article-img" alt="" src="../Assets/Images/Projects/HWR/HWR-description.jpg"> 
-                        <img class="article-img" alt="" src="../Assets/Images/Projects/HWR/HWR-piechart.jpg"> 
+                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HWR/HWR-description.jpg"> 
+                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HWR/HWR-piechart.jpg"> 
                     </li>
                 </ul>
             </div>
@@ -132,11 +139,11 @@
                     <li>"Article", "Quiz", and "Exercise" were replaced with "Learn", "Think", and "Do", respectively, to add a unique twist to the otherwise frequently used key-words.</li>
                     <li>
                         "Learn", "Think", and "Do" are color coded with Morneau Shepell brand colors to visually group each topic.
-                        <img class="article-img md-img" alt="" src="../Assets/Images/Projects/HWR/HWR-learn.jpg">
+                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HWR/HWR-learn.jpg">
                     </li>
                     <li>
                         There are 2 versions of the article layout, left-aligned and right-aligned. This is to provide some dimensional contrast to the user.
-                        <img class="article-img" alt="" src="../Assets/Images/Projects/HWR/HWR-leftright.jpg">
+                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HWR/HWR-leftright.jpg">
                     </li>
                     <li>A survey is included on the resource page so we can receive feedback about the website.</li>
                     <li>WCAG 2.0 color compliant.</li>

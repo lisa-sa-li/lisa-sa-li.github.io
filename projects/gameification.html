@@ -62,6 +62,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/gameification/gameification.jpg"> 
@@ -91,7 +98,7 @@
                 <br>
 
                 <h2 class="sans-serif-font article-h2">Info Flow</h2>
-                <img class="article-img md-img" alt="" src="../Assets/Images/Projects/gameification/gameification-flow.jpg">
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/gameification/gameification-flow.jpg">
 
                 <h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
                 <ul>
@@ -101,15 +108,15 @@
                             <li>Completed tiers are colored while uncompleted remain in black and white</li>
                             <li>Star graphics double as a progress bar and fill up in accordance to number of times goal has been achieved</li>
                         </ul>
-                        <img class="article-img" alt="" src="../Assets/Images/Projects/gameification/gameification-progress.jpg"> 
+                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/gameification/gameification-progress.jpg"> 
                     </li>
                     <li>
                         User can toggle between <strong>Badges</strong> and <strong>My Goal</strong>, which displays their initial goal and offers the inspiration graphic of a rocket that symbolizes their increasing momentum to achieving their objective
-                        <img class="article-img lg-img" alt="" src="../Assets/Images/Projects/gameification/gameification-goal.jpg">
+                        <img class="article-img lg-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/gameification/gameification-goal.jpg">
                     </li>
                     <li>
                         Prominent appearance and popup on dashboard to foster a goal-oriented environment
-                        <img class="article-img md-img" alt="" src="../Assets/Images/Projects/gameification/gameification-dashboard.jpg">
+                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/gameification/gameification-dashboard.jpg">
                     </li>
                 </ul>
                 <br>

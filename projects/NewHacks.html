@@ -62,6 +62,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/NewHacks/NewHacks-main.jpg"> 
@@ -81,8 +88,8 @@
                 <p>The site was developed with Google Materialize and Jinja2 templates, with a Django backend.</p>
                 <br>
                 <p>I was inspired by a graphic from NewHacks 2019 created by another designer. It was a gramophone that was spitting out a cloud binary. This one sole graphic influenced my entire rebrand of NewHacks and the site design. I determined the visual theme of NewHacks to be “ordinary items spitting out binary”. Our login graphic is a rocket blasting off on a cloud of binary. Our signup graphic is a pile building blocks with binary.</p>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/NewHacks/NewHacks-1.jpg">
-                <img class="article-img" alt="" src="../Assets/Images/Projects/NewHacks/NewHacks-2.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/NewHacks/NewHacks-1.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/NewHacks/NewHacks-2.jpg">
 
                 <p>This site is part of a bigger project which is a template that other hackathons can use to create their site. We implemented all of the logic for login, sign up, and applications, as well as setting up the database for applicants. Styling was left blank, meant for hackathons to design their own frontend to match their branding.</p>
                 <br>

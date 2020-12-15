@@ -63,6 +63,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/bike/bike-main.jpg"> 
@@ -123,7 +130,7 @@
 
                 <h2 class="sans-serif-font article-h2">Prototypes</h2>
                 <p>Our <strong>scaled prototype</strong> was mainly made out of tape and Lego and effectively demonstrated our device; I remember my TA being so impressed that he asked why didn't the device already exist. Our <strong>graphical prototype</strong> accurately portrayed what we envisioned the device to look like. Our <strong>mathematical prototype</strong> compared the time it took to lock the bikes of our device and other alternatives. An actual bike was used to prototype the time needed. Simulations of all 4 alternatives were created and 3 trials were timed. The final times used in the ratio was the average of the 3, then rounded to the nearest second. The prototypes gave a fair estimation to the time it took to lock a bike for each alternative.</p>
-                <img class="article-img" src="../Assets/Images/Projects/bike/metric-table.png">
+                <img class="article-img" onclick="modalImage(this)" src="../Assets/Images/Projects/bike/metric-table.png">
                 <p>At the time, this report was perhaps the most difficult project that required all six phases of my Engineering Design Philosophy. After applying all the knowledge I learned from my engineering design course, I came out of it fully understanding all that I was taught and was able to see how my professors structured the course to teach us these concepts.</p>
                 <br>
                 <nav class="article-files sans-serif-font">

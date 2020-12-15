@@ -62,6 +62,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/Coda/Coda-main.jpg"> 
@@ -92,15 +99,15 @@
                 <br>
                 <p>This empirically gave the best results compared to other models I developed, and is also the best model for the harder task of identifying multiple instruments.</p>
                 <br>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Coda/Coda-1.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Coda/Coda-1.jpg">
 
                 <h2 class="serif-font article-h2">Results </h2>
                 <p>The figure below shows the loss and accuracy plots for the model. It averages around low 70s validation accuracy although there are significant fluctuations. Visually, the orange follows the blue line close enough to signify no overfitting. A test accuracy of 0.684 was obtained, showing that the model generalizes well. </p>
                 <br>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Coda/Coda-2.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Coda/Coda-2.jpg">
                 <p>Since the model consists of 11 binary classifiers, there are 11 confusion matrices, one for each instrument. The large values along the diagonal show that the model is accurately predicting the presence of the instruments. I’d like to point out that the instruments with over 100 false positives and negatives are the cello, acoustic guitar, electric guitar, and violin. These are all string instruments, perhaps meaning that it’s harder for the model to discern amongst them. For voice, it has the lowest false positives and negatives, possibly meaning it’s distinct compared to the other instruments and easier to be predicted by the model.</p>
                 <br>
-                <img class="article-img" alt="" src="../Assets/Images/Projects/Coda/Coda-3.jpg">
+                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Coda/Coda-3.jpg">
 
                 <h2 class="serif-font article-h2">Conclusion</h2>
                 <p>Looking over related literature, instrument recognition within multi-instrumental music is still a prevalent and difficult problem being tackled by academic research. Audio is quite messy and unpredictable, and there can be many variations between different audio files that cause models to not generalize. This may be a reason for the sub-70’s accuracy. </p>

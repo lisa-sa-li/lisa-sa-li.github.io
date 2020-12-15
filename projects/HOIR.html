@@ -63,6 +63,13 @@
         </div>
     </header>
 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
     <div class="article" id="to-top">
         <div class="p-hover-img img-div">
             <img class="project-img img-div" alt="" src="../Assets/Images/Projects/HOIR/HOIR-main.jpg"> 
@@ -87,15 +94,15 @@
                 <ul>
                     <li>
                         Modern design centered around the input field from the Morneau Shepell design system.
-                        <img class="article-img" alt="" src="../Assets/Images/Projects/HOIR/HOIR-input.jpg"> 
+                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HOIR/HOIR-input.jpg"> 
                     </li>
                     <li>
                         A sticky sidebar which offers a shortcut to each section of the form and a progress bar.
-                        <img class="article-img lg-img" style="min-width: 300px;" alt="" src="../Assets/Images/Projects/HOIR/HOIR-sidebar.jpg"> 
+                        <img class="article-img lg-img" style="min-width: 300px;" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/HOIR/HOIR-sidebar.jpg"> 
                     </li>
                     <li>
                         Categories are grouped together opposed to the original form for easy navigation and a cleaner, more organised design.
-                        <img class="article-img md-img" style="box-shadow: 0px 0px 23px #8F8468; margin-top: 40px; margin-bottom: 40px;" alt="" src="../Assets/Images/Projects/HOIR/HOIR-og.jpg"> 
+                        <img class="article-img md-img" onclick="modalImage(this)" style="box-shadow: 0px 0px 23px #8F8468; margin-top: 40px; margin-bottom: 40px;" alt="" src="../Assets/Images/Projects/HOIR/HOIR-og.jpg"> 
                     </li>
                 </ul>
                 <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
