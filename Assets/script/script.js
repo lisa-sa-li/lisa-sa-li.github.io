@@ -1,5 +1,6 @@
 function showProjectImg(name, number) {
     let img = document.getElementById("project-img");
+    img.alt = name;
     switch (number) {
         case 0:
             img.style.objectPosition = "top right";
