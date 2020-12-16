@@ -14,7 +14,7 @@ function showProjectImg(name, number) {
         default:
             break;
     }
-    img.src = `Assets/Images/Projects/HoverImg/${name}.jpg`;
+    img.src = `/Assets/Images/Projects/HoverImg/${name}.jpg`;
 }
 
 /* Menu */
