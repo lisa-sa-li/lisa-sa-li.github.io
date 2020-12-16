@@ -1,8 +1,8 @@
 function showProjectImg(name, number) {
     let img = document.getElementById("project-img");
-    switch(number) {
+    switch (number) {
         case 0:
-            img.style.objectPosition = "top right"
+            img.style.objectPosition = "top right";
             break;
         case 1:
             img.style.objectPosition = "center";
@@ -17,22 +17,41 @@ function showProjectImg(name, number) {
 }
 
 /* Menu */
-let myLabels = document.querySelectorAll('.lbl-toggle');
+let myLabels = document.querySelectorAll(".lbl-toggle");
 
-Array.from(myLabels).forEach(label => {
-    label.addEventListener('keydown', e => {
+Array.from(myLabels).forEach((label) => {
+    label.addEventListener("keydown", (e) => {
         // 32 === spacebar
         // 13 === enter
         if (e.which === 32 || e.which === 13) {
             e.preventDefault();
             label.click();
-        };
+        }
     });
 });
 
-
 function preloadImg() {
-    let imageList = ["Hardware.jpg", "Coda.jpg", "Aweary.jpg", "NewHacks.jpg", "Trendr.jpg", "AMS.jpg", "Bike.jpg", "Blackboard.jpg", "Cats.jpg", "Frosh.jpg", "Gameification.jpg", "HOIR.jpg", "HWR.jpg", "iCBT.jpg", "LecExt.jpg", "Matboard.jpg", "QuicKnife.jpg", "Skulebook.jpg", "StepRight.jpg"];
+    let imageList = [
+        "Hardware.jpg",
+        "Coda.jpg",
+        "Aweary.jpg",
+        "NewHacks.jpg",
+        "Trendr.jpg",
+        "AMS.jpg",
+        "Bike.jpg",
+        "Blackboard.jpg",
+        "Cats.jpg",
+        "Frosh.jpg",
+        "Gameification.jpg",
+        "HOIR.jpg",
+        "HWR.jpg",
+        "iCBT.jpg",
+        "LecExt.jpg",
+        "Matboard.jpg",
+        "QuicKnife.jpg",
+        "Skulebook.jpg",
+        "StepRight.jpg",
+    ];
     let path = "Assets/Images/Projects/HoverImg/";
     for (let i = 0; i < imageList.length; i++) {
         let imageObject = new Image();
@@ -40,13 +59,13 @@ function preloadImg() {
     }
 }
 
-function downloadResume(layer, resumeType) {
-    if (!["UX", "Software"].includes(resumeType) || ![0, 1, 2].includes(layer)) {
+function downloadResume(resumeType) {
+    console.log(resumeType)
+    if (!["UX", "Software"].includes(resumeType)) {
         return;
     }
 
-    let path = "../".repeat(layer)+ "Assets";
-    let url = `${path}/Lisa Li Resume - ${resumeType}.pdf`;
+    let url = `/Assets/Lisa Li Resume - ${resumeType}.pdf`;
     let a = document.createElement("a");
     a.href = url;
     a.setAttribute("Download", `Lisa Li ${resumeType} Resume`);
@@ -75,7 +94,7 @@ function modalImage(img) {
     let span = document.getElementsByClassName("close")[0];
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
+    span.onclick = function () {
         modal.style.display = "none";
-    }
+    };
 }

@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block body %}
+<div class="project-div" id="project-div">
+    <div class="p-hover-img project-hover-img">
+        <img class="project-img" id="project-img" alt="" src="Assets/Images/Projects/HoverImg/Hardware.jpg">
+    </div>
+
+    <div style="width: 100%;">
+        <div class="yellow-header">
+            <div class="by-title-div media-by-title">
+                <h1 class="black-outline-title">Projects</h1>
+                <p class="yellow-title">Projects</p>
+            </div>
+        </div>
+
+        <div class="project-list" style="padding-bottom: 80px;">
+            <ul>   <!-- 0: top right, 1: center", 2: top center --> 
+                <li onmouseover="showProjectImg('hardware', 0)" onclick="goToPage('hardware-signout')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">Hackathon Hardware Sign Out System <sup>2020</sup></p>
+                </li>
+                <!-- <li onmouseover="showProjectImg('NewHacks', 0)" onclick="goToPage('newhacks')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">NewHacks <sup>2020</sup></p>
+                </li> -->
+                <li onmouseover="showProjectImg('Coda', 0)" onclick="goToPage('coda')">
+                    <p class="project-group purple-title">Engineering Experience</p>
+                    <p class="project-title">Coda <sup>2019</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Aweary', 0)" onclick="goToPage('aweary')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">Aweary <sup>2019</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Trendr', 0)" onclick="goToPage('trendr')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">Trendr <sup>2019</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('HWR', 0)" onclick="goToPage('hwr')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">Health and Wellness Resource (HWR) Website <sup>2018</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('HOIR', 0)" onclick="goToPage('hoir')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">Hazardous Occurrence Investigation Report Form <sup>2018</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('iCBT', 0)" onclick="goToPage('icbt')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">iCBT Sign Up <sup>2018</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('AMS', 0)" onclick="goToPage('ams')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">AMS Helpdesk Portal <sup>2018</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Frosh', 1)" onclick="goToPage('frosh')">
+                    <p class="project-group">Miscellaneous Art</p>
+                    <p class="project-title">UofT F!rosh Week Orientation Committee <sup>2018</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('QuicKnife', 1)" onclick="goToPage('quicknife')">
+                    <p class="project-group purple-title">Engineering Experience</p>
+                    <p class="project-title">Timing the Throw in a Quick Knife Draw Competition <sup>2018</sup></p>
+                </li>
+                <!-- <li onmouseover="showProjectImg('Skulebook', 1)" onclick="goToPage('skulebook')">
+                    <p class="project-group">Miscellaneous Art</p>
+                    <p class="project-title">UofT Skulebook <sup>2018</sup></p>
+                </li> -->
+                <li onmouseover="showProjectImg('Matboard', 1)" onclick="goToPage('matboard-bridge')">
+                    <p class="project-group purple-title">Engineering Experience</p>
+                    <p class="project-title">Matboard Bridge Prototype <sup>2017</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Cats', 1)" onclick="goToPage('catseye-bridge')">
+                    <p class="project-group purple-title">Engineering Experience</p>
+                    <p class="project-title">Cat's Eye Bridge <sup>2017</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Bike', 1)" onclick="goToPage('bike-racks')">
+                    <p class="project-group purple-title">Engineering Experience</p>
+                    <p class="project-title">Proposal: New Bike Racks for UofT <sup>2017</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Blackboard', 0)" onclick="goToPage('blackboard')">
+                    <p class="project-group purple-title">Engineering Experience</p>
+                    <p class="project-title">RFP: Improving the Blackboard at UofT <sup>2017</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('StepRight', 2)" onclick="goToPage('stepright')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">StepRight App <sup>2017</sup></p>
+                </li>
+                <li onmouseover="showProjectImg('Gameification', 2)" onclick="goToPage('gameification')">
+                    <p class="project-group blue-title">UI/UX Design</p>
+                    <p class="project-title">My Migo - Positive Play <sup>2017</sup></p>
+                </li>
+                <!-- <li onmouseover="showProjectImg('Gameification', 1)" onclick="goToPage('art')">
+                    <p class="project-group">Miscellaneous Art</p>
+                    <p class="project-title">Collection of Random Images <sup>2017</sup></p>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

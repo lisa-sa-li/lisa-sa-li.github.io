@@ -1,163 +1,196 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="en">
+    <head>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    gtag('config', 'UA-180967281-1');
-    </script>
+            gtag('config', 'UA-180967281-1');
+        </script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
+
+
+        <title>quicKnife — Lisa Li</title>
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
+        <meta property="og:type" content="website" /> 
+        <meta property="og:url" content="www.lisali.me" />
+        <meta property="og:title" content="Lisa Li" />
+        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
+
+        
+        
+    </head>
+    <body id="to-top" onload="preloadImg()">
+        
+        <header>
+            <div class="header-container">
+                <div class="logo-anim">
+                    <div class="black-circle"></div>
+                    <div class="yellow-circle"></div>
+                    <p class="sans-serif-font logo-Li">Li.</p>
+                </div>
     
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style2.css">
-    <script type="text/javascript" src="../Assets/script/script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo-anim">
-                <div class="black-circle"></div>
-                <div class="yellow-circle"></div>
-                <p class="sans-serif-font logo-Li" id="typedtext">Li.</p>
-            </div>
-
-            <div class="wrap-collabsible">
-                <input id="collapsible" class="toggle" type="checkbox">
-                <label for="collapsible" class="lbl-toggle">
-                    <img src="../Assets/Images/menu.png" style="height: 24px; margin: auto;">
-                </label>
-                <div class="collapsible-content">
-                    <div class="content-inner">
-                        <nav class="nav-container">
-                            <a class="nav-a" href="../index.html">Me</a>
-                            <a class="nav-a" href="../Design.html">Design</a>
-                            <a class="nav-a" href="../Philosophy.html">Philosophy</a>
-                            <a class="nav-a" href="../projects.html">Projects</a>
-                        </nav>
+                <div class="wrap-collabsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">
+                        <img src="Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                    </label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <nav class="nav-container">
+                                <a class="nav-a" href="/index.html">Me</a>
+                                <a class="nav-a" href="/design.html">Design</a>
+                                <a class="nav-a" href="/philosophy.html">Philosophy</a>
+                                <a class="nav-a" href="/projects.html">Projects</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="menu-content nav-container" id="menu-button">
+                    <a class="nav-a" href="/index.html">Me</a>
+                    <a class="nav-a" href="/Design.html">Design</a>
+                    <a class="nav-a" href="/Philosophy.html">Philosophy</a>
+                    <a class="nav-a" href="/projects.html">Projects</a>
+                </div>
+    
+                <div class="resume-button-div">
+                    <div class="black-outline-button"></div>
+                    <button class="yellow-outline-button">Resume</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="downloadResume('Software')">Software</a>
+                        <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
                 </div>
             </div>
+        </header>
+        
 
-            <div class="menu-content nav-container" id="menu-button">
-                <a class="nav-a" href="../index.html">Me</a>
-                <a class="nav-a" href="../Design.html">Design</a>
-                <a class="nav-a" href="../Philosophy.html">Philosophy</a>
-                <a class="nav-a" href="../projects.html">Projects</a>
-            </div>
+    
+        
 
-            <div class="resume-button-div">
-                <div class="black-outline-button"></div>
-                <button class="yellow-outline-button">Resume</button>
-                <div class="dropdown-content">
-                    <a href="#" onclick="downloadResume(1, 'Software')">Software</a>
-                    <a href="#" onclick="downloadResume(1, 'UX')">UX</a>
-                </div>
-            </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/quicKnife/quicKnife-main.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-header" id="article-div">
+            <h1 class="sans-serif-font article-title">Timing the Throw in a Quick Knife Draw Competition</h1>
+            <div><p class="article-date">February - April 2018</p></div>
         </div>
-    </header>
 
-    <div class="article" id="to-top">
-        <div class="p-hover-img img-div">
-            <img class="project-img img-div" alt="" src="../Assets/Images/Projects/quicKnife/quicKnife-main.jpg"> 
-        </div>
-       
-        <div class="article-div">
-            <div class="article-header">
-                <h1 class="sans-serif-font article-title">Timing the Throw in a Quick Knife Draw Competition</h1>
-                <p class="article-date">February - April 2018</p>
-            </div>
+        <div class="article-content" id="article-div">
+            
+<p>A request for proposal (RFP) is a document outlining an opportunity, and the framing, objectives, criteria, and constraints needed in a solution. For one of my first year engineering design courses, I worked on a 3 month project in which my team and I wrote an entire proposal, designed a solution, and built a functioning prototype.</p>
+<br>
+<p>Our RFP was regarding the knife throwing community, a group of individuals who throw knives for recreation and sport. While interviewing members of the community, they addressed the need of a accurate timing mechanism to measure the time of their throws.</p>
+<br>
+<p>One set of knife throwing competitions is the quick draw, where two throwers must draw their knives and hit the target faster than the other. The concern is that in competitions with high skilled throwers, the knives hit the target within a fraction of a second from each other, making it impossible to tell by sound or sight who the winner is. Through several interviews, in-depth field tests, and research of the sport and similar products, we were able to compose an RFP that was one of the few selected to continue on to the prototype phase to be displayed and demonstrated at an end-of-year showcase.</p>
+<br>
+<p>The objectives of the RFP were to:</p>
+<br>
+<ol>
+    <li>Accurately record the duration of a knife throw, from when timer begins to when the knife hits the board.</li>
+    <li>Indicate the start of each round without causing disadvantages for players with various throwing preferences.</li>
+    <li>Build a strong and durable device that can handle knife hits as well as damage due to outdoor exposure.</li>
+    <li>Create a portable product that can easily be transported for competitions</li>
+</ol>
+<br>
+<p>Our proposed solution, the QuicKnife, addresses the needs of a quick draw competition. Our device featured:</p>
+<br>
+<ul>
+    <li>A piezoelectric sensor connected to an LED screen to display the time and 3 colored lights to indicate the beginning and end of each round.</li> 
+    <li>A pair of connected devices to compare speeds and indicate the faster time between the two</li> 
+    <li>A remote control for the referee to turn on the device or reset the time for each round.</li> 
+    <li>A stainless steel body and polycarbonate frontal cover, which were tested to be durable enough to withstand the blow of a knife without shattering or breaking.</li>  
+    <li>A light-weight and small device totalling at 1 kg each and is approximately 16x10x10 cm.</li> 
+</ul>
 
-            <div class="article-content">
-                <p>A request for proposal (RFP) is a document outlining an opportunity, and the framing, objectives, criteria, and constraints needed in a solution. For one of my first year engineering design courses, I worked on a 3 month project in which my team and I wrote an entire proposal, designed a solution, and built a functioning prototype.</p>
-                <br>
-                <p>Our RFP was regarding the knife throwing community, a group of individuals who throw knives for recreation and sport. While interviewing members of the community, they addressed the need of a accurate timing mechanism to measure the time of their throws.</p>
-                <br>
-                <p>One set of knife throwing competitions is the quick draw, where two throwers must draw their knives and hit the target faster than the other. The concern is that in competitions with high skilled throwers, the knives hit the target within a fraction of a second from each other, making it impossible to tell by sound or sight who the winner is. Through several interviews, in-depth field tests, and research of the sport and similar products, we were able to compose an RFP that was one of the few selected to continue on to the prototype phase to be displayed and demonstrated at an end-of-year showcase.</p>
-                <br>
-                <p>The objectives of the RFP were to:</p>
-                <br>
-                <ol>
-                    <li>Accurately record the duration of a knife throw, from when timer begins to when the knife hits the board.</li>
-                    <li>Indicate the start of each round without causing disadvantages for players with various throwing preferences.</li>
-                    <li>Build a strong and durable device that can handle knife hits as well as damage due to outdoor exposure.</li>
-                    <li>Create a portable product that can easily be transported for competitions</li>
-                </ol>
-                <br>
-                <p>Our proposed solution, the QuicKnife, addresses the needs of a quick draw competition. Our device featured:</p>
-                <br>
-                <ul>
-                    <li>A piezoelectric sensor connected to an LED screen to display the time and 3 colored lights to indicate the beginning and end of each round.</li> 
-                    <li>A pair of connected devices to compare speeds and indicate the faster time between the two</li> 
-                    <li>A remote control for the referee to turn on the device or reset the time for each round.</li> 
-                    <li>A stainless steel body and polycarbonate frontal cover, which were tested to be durable enough to withstand the blow of a knife without shattering or breaking.</li>  
-                    <li>A light-weight and small device totalling at 1 kg each and is approximately 16x10x10 cm.</li> 
-                </ul>
+<h2 class="serif-font article-h2">Accompanying Files</h2>
+<nav class="article-files sans-serif-font">
+    <a href="/Assets/Images/Projects/quicKnife/RFP T14.pdf" download="Lisa Li - QuicKnife Report">Report</a>
+    <a href="/Assets/Images/Projects/quicKnife/Poster.pdf" download="Lisa Li - QuicKnife Poster">Poster</a>
+    <a href="/Assets/Images/Projects/quicKnife/One Pager.pdf" download="Lisa Li - QuicKnife Features">Product Features</a>
+    <a href="/Assets/Images/Projects/quicKnife/Dimensions.pdf" download="Lisa Li - QuicKnife Dimensions">Product Dimensions</a>
+    <a href="/Assets/Images/Projects/quicKnife/Rating Matrices.pdf" download="Lisa Li - QuicKnife Material Selection">Material Selection</a>
+    <a href="/Assets/Images/Projects/quicKnife/Tests.pdf" download="Lisa Li - QuicKnife Testing Protocols">Testing Protocols</a>
+</nav>
+<br>
+<p>Above are the documents that lead us to our final design, which follows my Engineering Design Philosophy. Programming and circuitry, material selection and testing was the largest part of our project. Under "Engineering Tools" you can find our Rating Matrices and Pugh Charts, where we determined what materials to use. Under "Testing Protocols" is the result from our tests to verify our material and design decisions, as well as refinements we made based on results of the tests. </p>
+<br>
+<p>Building our prototypes taught me many hands on skills. For the opportunity, we learned how to throw knives, which came in handy as for one of our tests, we threw knives against various kinds of materials to test their strength. We also spent hours in workshops bending, drilling, and cutting materials. I also learned how to program an Arduino, as that was the microcontroller that powered our device, and creating the circuits applied the knowledge I learned in my ECE course. My team and I spent several hours solely on building the device, and it paid off as it worked! Check out the video below.</p>
 
-                <h2 class="serif-font article-h2">Accompanying Files</h2>
-                <nav class="article-files sans-serif-font">
-                    <a href="../Assets/Images/Projects/quicKnife/RFP T14.pdf" download="Lisa Li - QuicKnife Report">Report</a>
-                    <a href="../Assets/Images/Projects/quicKnife/Poster.pdf" download="Lisa Li - QuicKnife Poster">Poster</a>
-                    <a href="../Assets/Images/Projects/quicKnife/One Pager.pdf" download="Lisa Li - QuicKnife Features">Product Features</a>
-                    <a href="../Assets/Images/Projects/quicKnife/Dimensions.pdf" download="Lisa Li - QuicKnife Dimensions">Product Dimensions</a>
-                    <a href="../Assets/Images/Projects/quicKnife/Rating Matrices.pdf" download="Lisa Li - QuicKnife Material Selection">Material Selection</a>
-                    <a href="../Assets/Images/Projects/quicKnife/Tests.pdf" download="Lisa Li - QuicKnife Testing Protocols">Testing Protocols</a>
-                </nav>
-                <br>
-                <p>Above are the documents that lead us to our final design, which follows my Engineering Design Philosophy. Programming and circuitry, material selection and testing was the largest part of our project. Under "Engineering Tools" you can find our Rating Matrices and Pugh Charts, where we determined what materials to use. Under "Testing Protocols" is the result from our tests to verify our material and design decisions, as well as refinements we made based on results of the tests. </p>
-                <br>
-                <p>Building our prototypes taught me many hands on skills. For the opportunity, we learned how to throw knives, which came in handy as for one of our tests, we threw knives against various kinds of materials to test their strength. We also spent hours in workshops bending, drilling, and cutting materials. I also learned how to program an Arduino, as that was the microcontroller that powered our device, and creating the circuits applied the knowledge I learned in my ECE course. My team and I spent several hours solely on building the device, and it paid off as it worked! Check out the video below.</p>
-
-                <div class="video-container">
-                    <div class="video-div">
-                        <label for="showcase-video">Final Product Demonstration at our Showcase</label>
-                        <video class="article-video sans-serif-font" id="showcase-video" controls>
-                            <source src="../Assets/Video/quicKnife/showcase.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="video-div">
-                        <label for="prototype-video">Early Prototype</label>
-                        <video class="article-video sans-serif-font" id="prototype-video" controls>
-                            <source src="../Assets/Video/quicKnife/early-prototype.mp4" type="video/mp4">
-                        </video>
-                    </div>
-
-                    <div class="video-div">
-                        <label for="piezo-video">Our Piezoelectric Sensor in Action!</label>
-                        <video class="article-video sans-serif-font" id="piezo-video" controls>
-                            <source src="../Assets/Video/quicKnife/piezo.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
-                <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
-            </div>
-        </div>
+<div class="video-container">
+    <div class="video-div">
+        <label for="showcase-video">Final Product Demonstration at our Showcase</label>
+        <video class="article-video sans-serif-font" id="showcase-video" controls>
+            <source src="/Assets/Video/quicKnife/showcase.mp4" type="video/mp4">
+        </video>
     </div>
 
-    <footer>
-        <div class="footer-container">
-            <img class="logo" src="../Assets/Images/Logo/White.png">
-            <div class="creds">
-                <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                <p class="creds-email">lisasa.li@mail.utoronto.ca</p>
-            </div>
-            <a href="#to-top"><u class="sans-serif-font" style="font-size: 20px; align-self: center;">Back to top</u></a>
+    <div class="video-div">
+        <label for="prototype-video">Early Prototype</label>
+        <video class="article-video sans-serif-font" id="prototype-video" controls>
+            <source src="/Assets/Video/quicKnife/early-prototype.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="video-div">
+        <label for="piezo-video">Our Piezoelectric Sensor in Action!</label>
+        <video class="article-video sans-serif-font" id="piezo-video" controls>
+            <source src="/Assets/Video/quicKnife/piezo.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+
         </div>
-    </footer>
-</body>
+    </div>
+</div>
 
+
+
+
+
+
+        
+        <footer>
+            <div class="footer-container">
+                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <div class="creds">
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                </div>
+                <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
+            </div>
+        </footer>
+        
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="/Assets/script/script.js"></script>
+        
+    </body>
 </html>
-

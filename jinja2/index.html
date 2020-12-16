@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="name-div" id="name-div">
+    <div class="name-content">
+        <div class="name-text">
+            <div class="Lisa-div">
+                <h1 id="Lisa">Lisa</h1>
+                <p id="Lisa1">Lisa</p>
+            </div>
+            <div class="Lisa-div Li-div">
+                <p id="Li">Li.</p>
+                <p id="Li1">Li.</p>
+            </div>
+        </div>    
+        <img class="portrait" src="Assets/Images/Portrait.png">
+    </div>
+</div>
+
+<div class="rtl-div" id="intro-div">
+    <div><h2 class="landing-h2 sans-serif-font">Who's this??</h2></div>
+
+    <div class="intro-text" style="padding-top: 0px;">
+        <p>I'm an engineering student by day, and a slightly more stressed engineering student by night. As an Engineering Science student at the University of Toronto, with extensive experience in <strong>UX design and software engineering</strong>, I look for solutions that are rooted in usability, aesthetics, and innovation.</p>
+    </div>
+</div>
+
+<div class="white-div design-div" id="design-div">
+    <div class="ltr-div-content">
+        <div><h2 class="landing-h2 serif-font">What I Design For</h2></div>
+
+        <div class="design-text">
+            <p>My goal is to design user interfaces that anyone can use without much effort. This does not mean restricting myself to incredibly simplistic designs; as Steve Krug, a usability expert, puts it: using new conventions is acceptable if it "adds so much value that it's worth a small learning curve".</p>
+            <a href="Design.html" style="margin: auto;">
+                <div class="by-button-div">
+                    <div class="black-outline-button"></div>
+                    <button class="yellow-outline-button">Read More</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="rtl-div" id="philosophy-div">
+    <div><h2 class="landing-h2 sans-serif-font" style="margin-top: -40px;">My Engineering Design Philosophy</h2></div>
+
+    <div class="intro-text">
+        <p>The following flow chart showcases my personal design process. Rather than making a detailed, step-by-step protocol, I start with a basic outline that I can then build on. This makes it easy to adapt the design to new requirements.</p>
+        <a href="Philosophy.html" style="margin: auto;"><button class="yellow-button">Read more</button></a>
+    </div>
+</div>
+
+<div class="project-div" style="align-items: stretch;" id="project-div">
+
+    <div class="p-hover-img project-hover-img">
+        <img class="project-img" id="project-img" alt="" src="Assets/Images/Projects/HoverImg/HWR.jpg"> 
+    </div>
+
+    <div class="project-list">
+        <h2 class="landing-h2 serif-font project-h2">Featured Projects</h2>
+        <ul>
+            <li onmouseover="showProjectImg('Hardware', 0)" onclick="goToPage('hardware')">
+                <p class="project-group blue-title">UI/UX Design</p>
+                <p class="project-title">Hackathon Hardware Sign Out System <sup>2020</sup></p>
+            </li>
+            <li onmouseover="showProjectImg('Coda', 0)" onclick="goToPage('Coda')">
+                <p class="project-group purple-title">Engineering Experience</p>
+                <p class="project-title">Coda <sup>2019</sup></p>
+            </li>
+            <li onmouseover="showProjectImg('Aweary', 0)" onclick="goToPage('Aweary')">
+                <p class="project-group blue-title">UI/UX Design</p>
+                <p class="project-title">Aweary <sup>2019</sup></p>
+            </li>
+            <li onmouseover="showProjectImg('HWR', 0)" onclick="goToPage('HWR')">
+                <p class="project-group blue-title">UI/UX Design</p>
+                <p class="project-title">Health and Wellness Resource (HWR) Website <sup>2018</sup></p>
+            </li>
+            <li onmouseover="showProjectImg('AMS', 0)" onclick="goToPage('AMS')">
+                <p class="project-group blue-title">UI/UX Design</p>
+                <p class="project-title">AMS Helpdesk Portal <sup>2018</sup></p>
+            </li>
+            <li onmouseover="showProjectImg('QuicKnife', 1)" onclick="goToPage('QuicKnife')">
+                <p class="project-group purple-title">Engineering Experience</p>
+                <p class="project-title">Timing the Throw in a Quick Knife Draw Competition <sup>2018</sup></p>
+            </li>
+            <li onmouseover="showProjectImg('StepRight', 2)" onclick="goToPage('stepright')">
+                <p class="project-group blue-title">UI/UX Design</p>
+                <p class="project-title">StepRight App <sup>2017</sup></p>
+            </li>
+        </ul>
+        
+        <div class="by-button-div" style="margin-bottom:50px; align-self: center;">
+            <a href="projects.html">
+                <div class="by-button-div">
+                    <div class="black-outline-button"></div>
+                    <button class="yellow-outline-button">View all</button>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

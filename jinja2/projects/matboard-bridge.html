@@ -1,0 +1,38 @@
+{% extends "project_base.html" %}
+
+{% block title %}Matboard Bridge — Lisa Li{% endblock %}
+{% block main_img %}HoverImg/Matboard.jpg{% endblock %}>
+{% block h1 %}Matboard Bridge{% endblock %}
+{% block date %}November 2017{% endblock %}
+
+{% block body1 %}
+<p>My second bridge project was similar to the first, however, the biggest different was that we actually built a physical, scaled prototype out of mat-board, a cardboard-like material and contact cement, an adhesive made from elastic polymers.</p>
+<br>
+<p>The bridge was to be marked based on strength, aesthetics, and had a restriction on weight and dimensions. While performing our calculations, my team had to go with several revisions of our design to balance the aforementioned elements of our bridge. There were several designs that would have increased the maximum load the bridge could hold, such as increased height of the bridge or width. However, due to the limitation of materials, this would have resulted in either a lack of matboard available for construction and/or compromise the strength in various parts of the bridge.</p>
+
+<h2 class="serif-font article-h2">Accompanying Files</h2>
+<nav class="article-files sans-serif-font">
+    <a href="/Assets/Images/Projects/matboard/matboard-report.pdf" download="Lisa Li - Matboard Bridge Report">Report</a>
+</nav>
+<br>
+
+<h2 class="serif-font article-h2">Engineering Design Decisions</h2>
+<ul>
+    <li><strong>Having Two Cross-Sections:</strong> Roughly half our bridge is purely a pi-shaped cross section (region A) with a high centroid, resulting in a good performance in resisting compression on the top. The other half, region B, layer of Matboard beneath it with an attempt to increase I and lower the centroid. Such a design reduces the compressive stresses at the bottom and increases the predicted loading as a result. Due to the positions along the bridge where the loads were being placed, region A and region B would rotate in opposite directions, increasing its chances of breaking. Therefore, it is necessary to customize the cross-sections are for different region</li>
+    <li><strong>Bending the Matboard deck rather than gluing the web:</strong> The amount of cuts and gluing were minimized in order to prevent as many human errors as possible during construction. The bottom layer of the deck and the sides of the bridge are one piece of matboard bent into a pi shape. This design avoids the procedure to glue separate pieces of webs onto the flange, which improves the ease of construction and lowers the possibly of a failure mode. As the maximum shear stress (amount of force it can resist without breaking) of cement glue is less than the maximum shear stress of matboard, gluing the web on will increase the possibility of another failure mode of the bridge.</li>
+    <li><strong>Having Two Layers on the Top Deck:</strong> A single layered top deck is not strong enough to withstand the loads being placed on top it. After careful consideration over several designs, we found that two layers on the top deck strikes a balance between material use and maximum loading.</li>
+</ul>
+<br>
+<p>To test the quality of our bridge, four 100 N loads with wheels were rolled across the bridge. As shown in the video, our bridge cracked under the pressure due to a poor reinforcement. This was the first prototype we built for a course and it taught me the importance of testing and refining. For this project however, we were given a specific amount of mat-board, that did not allow us to do any testing by making several iterations of our bridge. Even though all of our math was correct and we felt that the bridge was well constructed, only through testing did we see that there were issues. It was a new experience to prototype and test, and this video of the most heart shattering moment of first semester is a constant reminder to me of testing and refinement.</p>    
+
+<div class="video-container">
+    <div class="video-div">
+        <label for="showcase-video">Our Bridge Being Tested</label>
+        <video class="article-video sans-serif-font" id="showcase-video" controls>
+            <source src="/Assets/Video/matboard/bridge.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<a href="/projects.html"><button class="yellow-button">Back to Projects</button></a>
+{% endblock %}

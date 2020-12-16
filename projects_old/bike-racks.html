@@ -1,0 +1,65 @@
+{% extends "project_base.html" %}
+
+{% block title %}Bike Racks — Lisa Li{% endblock %}
+{% block main_img %}bike/bike-main.jpg{% endblock %}>
+{% block h1 %}Bicycle​ Parking​ Facilities​ on​ Campus{% endblock %}
+{% block date %}November - December 2017{% endblock %}
+
+{% block body1 %}
+<p>Continuing from my team's <u><a href="blackboard.html">blackboard RFP</a></u>, my team and I were tasked with taking on another RFP and making a proposal. The RFP we chose tackled campus bike theft, a predominant issue as there were 66 bike thefts in 2016, despite several initiatives taken by the school and the city. My team and I decided to focus heavily on <strong>durability</strong> and <strong>usability</strong> with our high level objectives being:</p>
+<br>
+<ol>
+    <li>Reduce​ the​ amount​ of​ thefts​ of​ any​ kind​ by​ securing​ more​ parts​ of​ the​ bike</li>
+    <li>Make​ sure​ the​ Campus​ Police​ is alerted​ whenever​ a​ theft​ occurs</li>        
+</ol>
+<br>
+<p>We came up with the following metrics that we thought could best analyze each respective lock against their counterparts.</p>
+<br>
+<ol>
+    <li>Number​ of exposed bike parts</li>
+    <li>Number​ of​ alarm​ triggers​</li>
+    <li>Time​ taken​ to​ contact​ Campus​ Police​</li>
+    <li>Number​ of​ ways​ the​ system​ can​ be​ broken​</li>
+    <li>Site​ area​ taken​ up​ per​ bike​ lock​</li>
+    <li>Number of dimensional restrictions caused by the system (a dimensional restriction​ being​ when​ a​ bike​ cannot​ fit​ into​ the​ system​ do​ to​ its​ irregular​ shape)</li>
+    <li>Ratio​ of​ number​ of​ parts​ secured​ to​ time​ needed​ to​ lock​ it,​ measured​ in​ seconds​</li>    
+</ol>
+<br>
+<p><strong>The Retractable​ Chain​ Bike​ Station​</strong>, a device of our own creation was deemed the best of the alternatives through testing and evaluation of the metrics, and was our final proposal.</p>
+
+<h2 class="sans-serif-font article-h2">Engineering Design Decisions</h2>
+<ul>
+    <li>A retractable chain similar to that of a seat belt, with a retractor that gets triggered by the movement of the chain and a pretensioner that helps hold the chain in place.
+        <ul>
+            <li>Can fit around different sized bikes and protect each and every part</li>
+            <li>When the chain is released, it will respool itself, and tighten around the bike</li>
+            <li>Locks into place in a slot behind it</li>
+        </ul>
+    </li>
+    <li>A security system that gets triggered whenever the chain is cut or when the lock is broken.
+        <ul>
+            <li>A silent alarm is sent to Campus Police.</li>
+            <li>A loud siren goes off to alert bystanders of the thief's presence.</li>
+            <li>Due to the seat belt mechanism, when the chain is cut it will completely retract causing the system's alarms to trigger</li>
+        </ul>
+    </li>
+    <li>After some research on chains and the ways they can be broken or cut, a hardened steel chain with a diameter of 16 mm was chosen as it is big enough that it cannot easily be cut by any manual bolt croppers and hacksaws but still fit through small opening in the bike.</li>
+    <li>Presto-card-activated for locking and unlocking the system.
+        <ul>
+            <li>Makes the bike lock system available to the public.</li>
+            <li>Gives the school the ability to charge non-students, or even students, a small fee to use the system.</li>
+        </ul>
+    </li>
+</ul>
+
+<h2 class="sans-serif-font article-h2">Prototypes</h2>
+<p>Our <strong>scaled prototype</strong> was mainly made out of tape and Lego and effectively demonstrated our device; I remember my TA being so impressed that he asked why didn't the device already exist. Our <strong>graphical prototype</strong> accurately portrayed what we envisioned the device to look like. Our <strong>mathematical prototype</strong> compared the time it took to lock the bikes of our device and other alternatives. An actual bike was used to prototype the time needed. Simulations of all 4 alternatives were created and 3 trials were timed. The final times used in the ratio was the average of the 3, then rounded to the nearest second. The prototypes gave a fair estimation to the time it took to lock a bike for each alternative.</p>
+<img class="article-img" onclick="modalImage(this)" src="/Assets/Images/Projects/bike/metric-table.png">
+<p>At the time, this report was perhaps the most difficult project that required all six phases of my Engineering Design Philosophy. After applying all the knowledge I learned from my engineering design course, I came out of it fully understanding all that I was taught and was able to see how my professors structured the course to teach us these concepts.</p>
+<br>
+<nav class="article-files sans-serif-font">
+    <a href="/Assets/Images/Projects/bike/bike.pdf" download="Lisa Li - Bicycle​ Parking​ Facilities​ on​ Campus Report">Read My Report</a>
+</nav>
+
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+{% endblock %}

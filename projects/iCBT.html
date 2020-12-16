@@ -1,137 +1,167 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="en">
+    <head>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    gtag('config', 'UA-180967281-1');
-    </script>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style2.css">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-    <script type="text/javascript" src="../Assets/script/script.js"></script>
-</head>
+            gtag('config', 'UA-180967281-1');
+        </script>
 
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo-anim">
-                <div class="black-circle"></div>
-                <div class="yellow-circle"></div>
-                <p class="sans-serif-font logo-Li" id="typedtext">Li.</p>
-            </div>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
 
-            <div class="wrap-collabsible">
-                <input id="collapsible" class="toggle" type="checkbox">
-                <label for="collapsible" class="lbl-toggle">
-                    <img src="../Assets/Images/menu.png" style="height: 24px; margin: auto;">
-                </label>
-                <div class="collapsible-content">
-                    <div class="content-inner">
-                        <nav class="nav-container">
-                            <a class="nav-a" href="../index.html">Me</a>
-                            <a class="nav-a" href="../Design.html">Design</a>
-                            <a class="nav-a" href="../Philosophy.html">Philosophy</a>
-                            <a class="nav-a" href="../projects.html">Projects</a>
-                        </nav>
+
+        <title>iCBT — Lisa Li</title>
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
+        <meta property="og:type" content="website" /> 
+        <meta property="og:url" content="www.lisali.me" />
+        <meta property="og:title" content="Lisa Li" />
+        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
+
+        
+        
+    </head>
+    <body id="to-top" onload="preloadImg()">
+        
+        <header>
+            <div class="header-container">
+                <div class="logo-anim">
+                    <div class="black-circle"></div>
+                    <div class="yellow-circle"></div>
+                    <p class="sans-serif-font logo-Li">Li.</p>
+                </div>
+    
+                <div class="wrap-collabsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">
+                        <img src="Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                    </label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <nav class="nav-container">
+                                <a class="nav-a" href="/index.html">Me</a>
+                                <a class="nav-a" href="/design.html">Design</a>
+                                <a class="nav-a" href="/philosophy.html">Philosophy</a>
+                                <a class="nav-a" href="/projects.html">Projects</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="menu-content nav-container" id="menu-button">
+                    <a class="nav-a" href="/index.html">Me</a>
+                    <a class="nav-a" href="/Design.html">Design</a>
+                    <a class="nav-a" href="/Philosophy.html">Philosophy</a>
+                    <a class="nav-a" href="/projects.html">Projects</a>
+                </div>
+    
+                <div class="resume-button-div">
+                    <div class="black-outline-button"></div>
+                    <button class="yellow-outline-button">Resume</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="downloadResume('Software')">Software</a>
+                        <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
                 </div>
             </div>
+        </header>
+        
 
-            <div class="menu-content nav-container" id="menu-button">
-                <a class="nav-a" href="../index.html">Me</a>
-                <a class="nav-a" href="../Design.html">Design</a>
-                <a class="nav-a" href="../Philosophy.html">Philosophy</a>
-                <a class="nav-a" href="../projects.html">Projects</a>
-            </div>
+    
+        
 
-            <div class="resume-button-div">
-                <div class="black-outline-button"></div>
-                <button class="yellow-outline-button">Resume</button>
-                <div class="dropdown-content">
-                    <a href="#" onclick="downloadResume(1, 'Software')">Software</a>
-                    <a href="#" onclick="downloadResume(1, 'UX')">UX</a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/iCBT/iCBT-main.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-header" id="article-div">
+            <h1 class="sans-serif-font article-title">iCBT Landing Page and Self-Register</h1>
+            <div><p class="article-date">June 2018</p></div>
+        </div>
+
+        <div class="article-content" id="article-div">
+             
+<p>Cognitive Behaviour Therapy (CBT) is the most widely used evidence-based practice for improving mental health. It focuses on the development of personal coping strategies and skills that target solving current problems and changing unhelpful patterns of thought, beliefs, attitudes, and behaviours. iCBT is Cognitive Behaviour Therapy through a digital platform.</p>
+<br>
+<p>Morneau Shepell's iCBT program is CBT that is delivered by a therapist through an online platform. Combining the convenience of online access with the same benefits of in-person Cognitive Behaviour Therapy, iCBT targets gaps in treatment, which in turn reduces absenteeism and shortens return to work time frames.<sup>[1]</sup></p>
+<br>
+<p>I was tasked to create a self-register flow as well as redesign the old landing page:</p>
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/iCBT/iCBT-old.jpg"> 
+<br>
+<h2 class="sans-serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://invis.io/YENY2JF96HJ" target="_blank">Desktop</a>
+    <a href="https://invis.io/ZCNY2JL56N9" target="_blank">Mobile</a>
+</nav>
+
+<h2 class="sans-serif-font article-h2">Info Flow</h2>
+<img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/iCBT/iCBT-flow.jpg">
+
+<h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
+<ul>
+    <li>
+        The background was selected because the person in it looks like they're beginning a new adventure, which is what we want our users to feel.
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/iCBT/iCBT-background.jpg"> 
+    </li>
+    <li>
+        Adding a video describing CBT and iCBT to new users.
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/iCBT/iCBT-video.jpg">
+    </li>
+    <li>
+        Having a short description of Morneau Shepell and its resources.
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/iCBT/iCBT-description.jpg">
+    </li>
+</ul>
+<br>
+<p style="font-size: 14px; font-weight: 600;">[1] <a href="https://www.morneaushepell.com/ca-en/internet-based-cognitive-behaviour-therapy-icbt" target="_blank">www.morneaushepell.com/ca-en/internet-based-cognitive-behaviour-therapy-icbt</a></p>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        
+        <footer>
+            <div class="footer-container">
+                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <div class="creds">
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
                 </div>
+                <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
-        </div>
-    </header>
+        </footer>
+        
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-
-    <div class="article" id="to-top">
-        <div class="p-hover-img img-div">
-            <img class="project-img img-div" alt="" src="../Assets/Images/Projects/iCBT/iCBT-main.jpg"> 
-        </div>
-       
-        <div class="article-div">
-            <div class="article-header">
-                <h1 class="sans-serif-font article-title">iCBT Landing Page and Self-Register</h1>
-                <div><p class="article-date">June 2018</p></div>  
-            </div>
-
-            <div class="article-content">
-                <p>Cognitive Behaviour Therapy (CBT) is the most widely used evidence-based practice for improving mental health. It focuses on the development of personal coping strategies and skills that target solving current problems and changing unhelpful patterns of thought, beliefs, attitudes, and behaviours. iCBT is Cognitive Behaviour Therapy through a digital platform.</p>
-                <br>
-                <p>Morneau Shepell's iCBT program is CBT that is delivered by a therapist through an online platform. Combining the convenience of online access with the same benefits of in-person Cognitive Behaviour Therapy, iCBT targets gaps in treatment, which in turn reduces absenteeism and shortens return to work time frames.<sup>[1]</sup></p>
-                <br>
-                <p>I was tasked to create a self-register flow as well as redesign the old landing page:</p>
-                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/iCBT/iCBT-old.jpg"> 
-                <br>
-                <h2 class="sans-serif-font article-h2">View My Prototype</h2>
-                <nav class="article-files sans-serif-font">
-                    <a href="https://invis.io/YENY2JF96HJ" target="_blank">Desktop</a>
-                    <a href="https://invis.io/ZCNY2JL56N9" target="_blank">Mobile</a>
-                </nav>
-                <br>
-
-                <h2 class="sans-serif-font article-h2">Info Flow</h2>
-                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/iCBT/iCBT-flow.jpg">
-
-                <h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
-                <ul>
-                    <li>
-                        The background was selected because the person in it looks like they're beginning a new adventure, which is what we want our users to feel.
-                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/iCBT/iCBT-background.jpg"> 
-                    </li>
-                    <li>
-                        Adding a video describing CBT and iCBT to new users.
-                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/iCBT/iCBT-video.jpg">
-                    </li>
-                    <li>
-                        Having a short description of Morneau Shepell and its resources.
-                        <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/iCBT/iCBT-description.jpg">
-                    </li>
-                </ul>
-                <br>
-                <p style="font-size: 14px; font-weight: 600;">[1] <a href="https://www.morneaushepell.com/ca-en/internet-based-cognitive-behaviour-therapy-icbt" target="_blank">www.morneaushepell.com/ca-en/internet-based-cognitive-behaviour-therapy-icbt</a></p>
-                <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-container">
-            <img class="logo" src="../Assets/Images/Logo/White.png">
-            <div class="creds">
-                <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                <p class="creds-email">lisasa.li@mail.utoronto.ca</p>
-            </div>
-            <a href="#to-top"><u class="sans-serif-font" style="font-size: 20px; align-self: center;">Back to top</u></a>
-        </div>
-    </footer>
-</body>
-
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="/Assets/script/script.js"></script>
+        
+    </body>
 </html>
-

@@ -1,0 +1,49 @@
+{% extends "project_base.html" %}
+
+{% block title %}My Migo — Lisa Li{% endblock %}
+{% block main_img %}gameification/gameification.jpg{% endblock %}>
+{% block h1 %}My Migo - Positive Play{% endblock %}
+{% block date %}June - August 2017{% endblock %}
+
+{% block body1 %} 
+<h2 class="sans-serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://invis.io/GMPTFJGEFUR" target="_blank">Mobile</a>
+</nav>
+
+<p>Morneau Shepell's My Migo program aims to help users set and achieve health and wellness goals through features offered by the app, such as online therapy, breathing exercises, goal-achievements, and more. An additional feature to the app was <strong>Positive Play</strong>, a set of achievement badges to "<strong>gamify</strong>" My Migo, meaning adding game-elements to non-game contexts which has been shown to improve user engagement, learning, physical exercise, and more.</p>
+<br>
+<p>The set of badges I created and designed were meant to encourage:</p>
+<ul>
+    <li>Health through means of diet, sleep, and exercise</li>
+    <li>Relationships with friends, family, and colleagues</li>
+    <li>Setting and completing more goals</li>
+    <li>Use of other features in the app</li>
+</ul>
+<br>
+
+<h2 class="sans-serif-font article-h2">Info Flow</h2>
+<img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-flow.jpg">
+
+<h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
+<ul>
+    <li>
+        Each badge has 3 tiers (denoted as stars) encourage the user to accomplish their goal and eventually form actions into habits
+        <ul>
+            <li>Completed tiers are colored while uncompleted remain in black and white</li>
+            <li>Star graphics double as a progress bar and fill up in accordance to number of times goal has been achieved</li>
+        </ul>
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-progress.jpg"> 
+    </li>
+    <li>
+        User can toggle between <strong>Badges</strong> and <strong>My Goal</strong>, which displays their initial goal and offers the inspiration graphic of a rocket that symbolizes their increasing momentum to achieving their objective
+        <img class="article-img lg-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-goal.jpg">
+    </li>
+    <li>
+        Prominent appearance and popup on dashboard to foster a goal-oriented environment
+        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-dashboard.jpg">
+    </li>
+</ul>
+<br>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+{% endblock %}

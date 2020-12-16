@@ -11,11 +11,11 @@
     gtag('config', 'UA-180967281-1');
     </script>
     <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style2.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/Assets/css/style2.css">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-    <script type="text/javascript" src="../Assets/script/script.js"></script>
+    <script type="text/javascript" src="/Assets/script/script.js"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
             <div class="wrap-collabsible">
                 <input id="collapsible" class="toggle" type="checkbox">
                 <label for="collapsible" class="lbl-toggle">
-                    <img src="../Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                    <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
                 </label>
                 <div class="collapsible-content">
                     <div class="content-inner">
@@ -69,46 +69,57 @@
         <div id="caption"></div>
     </div>
 
-    <div class="article" id="to-top">
-        <div class="p-hover-img project-img1 img-div">
-            <img class="project-img img-div" alt="" src="../Assets/Images/Projects/cats/cats-main.jpg"> 
+    <div class="article">
+        <div class="p-hover-img img-div">
+            <img class="project-img img-div" alt="" src="/Assets/Images/Projects/gameification/gameification.jpg"> 
         </div>
        
         <div class="article-div">
             <div class="article-header">
-                <h1 class="sans-serif-font article-title">Proposition to Rebuild: Cat's Eye Bridge</h1>
-                <div><p class="article-date">November 2017</p></div>
+                <h1 class="sans-serif-font article-title">My Migo - Positive Play</h1>
+                <div><p class="article-date">June - August 2017</p></div>  
             </div>
 
             <div class="article-content">
-                <p>For my civil engineering course, my team and I searched Toronto for an old, decaying bridge and designed a replacement. As in our Proposition to Rebuild report: "The neighbourhood surrounding the Moore Park Ravine is comprised of many Victorian style homes, with a quiet atmosphere. Spanning the ravine is the Heath St. East pedestrian bridge, known fondly by locals as the Cat's Eye bridge. As this bridge is used frequently by the residents of the area, our team believes this would be a good opportunity for revitalizing local infrastructure."</p>
+                <p>Morneau Shepell's My Migo program aims to help users set and achieve health and wellness goals through features offered by the app, such as online therapy, breathing exercises, goal-achievements, and more. An additional feature to the app was <strong>Positive Play</strong>, a set of achievement badges to "<strong>gamify</strong>" My Migo, meaning adding game-elements to non-game contexts which has been shown to improve user engagement, learning, physical exercise, and more.</p>
                 <br>
-                <p>Using the concepts we learned in lectures, calculations of beams, choices for HSS members, graphical prototypes, and cost and material analysis were conducted. Our designs accounted for the self load, load of people using the bridge, wind, and factors of safety.</p>
-
-                <h2 class="serif-font article-h2">Accompanying Files</h2>
+                <p>The set of badges I created and designed were meant to encourage:</p>
+                <ul>
+                    <li>Health through means of diet, sleep, and exercise</li>
+                    <li>Relationships with friends, family, and colleagues</li>
+                    <li>Setting and completing more goals</li>
+                    <li>Use of other features in the app</li>
+                </ul>
+                <br>
+                <h2 class="sans-serif-font article-h2">View My Prototype</h2>
                 <nav class="article-files sans-serif-font">
-                    <a href="../Assets/Images/Projects/cats/cats-report.pdf" download="Lisa Li - Cat's Eye Bridge Report">Report</a>
-                    <a href="../Assets/Images/Projects/cats/cats-drawings.pdf" download="Lisa Li - Cat's Eye Bridge Drawings">Drawings</a>
+                    <a href="https://invis.io/GMPTFJGEFUR" target="_blank">Mobile</a>
                 </nav>
                 <br>
-                
-                <h2 class="serif-font article-h2">Engineering Design Decisions</h2>
+
+                <h2 class="sans-serif-font article-h2">Info Flow</h2>
+                <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-flow.jpg">
+
+                <h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
                 <ul>
-                    <li>The center of the bridge featured an inverted truss design to minimize view obstruction and feature the beautiful surroundings of the bridge. To provide dimensional contrast, the ends of the bridge are non-inverted.</li>
-                         <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/cats/cats-rendering.jpg"> 
-                    <li>After observing the lived experiences of pedestrians and cyclists using the bridge during our field investigation, we increased the width of the proposed plan to more than 150% of the current bridge to accommodate both cyclists and pedestrians.</li>
                     <li>
-                        A Pratt design was chosen for its symmetrical and aesthetically pleasing trusses. This was chosen over a K or bowstring truss in order to minimize the obstructions caused by the structure.
-                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/cats/cats-truss.jpg"> 
+                        Each badge has 3 tiers (denoted as stars) encourage the user to accomplish their goal and eventually form actions into habits
+                        <ul>
+                            <li>Completed tiers are colored while uncompleted remain in black and white</li>
+                            <li>Star graphics double as a progress bar and fill up in accordance to number of times goal has been achieved</li>
+                        </ul>
+                        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-progress.jpg"> 
                     </li>
                     <li>
-                        To improve the lighting of the bridge's two dim lamps, the proposed design included 60 lights to be installed in the deck along both sides of the span, which are able to change colours for special occasions.
-                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/cats/cats-night.jpg">
+                        User can toggle between <strong>Badges</strong> and <strong>My Goal</strong>, which displays their initial goal and offers the inspiration graphic of a rocket that symbolizes their increasing momentum to achieving their objective
+                        <img class="article-img lg-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-goal.jpg">
                     </li>
                     <li>
-                        A childproof steel railing was been chosen as it is aesthetically pleasing, safe for pedestrians, and cost-effective. This was implemented improve functionality of the bridge, as well as decrease the accessory cost.
+                        Prominent appearance and popup on dashboard to foster a goal-oriented environment
+                        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-dashboard.jpg">
                     </li>
                 </ul>
+                <br>
                 <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
             </div>
         </div>
@@ -116,13 +127,11 @@
 
     <footer>
         <div class="footer-container">
-            <img class="logo" src="../Assets/Images/Logo/White.png">
+            <img class="logo" src="/Assets/Images/Logo/White.png">
             <div class="creds">
                 <p class="hear-from-you serif-font">I'd love to hear from you</p> 
                 <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
                 <p class="creds-email">lisasa.li@mail.utoronto.ca</p>
-                
-                
             </div>
             <a href="#to-top"><u class="sans-serif-font" style="font-size: 20px; align-self: center;">Back to top</u></a>
         </div>

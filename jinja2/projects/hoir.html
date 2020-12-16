@@ -1,0 +1,33 @@
+{% extends "project_base.html" %}
+
+{% block title %}HOIR — Lisa Li{% endblock %}
+{% block main_img %}HOIR/HOIR-main.jpg{% endblock %}>
+{% block h1 %}Hazardous Occurrence Investigation Report Form{% endblock %}
+{% block date %}July 2018{% endblock %}
+
+{% block body1 %} 
+<p>The content of the Hazardous Occurrence Investigation Report (HOIR) is from the Department of Employment and Social Development Canada (ESDC). The design of the form is inspired by the input field from the Morneau Shepell design system, and features shades of Morneau Shepell's green branding color.</p>
+<br>
+<h2 class="serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://invis.io/YGNRFE18RWH" target="_blank">Desktop</a>
+</nav>
+
+<h2 class="serif-font article-h2">UI Design Decisions</h2>
+<br>
+<ul>
+    <li>
+        Modern design centered around the input field from the Morneau Shepell design system.
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HOIR/HOIR-input.jpg"> 
+    </li>
+    <li>
+        A sticky sidebar which offers a shortcut to each section of the form and a progress bar.
+        <img class="article-img lg-img" style="min-width: 300px;" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HOIR/HOIR-sidebar.jpg"> 
+    </li>
+    <li>
+        Categories are grouped together opposed to the original form for easy navigation and a cleaner, more organised design.
+        <img class="article-img md-img" onclick="modalImage(this)" style="box-shadow: 0px 0px 23px #8F8468; margin-top: 40px; margin-bottom: 40px;" alt="" src="/Assets/Images/Projects/HOIR/HOIR-og.jpg"> 
+    </li>
+</ul>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+{% endblock %}

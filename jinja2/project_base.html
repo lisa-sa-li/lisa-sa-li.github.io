@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+{% block modal %}
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+{% endblock %}
+
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/{% block main_img %}{% endblock %}"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-header" id="article-div">
+            <h1 class="sans-serif-font article-title">{% block h1 %}{% endblock %}</h1>
+            <div><p class="article-date">{% block date %}{% endblock %}</p></div>
+        </div>
+
+        <div class="article-content" id="article-div">
+            {% block body1 %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+{% block body2 %}
+{% endblock %}
+
+{% endblock %}

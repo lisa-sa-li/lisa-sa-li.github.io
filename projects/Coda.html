@@ -1,137 +1,168 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="en">
+    <head>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-    gtag('config', 'UA-180967281-1');
-    </script>
-    <meta content='width=device-width, initial-scale=1' name='viewport'>
-    <link rel="shortcut icon" type="image/x-icon" href="../Assets/Images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../Assets/css/style2.css">
-    <script type="text/javascript" src="../Assets/script/script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-</head>
+            gtag('config', 'UA-180967281-1');
+        </script>
 
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo-anim">
-                <div class="black-circle"></div>
-                <div class="yellow-circle"></div>
-                <p class="sans-serif-font logo-Li" id="typedtext">Li.</p>
-            </div>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
 
-            <div class="wrap-collabsible">
-                <input id="collapsible" class="toggle" type="checkbox">
-                <label for="collapsible" class="lbl-toggle">
-                    <img src="../Assets/Images/menu.png" style="height: 24px; margin: auto;">
-                </label>
-                <div class="collapsible-content">
-                    <div class="content-inner">
-                        <nav class="nav-container">
-                            <a class="nav-a" href="../index.html">Me</a>
-                            <a class="nav-a" href="../Design.html">Design</a>
-                            <a class="nav-a" href="../Philosophy.html">Philosophy</a>
-                            <a class="nav-a" href="../projects.html">Projects</a>
-                        </nav>
+
+        <title>Coda — Lisa Li</title>
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
+        <meta property="og:type" content="website" /> 
+        <meta property="og:url" content="www.lisali.me" />
+        <meta property="og:title" content="Lisa Li" />
+        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
+
+        
+        
+    </head>
+    <body id="to-top" onload="preloadImg()">
+        
+        <header>
+            <div class="header-container">
+                <div class="logo-anim">
+                    <div class="black-circle"></div>
+                    <div class="yellow-circle"></div>
+                    <p class="sans-serif-font logo-Li">Li.</p>
+                </div>
+    
+                <div class="wrap-collabsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">
+                        <img src="Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                    </label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <nav class="nav-container">
+                                <a class="nav-a" href="/index.html">Me</a>
+                                <a class="nav-a" href="/design.html">Design</a>
+                                <a class="nav-a" href="/philosophy.html">Philosophy</a>
+                                <a class="nav-a" href="/projects.html">Projects</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="menu-content nav-container" id="menu-button">
+                    <a class="nav-a" href="/index.html">Me</a>
+                    <a class="nav-a" href="/Design.html">Design</a>
+                    <a class="nav-a" href="/Philosophy.html">Philosophy</a>
+                    <a class="nav-a" href="/projects.html">Projects</a>
+                </div>
+    
+                <div class="resume-button-div">
+                    <div class="black-outline-button"></div>
+                    <button class="yellow-outline-button">Resume</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="downloadResume('Software')">Software</a>
+                        <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
                 </div>
             </div>
+        </header>
+        
 
-            <div class="menu-content nav-container" id="menu-button">
-                <a class="nav-a" href="../index.html">Me</a>
-                <a class="nav-a" href="../Design.html">Design</a>
-                <a class="nav-a" href="../Philosophy.html">Philosophy</a>
-                <a class="nav-a" href="../projects.html">Projects</a>
-            </div>
+    
+        
 
-            <div class="resume-button-div">
-                <div class="black-outline-button"></div>
-                <button class="yellow-outline-button">Resume</button>
-                <div class="dropdown-content">
-                    <a href="#" onclick="downloadResume(1, 'Software')">Software</a>
-                    <a href="#" onclick="downloadResume(1, 'UX')">UX</a>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/Coda/Coda-main.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-header" id="article-div">
+            <h1 class="sans-serif-font article-title">Aweary - Commuter Alarm</h1>
+            <div><p class="article-date">November 2019</p></div>
+        </div>
+
+        <div class="article-content" id="article-div">
+            
+<p>Coda is a neural network which classifies the main instrument being played within a multi-instrumental piece of music. With the popularity of music streaming services and playlist curation, Coda is meant to help increase the specificity of categorized music and recommender systems. This is a great application for machine learning, as traditional methods of hard coding instrument features are made difficult by noise such as tuning, external sounds, etc.</p>
+<br>
+
+<h2 class="serif-font article-h2">Data Collection/Processing </h2>
+<p>The IRMAS dataset was used to train the model, which consists of over 6700 three-second long audio files each labelled with one of the 11 different instrument classes. The audio and corresponding labels are stored in different files but have the same names. This made it easy to write a Python script to crawl through the dataset folder to extract and store all of the different names. </p>
+<br>
+
+<h2 class="serif-font article-h2">Data Preprocessing</h2>
+<p>The harmonic and percussive components of the audio were separated to further isolate the main instrument. Using only the harmonic component, the Mel-scale spectrogram was computed, which can be thought of as the representation of the audio in the frequency domain, scaled by a nonlinear equation. This was represented as a 128x65 NumPy array, where the 128 rows are bins of frequency values while the 65 columns each represent 0.05 seconds of audio. Lastly, columns were normalized to have a mean of 0 and standard deviation of 1.  </p>
+<br>
+<p>Additionally, I realized that 6700 training examples spread across 11 classes was insufficient, so I implemented two types of data augmentation to triple our dataset. First, I added Gaussian noise to the audio. Also, I slowed the audio down to 0.5 speed and cropped the first 3 seconds to use.</p>
+<br>
+
+<h2 class="serif-font article-h2">Final Model</h2>
+<p>The best model was a MLP with 3 layers with 1000 neurons each, a ReLU activation function on the first two layers and a sigmoid on the last layer. This was “duplicated” 11 times, such that each model was a binary classifier for each of the 11 instruments.</p>
+<br>
+<p>This empirically gave the best results compared to other models I developed, and is also the best model for the harder task of identifying multiple instruments.</p>
+<br>
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Coda/Coda-1.jpg">
+
+<h2 class="serif-font article-h2">Results </h2>
+<p>The figure below shows the loss and accuracy plots for the model. It averages around low 70s validation accuracy although there are significant fluctuations. Visually, the orange follows the blue line close enough to signify no overfitting. A test accuracy of 0.684 was obtained, showing that the model generalizes well. </p>
+<br>
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Coda/Coda-2.jpg">
+<p>Since the model consists of 11 binary classifiers, there are 11 confusion matrices, one for each instrument. The large values along the diagonal show that the model is accurately predicting the presence of the instruments. I’d like to point out that the instruments with over 100 false positives and negatives are the cello, acoustic guitar, electric guitar, and violin. These are all string instruments, perhaps meaning that it’s harder for the model to discern amongst them. For voice, it has the lowest false positives and negatives, possibly meaning it’s distinct compared to the other instruments and easier to be predicted by the model.</p>
+<br>
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Coda/Coda-3.jpg">
+
+<h2 class="serif-font article-h2">Conclusion</h2>
+<p>Looking over related literature, instrument recognition within multi-instrumental music is still a prevalent and difficult problem being tackled by academic research. Audio is quite messy and unpredictable, and there can be many variations between different audio files that cause models to not generalize. This may be a reason for the sub-70’s accuracy. </p>
+<br>
+<nav class="article-files sans-serif-font">
+    <a href="/Assets/Images/Projects/Coda/Coda Report.pdf" download="Lisa Li - Coda Report">Read My Report</a>
+</nav>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        
+        <footer>
+            <div class="footer-container">
+                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <div class="creds">
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
                 </div>
+                <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
-        </div>
-    </header>
+        </footer>
+        
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
-    </div>
-
-    <div class="article" id="to-top">
-        <div class="p-hover-img img-div">
-            <img class="project-img img-div" alt="" src="../Assets/Images/Projects/Coda/Coda-main.jpg"> 
-        </div>
-       
-        <div class="article-div">
-            <div class="article-header">
-                <h1 class="sans-serif-font article-title">Coda - NLP For Musical Instrument Recognition</h1>
-                <p class="article-date">November 2019</p>
-            </div>
-
-            <div class="article-content">
-                <p>Coda is a neural network which classifies the main instrument being played within a multi-instrumental piece of music. With the popularity of music streaming services and playlist curation, Coda is meant to help increase the specificity of categorized music and recommender systems. This is a great application for machine learning, as traditional methods of hard coding instrument features are made difficult by noise such as tuning, external sounds, etc.</p>
-                <br>
-                
-                <h2 class="serif-font article-h2">Data Collection/Processing </h2>
-                <p>The IRMAS dataset was used to train the model, which consists of over 6700 three-second long audio files each labelled with one of the 11 different instrument classes. The audio and corresponding labels are stored in different files but have the same names. This made it easy to write a Python script to crawl through the dataset folder to extract and store all of the different names. </p>
-                <br>
-                
-                <h2 class="serif-font article-h2">Data Preprocessing</h2>
-                <p>The harmonic and percussive components of the audio were separated to further isolate the main instrument. Using only the harmonic component, the Mel-scale spectrogram was computed, which can be thought of as the representation of the audio in the frequency domain, scaled by a nonlinear equation. This was represented as a 128x65 NumPy array, where the 128 rows are bins of frequency values while the 65 columns each represent 0.05 seconds of audio. Lastly, columns were normalized to have a mean of 0 and standard deviation of 1.  </p>
-                <br>
-                <p>Additionally, I realized that 6700 training examples spread across 11 classes was insufficient, so I implemented two types of data augmentation to triple our dataset. First, I added Gaussian noise to the audio. Also, I slowed the audio down to 0.5 speed and cropped the first 3 seconds to use.</p>
-                <br>
-
-                <h2 class="serif-font article-h2">Final Model</h2>
-                <p>The best model was a MLP with 3 layers with 1000 neurons each, a ReLU activation function on the first two layers and a sigmoid on the last layer. This was “duplicated” 11 times, such that each model was a binary classifier for each of the 11 instruments.</p>
-                <br>
-                <p>This empirically gave the best results compared to other models I developed, and is also the best model for the harder task of identifying multiple instruments.</p>
-                <br>
-                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Coda/Coda-1.jpg">
-
-                <h2 class="serif-font article-h2">Results </h2>
-                <p>The figure below shows the loss and accuracy plots for the model. It averages around low 70s validation accuracy although there are significant fluctuations. Visually, the orange follows the blue line close enough to signify no overfitting. A test accuracy of 0.684 was obtained, showing that the model generalizes well. </p>
-                <br>
-                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Coda/Coda-2.jpg">
-                <p>Since the model consists of 11 binary classifiers, there are 11 confusion matrices, one for each instrument. The large values along the diagonal show that the model is accurately predicting the presence of the instruments. I’d like to point out that the instruments with over 100 false positives and negatives are the cello, acoustic guitar, electric guitar, and violin. These are all string instruments, perhaps meaning that it’s harder for the model to discern amongst them. For voice, it has the lowest false positives and negatives, possibly meaning it’s distinct compared to the other instruments and easier to be predicted by the model.</p>
-                <br>
-                <img class="article-img" onclick="modalImage(this)" alt="" src="../Assets/Images/Projects/Coda/Coda-3.jpg">
-
-                <h2 class="serif-font article-h2">Conclusion</h2>
-                <p>Looking over related literature, instrument recognition within multi-instrumental music is still a prevalent and difficult problem being tackled by academic research. Audio is quite messy and unpredictable, and there can be many variations between different audio files that cause models to not generalize. This may be a reason for the sub-70’s accuracy. </p>
-                <br>
-                <nav class="article-files sans-serif-font">
-                    <a href="../Assets/Images/Projects/Coda/Coda Report.pdf" download="Lisa Li - Coda Report">Read My Report</a>
-                </nav>
-                <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <div class="footer-container">
-            <img class="logo" src="../Assets/Images/Logo/White.png">
-            <div class="creds">
-                <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                <p class="creds-email">lisasa.li@mail.utoronto.ca</p>
-            </div>
-            <a href="#to-top"><u class="sans-serif-font" style="font-size: 20px; align-self: center;">Back to top</u></a>
-        </div>
-    </footer>
-</body>
-
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="/Assets/script/script.js"></script>
+        
+    </body>
 </html>
-

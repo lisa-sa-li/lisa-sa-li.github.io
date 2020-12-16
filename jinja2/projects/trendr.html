@@ -1,0 +1,56 @@
+{% extends "project_base.html" %}
+
+{% block title %}Trendr — Lisa Li{% endblock %}
+{% block main_img %}Trendr/Trendr-main.jpg{% endblock %}>
+{% block h1 %}Trendr - Social Media Insights{% endblock %}
+{% block date %}Summer 2019{% endblock %}
+
+{% block body1 %}
+<h2 class="serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://www.figma.com/proto/Ftgo0I2CZS9WbtkVvDTDO9Ju/Intern-Project?node-id=368%3A1315&viewport=129%2C205%2C0.10865142941474915&scaling=min-zoom" target="_blank">Desktop</a>
+</nav>
+<br>
+<h2 class="serif-font article-h2">Background</h2>
+<p>For a summer project, my intern team was assigned to develop a solution to aid marketing execs in decision pertaining current trends in the market. We pitched our solution, Trendr, as an insights dashboard meant to track one’s company social media, track trends of interest, and find relevant social media influencers to work with. We scoped our project to Twitter data as the Twitter API was readily available.</p>
+<br>
+<p>A strong emphasis was placed on discovering social media influencers. Each influencer has their own dashboard, providing useful information such as key information about them, follower numbers on their social media accounts, and a breakdown of their followers.</p>
+<br>
+<p>As the influencer market is getting increasingly diluted, we came up with Trendr Radar. The idea of Trendr Radar is to provide the user with the most important metrics of the influencer and allow them to quickly view many in a short amount of time.</p>
+<br>
+<p>The site was developed using React and Node.js. Chart.js was used to create our charts.</p>
+{% endblock %}
+
+{% block body2 %}
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Trendr/Trendr-1.jpg"> 
+    </div>
+    
+    <div class="article-div" style="padding-bottom: 0;">
+        <div class="article-content" style="margin-bottom: 0;">
+            <h2 class="serif-font article-h2">User Story</h2>
+            <p>Anilla Vanilla works for an up and coming ice cream company, ExpensiveFrozenWater, with a small but loyal following. She’s launching an organic, fair-trade, gluten-free, cruelty-free, vegan ice cream campaign and wants to appeal to millennials as cheaply as possible. She’ll use the platform to find influencers on the appropriate platform to maximize engagement.</p>
+            <br>
+            <h2 class="serif-font article-h2">Design Iterations</h2>
+            <p>Our team held biweekly meetings with accessibility expert Karen Hawkings. With each meeting, we went over features of our designs in order to get her input on how to make the project more accessible and usable. I noted the progression of our components, as I learned a lot from Karen’s mentorship and learning about improving the accessibility of my work.</p>
+            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Trendr/Intern-1.jpg">
+            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Trendr/Intern-2.jpg">
+        </div>
+    </div>
+</div>
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Trendr/Trendr-2.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-content" style="margin-top: 0;">
+            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Trendr/Intern-3.jpg">
+            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Trendr/Intern-4.jpg">
+            <img class="article-img" onclick="modalImage(this)" alt="Yooo" src="/Assets/Images/Projects/Trendr/Intern-5.jpg">
+            <a href="../projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

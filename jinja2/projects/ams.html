@@ -1,0 +1,34 @@
+{% extends "project_base.html" %}
+
+{% block title %}AMS — Lisa Li{% endblock %}
+{% block main_img %}AMS/AMS-main.jpg{% endblock %}>
+{% block h1 %}AMS Helpdesk Portal{% endblock %}
+{% block date %}June - August 2018{% endblock %}
+
+{% block body1 %} 
+<p>The AMS (Abiliti Management System) Helpdesk Portal was created to allow Morneau Shepell clients to access data stored in the back-end using a clean user interface. My design was based off of the 6 functions needed for the portal: Employee Search, Claim Lookup, Audit Trail, Remove Claim, Upload File, and Demographic History. <strong>CSS Flexbox</strong> and <strong>Grid</strong> were heavily used in my code as there were many grid components in the design.</p>
+<h2 class="sans-serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://invis.io/3VPTDHYRGJB" target="_blank">Desktop</a>
+</nav>
+
+<h2 class="sans-serif-font article-h2">Info Flow</h2>
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/AMS/AMS-flow.jpg">
+<br>
+
+<h2 class="sans-serif-font article-h2">UI Design Decisions</h2>    
+<ul>
+    <li>Desk illustration helps further engrain the "helpdesk" function of the site (and is modelled after my own desk at the office)</li>
+    <li>Each function has a Morneau Shepell brand-colored icon to illustrate its task
+        <img class="article-img lg-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/AMS/AMS-icons.jpg">
+    </li>
+    <li>A pin-protected "Private Info" tab to access an employee's sensitive information, such as SIN
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/AMS/AMS-pin.jpg">
+    </li>
+    <li>Tables to display previously cluttered information in lists
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/AMS/AMS-table.jpg">
+    </li>
+</ul>
+<br>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+{% endblock %}

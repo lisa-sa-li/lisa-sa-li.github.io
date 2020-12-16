@@ -1,0 +1,79 @@
+{% extends "project_base.html" %}
+
+{% block title %}HWR — Lisa Li{% endblock %}
+{% block main_img %}HWR/HWR-main.jpg{% endblock %}>
+{% block h1 %}Health and Wellness Resource (HWR) Website{% endblock %}
+{% block date %}June - July 2018{% endblock %}
+
+{% block body1 %} 
+<h2 class="serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://invis.io/UANRFDD8XCS" target="_blank">Desktop</a>
+    <a href="https://invis.io/3ANRFCVZDXJ" target="_blank">Mobile</a>
+</nav>
+
+<h2 class="serif-font article-h2">Background</h2>
+<p>For one of my intern projects, the business department of Morneau Shepell wanted to digitize their health and wellness resource (HWR) kits, resource packages aimed to guide people through 8 different topics such as, “Enhancing Your Relationships” and “Separation & Divorce”. The kits contain books, CDs, pamphlets, and a workbook with content, quizzes and exercises. By transitioning the kits to an online medium, the product becomes dynamic and easier-to-user, as well as savescosts from assembling and shipping the kits.</p>
+<br>
+<p>To mimic the original product, the web app I designed was inspired by magazine layouts (note the text in columns, the illustrations, and the numbered menu like chapters in a book).</p>
+<br>
+<p><strong>*DISCLAIMER*</strong>: the illustrations featured in my designs are from Dutch artist Maya Stepien and her work for Google Calendar and Google's Design Sprint Kit. They were used as placeholders to accurately portray the artistic direction of this project.</p>
+<br>
+{% endblock %}
+
+{% block body2 %}
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/HWR/HWR-1.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-content">
+            <h2 class="serif-font article-h2">Information Architecture</h2>
+            <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HWR/HWR-flow.jpg">
+        </div>
+    </div>
+</div>
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/HWR/HWR-3.jpg"> 
+    </div>
+    
+    <div class="article-div" style="padding-bottom: 0;">
+        <div class="article-content" style="margin-bottom: 0;">
+            <h2 class="serif-font article-h2">UI Design Decisions</h2>
+            <ul>
+                <li>
+                    On the list of articles shown, a small description was included with the image and title. Based on user testing, this was prefered over an image and title without the text with the number one indicated reasons that users wanted a quick summary of the article they'd be clicking.
+                    <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HWR/HWR-description.jpg"> 
+                    <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HWR/HWR-piechart.jpg"> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/HWR/HWR-4.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-content" style="margin-top: 0;">
+            <ul>
+                <li>"Article", "Quiz", and "Exercise" were replaced with "Learn", "Think", and "Do", respectively, to add a unique twist to the otherwise frequently used key-words.</li>
+                <li>
+                    "Learn", "Think", and "Do" are color coded with Morneau Shepell brand colors to visually group each topic.
+                    <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HWR/HWR-learn.jpg">
+                </li>
+                <li>
+                    There are 2 versions of the article layout, left-aligned and right-aligned. This is to provide some dimensional contrast to the user.
+                    <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/HWR/HWR-leftright.jpg">
+                </li>
+                <li>A survey is included on the resource page so we can receive feedback about the website.</li>
+                <li>WCAG 2.0 color compliant.</li>
+            </ul>
+            <a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

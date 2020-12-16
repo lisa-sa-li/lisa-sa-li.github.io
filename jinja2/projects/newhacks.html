@@ -1,0 +1,28 @@
+{% extends "project_base.html" %}
+
+{% block title %}NewHacks — Lisa Li{% endblock %}
+{% block main_img %}NewHacks/NewHacks-main.jpg{% endblock %}>
+{% block h1 %}NewHacks 2020{% endblock %}
+{% block date %}Summer 2020{% endblock %}
+
+{% block body1 %}
+<p>View the live site <a href="https://ieee.utoronto.ca/newhacks/" target="_blank"><u>here</u></a>!</p>
+<br>
+<p>I took on rebranding NewHacks, an MLH member hackathon held at the University of Toronto meant for people with little hackathon experience.</p>
+<br>
+<p>The site was developed with Google Materialize and Jinja2 templates, with a Django backend.</p>
+<br>
+<p>I was inspired by a graphic from NewHacks 2019 created by another designer. It was a gramophone that was spitting out a cloud binary. This one sole graphic influenced my entire rebrand of NewHacks and the site design. I determined the visual theme of NewHacks to be “ordinary items spitting out binary”. Our login graphic is a rocket blasting off on a cloud of binary. Our signup graphic is a pile building blocks with binary.</p>
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/NewHacks/NewHacks-1.jpg">
+<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/NewHacks/NewHacks-2.jpg">
+
+<p>This site is part of a bigger project which is a template that other hackathons can use to create their site. We implemented all of the logic for login, sign up, and applications, as well as setting up the database for applicants. Styling was left blank, meant for hackathons to design their own frontend to match their branding.</p>
+<br>
+<p>We tested our template with the NewHacks website. I forked the template repo repository and  implemented my design.</p>
+<br>
+<h2 class="serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://www.figma.com/proto/hVWlYzcRfwFgk17LFUqw8Z/NewHacks-MakeUofT-website-redesign?node-id=194%3A335&viewport=216%2C246%2C0.09136271476745605&scaling=min-zoom" target="_blank">Desktop</a>
+</nav>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+{% endblock %}
