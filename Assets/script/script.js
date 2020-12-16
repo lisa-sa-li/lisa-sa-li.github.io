@@ -46,13 +46,12 @@ function preloadImg() {
         "HOIR.jpg",
         "HWR.jpg",
         "iCBT.jpg",
-        "LecExt.jpg",
         "Matboard.jpg",
         "QuicKnife.jpg",
         "Skulebook.jpg",
         "StepRight.jpg",
     ];
-    let path = "Assets/Images/Projects/HoverImg/";
+    let path = "/Assets/Images/Projects/HoverImg/";
     for (let i = 0; i < imageList.length; i++) {
         let imageObject = new Image();
         imageObject.src = path + imageList[i];
@@ -60,7 +59,6 @@ function preloadImg() {
 }
 
 function downloadResume(resumeType) {
-    console.log(resumeType)
     if (!["UX", "Software"].includes(resumeType)) {
         return;
     }
@@ -72,7 +70,6 @@ function downloadResume(resumeType) {
     let b = document.createEvent("MouseEvents");
     b.initEvent("click", false, true);
     a.dispatchEvent(b);
-    return false;
 }
 
 function goToPage(name) {

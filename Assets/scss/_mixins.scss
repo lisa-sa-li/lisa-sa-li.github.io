@@ -19,13 +19,13 @@
     }
 
     @if ($breakpoint == lg-down) {
-        @media (max-width: 1280px) {
+        @media (max-width: 920px) {
             @content;
         }
     }
 
     @if ($breakpoint == lg-up) {
-        @media (min-width: 1280px) {
+        @media (min-width: 920px) {
             @content;
         }
     }

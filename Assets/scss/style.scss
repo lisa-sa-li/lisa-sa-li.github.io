@@ -596,8 +596,11 @@ footer {
     margin: 0px 15px;
     font-weight: 900;
     @include responsive(md-down) {
+        font-size: 14vw;
+        align-self: flex-start;
+    }
+    @include responsive(sm-down) {
         font-size: 22vw;
-        align-self: center;
         align-self: flex-start;
     }
 }
@@ -605,10 +608,11 @@ footer {
 .Li-div {
     align-self: flex-end;
     @include responsive(md-down) {
-        font-size: 22vw;
-        // align-self: center;
+        font-size: 15vw;
         margin-top: 10px;
-        align-self: flex-end;
+    }
+    @include responsive(sm-down) {
+        font-size: 22vw;
     }
 }
 
@@ -1013,6 +1017,10 @@ footer {
     font-weight: 900;
     font-size: 64px;
     margin: auto;
+
+    @include responsive(md-down) {
+        font-size: 50px;
+    }
 }
 
 .black-outline-title {
@@ -1037,9 +1045,7 @@ footer {
 
 .philosophy {
     &-img {
-        // height: 100%;
         width: calc((100vh - 86px) * 816 / 1021);
-        width: 100%;
         height: auto;
     }
 
@@ -1051,30 +1057,9 @@ footer {
         line-height: 29px;
     }
 
-    &-page {
-        flex-direction: column-reverse;
-    }
-
-    &-media {
-        width: 92%;
-        padding: 15px 0px;
-        font-size: 14vw;
-
-        &-title {
-            font-size: 12vw;
-        }
-    }
-
-    &-hover-img {
-        position: static;
-        height: auto;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    @include responsive(md-down) {
+    @include responsive(lg-down) {
         &-img {
             width: 100%;
-            height: auto;
         }
 
         &-page {

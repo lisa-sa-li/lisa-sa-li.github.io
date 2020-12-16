@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% block preloadImg %}onload="preloadImg()"{% endblock %}
+
 {% block body %}
 <div class="name-div" id="name-div">
     <div class="name-content">
@@ -13,7 +15,7 @@
                 <p id="Li1">Li.</p>
             </div>
         </div>    
-        <img class="portrait" src="Assets/Images/Portrait.png">
+        <img class="portrait" src="/Assets/Images/Portrait.png">
     </div>
 </div>
 
@@ -53,7 +55,7 @@
 <div class="project-div" style="align-items: stretch;" id="project-div">
 
     <div class="p-hover-img project-hover-img">
-        <img class="project-img" id="project-img" alt="" src="Assets/Images/Projects/HoverImg/HWR.jpg"> 
+        <img class="project-img" id="project-img" alt="" src="/Assets/Images/Projects/HoverImg/HWR.jpg"> 
     </div>
 
     <div class="project-list">

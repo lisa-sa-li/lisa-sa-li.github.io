@@ -1,11 +1,12 @@
 {% extends "base.html" %}
 
 {% block title %}Projects{% endblock %}
+{% block preloadImg %}onload="preloadImg()"{% endblock %}
 
 {% block body %}
 <div class="project-div" id="project-div">
     <div class="p-hover-img project-hover-img">
-        <img class="project-img" id="project-img" alt="" src="Assets/Images/Projects/HoverImg/Hardware.jpg">
+        <img class="project-img" id="project-img" alt="" src="/Assets/Images/Projects/HoverImg/Hardware.jpg">
     </div>
 
     <div style="width: 100%;">

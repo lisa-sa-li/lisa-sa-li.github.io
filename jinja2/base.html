@@ -30,7 +30,7 @@
         {% block head_extends %}{% endblock %}
         {% endblock %}
     </head>
-    <body id="to-top" onload="preloadImg()">
+    <body id="to-top" {% block preloadImg %}{% endblock %}>
         {% block header %}
         <header>
             <div class="header-container">
@@ -43,7 +43,7 @@
                 <div class="wrap-collabsible">
                     <input id="collapsible" class="toggle" type="checkbox">
                     <label for="collapsible" class="lbl-toggle">
-                        <img src="Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
                     </label>
                     <div class="collapsible-content">
                         <div class="content-inner">

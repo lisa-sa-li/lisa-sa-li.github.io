@@ -516,17 +516,22 @@ footer {
   font-weight: 900; }
   @media (max-width: 700px) {
     .Lisa-div {
+      font-size: 14vw;
+      align-self: flex-start; } }
+  @media (max-width: 500px) {
+    .Lisa-div {
       font-size: 22vw;
-      align-self: center;
       align-self: flex-start; } }
 
 .Li-div {
   align-self: flex-end; }
   @media (max-width: 700px) {
     .Li-div {
-      font-size: 22vw;
-      margin-top: 10px;
-      align-self: flex-end; } }
+      font-size: 15vw;
+      margin-top: 10px; } }
+  @media (max-width: 500px) {
+    .Li-div {
+      font-size: 22vw; } }
 
 #Lisa {
   position: absolute;
@@ -874,6 +879,9 @@ footer {
   font-weight: 900;
   font-size: 64px;
   margin: auto; }
+  @media (max-width: 700px) {
+    .by-title-div {
+      font-size: 50px; } }
 
 .black-outline-title {
   text-transform: uppercase;
@@ -895,7 +903,6 @@ footer {
 
 .philosophy-img {
   width: calc((100vh - 86px) * 816 / 1021);
-  width: 100%;
   height: auto; }
 
 .philosophy-text {
@@ -905,25 +912,9 @@ footer {
   margin: auto;
   line-height: 29px; }
 
-.philosophy-page {
-  flex-direction: column-reverse; }
-
-.philosophy-media {
-  width: 92%;
-  padding: 15px 0px;
-  font-size: 14vw; }
-  .philosophy-media-title {
-    font-size: 12vw; }
-
-.philosophy-hover-img {
-  position: static;
-  height: auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
-
-@media (max-width: 700px) {
+@media (max-width: 920px) {
   .philosophy-img {
-    width: 100%;
-    height: auto; }
+    width: 100%; }
   .philosophy-page {
     flex-direction: column-reverse; }
   .philosophy-media {
