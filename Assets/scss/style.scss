@@ -490,7 +490,7 @@ footer {
     padding: 30px 20px;
 
     .footer-container {
-        @include flexPosition($jusCon: space-between, $alIte: center);     
+        @include flexPosition($jusCon: space-between, $alIte: center);
         text-align: center;
 
         @include responsive(md-down) {
@@ -515,19 +515,17 @@ footer {
         }
     }
 
-
     .to-top {
         font-size: 20px;
         align-self: center;
     }
-
 
     @include responsive(md-down) {
         .creds {
             &-email {
                 font-size: 18px;
             }
-       
+
             .hear-from-you {
                 font-size: 24px;
                 margin-top: 20px;
@@ -884,19 +882,21 @@ footer {
 .error {
     &-background {
         background-color: color(primary);
+        min-height: calc(100vh - 64px);
     }
 
     &-div {
-        font-size: 20vw;
+        font-size: 15vw;
         @include responsive(md-down) {
             align-self: center;
             margin-top: 20%;
+            font-size: 20vw;
         }
     }
 
     &-text {
         @include flexPosition($alIte: center, $dir: column);
-        margin-top: 10%;
+        padding-top: 20px;
     }
 
     &-msg {

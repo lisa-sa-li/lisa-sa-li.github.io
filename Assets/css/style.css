@@ -758,21 +758,23 @@ footer {
 /* END OF PROJECTS DIV (BOX 5)  */
 /* ERROR PAGE */
 .error-background {
-  background-color: #f5ba23; }
+  background-color: #f5ba23;
+  min-height: calc(100vh - 64px); }
 
 .error-div {
-  font-size: 20vw; }
+  font-size: 15vw; }
   @media (max-width: 700px) {
     .error-div {
       align-self: center;
-      margin-top: 20%; } }
+      margin-top: 20%;
+      font-size: 20vw; } }
 
 .error-text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  margin-top: 10%; }
+  padding-top: 20px; }
 
 .error-msg {
   font-weight: bold;
