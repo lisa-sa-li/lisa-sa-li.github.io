@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-180967281-1');
+        </script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
+
+
+        <title>My Migo — Lisa Li</title>
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
+        <meta property="og:type" content="website" /> 
+        <meta property="og:url" content="www.lisali.me" />
+        <meta property="og:title" content="Lisa Li" />
+        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
+
+        
+        
+    </head>
+    <body id="to-top" >
+        
+        <header>
+            <div class="header-container">
+                <div class="logo-anim">
+                    <div class="black-circle"></div>
+                    <div class="yellow-circle"></div>
+                    <p class="sans-serif-font logo-Li">Li.</p>
+                </div>
+    
+                <div class="wrap-collabsible">
+                    <input id="collapsible" class="toggle" type="checkbox">
+                    <label for="collapsible" class="lbl-toggle">
+                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                    </label>
+                    <div class="collapsible-content">
+                        <div class="content-inner">
+                            <nav class="nav-container">
+                                <a class="nav-a" href="/index.html">Me</a>
+                                <a class="nav-a" href="/design.html">Design</a>
+                                <a class="nav-a" href="/philosophy.html">Philosophy</a>
+                                <a class="nav-a" href="/projects.html">Projects</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="menu-content nav-container" id="menu-button">
+                    <a class="nav-a" href="/index.html">Me</a>
+                    <a class="nav-a" href="/Design.html">Design</a>
+                    <a class="nav-a" href="/Philosophy.html">Philosophy</a>
+                    <a class="nav-a" href="/projects.html">Projects</a>
+                </div>
+    
+                <div class="resume-button-div">
+                    <div class="black-outline-button"></div>
+                    <button class="yellow-outline-button">Resume</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="downloadResume('Software')">Software</a>
+                        <a href="#" onclick="downloadResume('UX')">UX</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+
+    
+        
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+</div>
+
+
+<div class="article">
+    <div class="p-hover-img img-div">
+        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/gameification/gameification.jpg"> 
+    </div>
+    
+    <div class="article-div">
+        <div class="article-header" id="article-div">
+            <h1 class="sans-serif-font article-title">My Migo - Positive Play</h1>
+            <div><p class="article-date">June - August 2017</p></div>
+        </div>
+
+        <div class="article-content" id="article-div">
+             
+<h2 class="sans-serif-font article-h2">View My Prototype</h2>
+<nav class="article-files sans-serif-font">
+    <a href="https://invis.io/GMPTFJGEFUR" target="_blank">Mobile</a>
+</nav>
+<br>
+<p>Morneau Shepell's My Migo program aims to help users set and achieve health and wellness goals through features offered by the app, such as online therapy, breathing exercises, goal-achievements, and more. An additional feature to the app was <strong>Positive Play</strong>, a set of achievement badges to "<strong>gamify</strong>" My Migo, meaning adding game-elements to non-game contexts which has been shown to improve user engagement, learning, physical exercise, and more.</p>
+<br>
+<p>The set of badges I created and designed were meant to encourage:</p>
+<ul>
+    <li>Health through means of diet, sleep, and exercise</li>
+    <li>Relationships with friends, family, and colleagues</li>
+    <li>Setting and completing more goals</li>
+    <li>Use of other features in the app</li>
+</ul>
+<br>
+
+<h2 class="sans-serif-font article-h2">Info Flow</h2>
+<img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-flow.jpg">
+
+<h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
+<ul>
+    <li>
+        Each badge has 3 tiers (denoted as stars) encourage the user to accomplish their goal and eventually form actions into habits
+        <ul>
+            <li>Completed tiers are colored while uncompleted remain in black and white</li>
+            <li>Star graphics double as a progress bar and fill up in accordance to number of times goal has been achieved</li>
+        </ul>
+        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-progress.jpg"> 
+    </li>
+    <li>
+        User can toggle between <strong>Badges</strong> and <strong>My Goal</strong>, which displays their initial goal and offers the inspiration graphic of a rocket that symbolizes their increasing momentum to achieving their objective
+        <img class="article-img lg-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-goal.jpg">
+    </li>
+    <li>
+        Prominent appearance and popup on dashboard to foster a goal-oriented environment
+        <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/gameification/gameification-dashboard.jpg">
+    </li>
+</ul>
+<br>
+<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        
+        <footer>
+            <div class="footer-container">
+                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <div class="creds">
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                </div>
+                <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
+            </div>
+        </footer>
+        
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="/Assets/script/script.js"></script>
+        
+    </body>
+</html>
