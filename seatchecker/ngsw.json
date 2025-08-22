@@ -1,0 +1,79 @@
+{
+  "configVersion": 1,
+  "timestamp": 1755807789243,
+  "index": "/www.lisali.me/seatchecker/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/www.lisali.me/seatchecker/favicon.ico",
+        "/www.lisali.me/seatchecker/index.html",
+        "/www.lisali.me/seatchecker/main-4EX6DNM3.js",
+        "/www.lisali.me/seatchecker/manifest.json",
+        "/www.lisali.me/seatchecker/polyfills-B6TNHZQ6.js",
+        "/www.lisali.me/seatchecker/styles-OTF4MEM3.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/www.lisali.me/seatchecker/assets/images/image.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "firebase-data",
+      "patterns": [
+        "https:\\/\\/firestore\\.googleapis\\.com\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 3600000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/www.lisali.me/seatchecker/assets/images/image.png": "1b2e492fb9795894973670d59eb31226138ab983",
+    "/www.lisali.me/seatchecker/favicon.ico": "6756549d20446238dcc8779b00fe0519313f62e2",
+    "/www.lisali.me/seatchecker/index.html": "51391741f4356cb9edadeab1d1e1ec3ea9a2f38d",
+    "/www.lisali.me/seatchecker/main-4EX6DNM3.js": "02d17f18080232b0b7ac771264c895bcc2be8796",
+    "/www.lisali.me/seatchecker/manifest.json": "4012d17b8e432bd656ad3ad25c97e5295b030d17",
+    "/www.lisali.me/seatchecker/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/www.lisali.me/seatchecker/styles-OTF4MEM3.css": "ed11640e08a22610c9f966943a5ffa2d8f5d1c27"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
