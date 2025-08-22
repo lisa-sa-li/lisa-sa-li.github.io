@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1755807789243,
-  "index": "/www.lisali.me/seatchecker/index.html",
+  "timestamp": 1755825190229,
+  "index": "/seatchecker/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/www.lisali.me/seatchecker/favicon.ico",
-        "/www.lisali.me/seatchecker/index.html",
-        "/www.lisali.me/seatchecker/main-4EX6DNM3.js",
-        "/www.lisali.me/seatchecker/manifest.json",
-        "/www.lisali.me/seatchecker/polyfills-B6TNHZQ6.js",
-        "/www.lisali.me/seatchecker/styles-OTF4MEM3.css"
+        "/seatchecker/favicon.ico",
+        "/seatchecker/index.html",
+        "/seatchecker/main-4EX6DNM3.js",
+        "/seatchecker/manifest.json",
+        "/seatchecker/polyfills-B6TNHZQ6.js",
+        "/seatchecker/styles-OTF4MEM3.css"
       ],
       "patterns": []
     },
@@ -28,7 +28,7 @@
         "ignoreVary": true
       },
       "urls": [
-        "/www.lisali.me/seatchecker/assets/images/image.png"
+        "/seatchecker/assets/images/image.png"
       ],
       "patterns": []
     }
@@ -49,13 +49,13 @@
     }
   ],
   "hashTable": {
-    "/www.lisali.me/seatchecker/assets/images/image.png": "1b2e492fb9795894973670d59eb31226138ab983",
-    "/www.lisali.me/seatchecker/favicon.ico": "6756549d20446238dcc8779b00fe0519313f62e2",
-    "/www.lisali.me/seatchecker/index.html": "51391741f4356cb9edadeab1d1e1ec3ea9a2f38d",
-    "/www.lisali.me/seatchecker/main-4EX6DNM3.js": "02d17f18080232b0b7ac771264c895bcc2be8796",
-    "/www.lisali.me/seatchecker/manifest.json": "4012d17b8e432bd656ad3ad25c97e5295b030d17",
-    "/www.lisali.me/seatchecker/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
-    "/www.lisali.me/seatchecker/styles-OTF4MEM3.css": "ed11640e08a22610c9f966943a5ffa2d8f5d1c27"
+    "/seatchecker/assets/images/image.png": "1b2e492fb9795894973670d59eb31226138ab983",
+    "/seatchecker/favicon.ico": "6756549d20446238dcc8779b00fe0519313f62e2",
+    "/seatchecker/index.html": "5ea765ae8847fce0ed2da694a0901d130ccca193",
+    "/seatchecker/main-4EX6DNM3.js": "02d17f18080232b0b7ac771264c895bcc2be8796",
+    "/seatchecker/manifest.json": "4012d17b8e432bd656ad3ad25c97e5295b030d17",
+    "/seatchecker/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/seatchecker/styles-OTF4MEM3.css": "ed11640e08a22610c9f966943a5ffa2d8f5d1c27"
   },
   "navigationUrls": [
     {
