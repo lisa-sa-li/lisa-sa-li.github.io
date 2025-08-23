@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-180967281-1');
+            gtag("config", "UA-180967281-1");
         </script>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/Assets/Images/favicon.ico"
+        />
 
         <title>Lisa Li</title>
-        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
-        <meta property="og:type" content="website" /> 
+        <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+            rel="stylesheet"
+        />
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" />
+        <!-- Thumbnail img -->
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="www.lisali.me" />
         <meta property="og:title" content="Lisa Li" />
-        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
-
-        
-        
+        <meta
+            property="og:description"
+            content="I'm a engineering student by day, and a slightly more stressed engineering student by night."
+        />
     </head>
     <body id="to-top" onload="preloadImg()">
-        
         <header>
             <div class="header-container">
                 <div class="logo-anim">
@@ -39,11 +52,14 @@
                     <div class="yellow-circle"></div>
                     <p class="sans-serif-font logo-Li">Li.</p>
                 </div>
-    
+
                 <div class="wrap-collabsible">
-                    <input id="collapsible" class="toggle" type="checkbox">
+                    <input id="collapsible" class="toggle" type="checkbox" />
                     <label for="collapsible" class="lbl-toggle">
-                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                        <img
+                            src="/Assets/Images/menu.png"
+                            style="height: 24px; margin: auto"
+                        />
                     </label>
                     <div class="collapsible-content">
                         <div class="content-inner">
@@ -56,145 +72,198 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="menu-content nav-container" id="menu-button">
                     <a class="nav-a" href="/index.html">Me</a>
                     <a class="nav-a" href="/design.html">Design</a>
                     <a class="nav-a" href="/philosophy.html">Philosophy</a>
                     <a class="nav-a" href="/projects.html">Projects</a>
                 </div>
-    
-                <div class="resume-button-div">
+
+                <!-- <div class="resume-button-div">
                     <div class="black-outline-button"></div>
                     <button class="yellow-outline-button">Resume</button>
                     <div class="dropdown-content">
                         <a href="#" onclick="downloadResume('Software')">Software</a>
                         <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
-        
 
-    
-        
-<div class="name-div" id="name-div">
-    <div class="name-content">
-        <div class="name-text">
-            <div class="Lisa-div">
-                <h1 id="Lisa">Lisa</h1>
-                <p id="Lisa1">Lisa</p>
-            </div>
-            <div class="Lisa-div Li-div">
-                <p id="Li">Li.</p>
-                <p id="Li1">Li.</p>
-            </div>
-        </div>    
-        <img class="portrait" src="/Assets/Images/Portrait.png">
-    </div>
-</div>
-
-<div class="rtl-div" id="intro-div">
-    <div><h2 class="landing-h2 sans-serif-font">Who's this??</h2></div>
-
-    <div class="intro-text" style="padding-top: 0px;">
-        <p>I'm Lisa (she/her), a Software Engineer at Stripe and a 2022 engineering graduate from the University of Toronto. I'm interested in fields that combine software and design, including Frontend Engineering, UX Engineering, Design Technologist, and Product Design.</p>
-    </div>
-</div>
-
-<div class="white-div design-div" id="design-div">
-    <div class="ltr-div-content">
-        <div><h2 class="landing-h2 serif-font">What I Design For</h2></div>
-
-        <div class="design-text">
-            <p>My goal is to design user interfaces that anyone can use without much effort. This does not mean restricting myself to incredibly simplistic designs; as Steve Krug, a usability expert, puts it: using new conventions is acceptable if it "adds so much value that it's worth a small learning curve".</p>
-            <a href="design.html" style="margin: auto;">
-                <div class="by-button-div">
-                    <div class="black-outline-button"></div>
-                    <button class="yellow-outline-button">Read More</button>
+        <div class="name-div" id="name-div">
+            <div class="name-content">
+                <div class="name-text">
+                    <div class="Lisa-div">
+                        <h1 id="Lisa">Lisa</h1>
+                        <p id="Lisa1">Lisa</p>
+                    </div>
+                    <div class="Lisa-div Li-div">
+                        <p id="Li">Li.</p>
+                        <p id="Li1">Li.</p>
+                    </div>
                 </div>
-            </a>
+                <img class="portrait" src="/Assets/Images/Portrait.png" />
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="rtl-div" id="philosophy-div">
-    <div><h2 class="landing-h2 sans-serif-font" style="margin-top: -40px;">My Engineering Design Philosophy</h2></div>
+        <div class="rtl-div" id="intro-div">
+            <div><h2 class="landing-h2 sans-serif-font">Who's this??</h2></div>
 
-    <div class="intro-text">
-        <p>The following flow chart showcases my personal design process. Rather than making a detailed, step-by-step protocol, I start with a basic outline that I can then build on. This makes it easy to adapt the design to new requirements.</p>
-        <a href="philosophy.html" style="margin: auto;"><button class="yellow-button">Read more</button></a>
-    </div>
-</div>
+            <div class="intro-text" style="padding-top: 0px">
+                <p>
+                    I'm Lisa (she/her), a Software Engineer at Stripe and a 2022
+                    engineering graduate from the University of Toronto. I'm interested
+                    in fields that combine software and design, including Frontend
+                    Engineering, UX Engineering, Design Technologist, and Product
+                    Design.
+                </p>
+            </div>
+        </div>
 
-<div class="project-div" style="align-items: stretch;" id="project-div">
+        <div class="white-div design-div" id="design-div">
+            <div class="ltr-div-content">
+                <div><h2 class="landing-h2 serif-font">What I Design For</h2></div>
 
-    <div class="p-hover-img project-hover-img">
-        <img class="project-img" id="project-img" alt="" src="/Assets/Images/Projects/HoverImg/HWR.jpg"> 
-    </div>
-
-    <div class="project-list">
-        <h2 class="landing-h2 serif-font project-h2">Featured Projects</h2>
-        <ul>
-            <li onmouseover="showProjectImg('Hardware', 0)" onclick="goToPage('hardware-signout')">
-                <p class="project-group blue-title">UI/UX Design</p>
-                <p class="project-title">Hackathon Hardware Sign Out System <sup>2020</sup></p>
-            </li>
-            <li onmouseover="showProjectImg('Coda', 0)" onclick="goToPage('coda')">
-                <p class="project-group purple-title">Engineering Experience</p>
-                <p class="project-title">Coda <sup>2019</sup></p>
-            </li>
-            <li onmouseover="showProjectImg('Aweary', 0)" onclick="goToPage('aweary')">
-                <p class="project-group blue-title">UI/UX Design</p>
-                <p class="project-title">Aweary <sup>2019</sup></p>
-            </li>
-            <li onmouseover="showProjectImg('HWR', 0)" onclick="goToPage('hwr')">
-                <p class="project-group blue-title">UI/UX Design</p>
-                <p class="project-title">Health and Wellness Resource (HWR) Website <sup>2018</sup></p>
-            </li>
-            <li onmouseover="showProjectImg('AMS', 0)" onclick="goToPage('ams')">
-                <p class="project-group blue-title">UI/UX Design</p>
-                <p class="project-title">AMS Helpdesk Portal <sup>2018</sup></p>
-            </li>
-            <li onmouseover="showProjectImg('QuicKnife', 1)" onclick="goToPage('quicknife')">
-                <p class="project-group purple-title">Engineering Experience</p>
-                <p class="project-title">Timing the Throw in a Quick Knife Draw Competition <sup>2018</sup></p>
-            </li>
-            <li onmouseover="showProjectImg('StepRight', 2)" onclick="goToPage('stepright')">
-                <p class="project-group blue-title">UI/UX Design</p>
-                <p class="project-title">StepRight App <sup>2017</sup></p>
-            </li>
-        </ul>
-        
-        <div class="by-button-div" style="margin-bottom:50px; align-self: center;">
-            <a href="projects.html">
-                <div class="by-button-div">
-                    <div class="black-outline-button"></div>
-                    <button class="yellow-outline-button">View all</button>
+                <div class="design-text">
+                    <p>
+                        My goal is to design user interfaces that anyone can use without
+                        much effort. This does not mean restricting myself to incredibly
+                        simplistic designs; as Steve Krug, a usability expert, puts it:
+                        using new conventions is acceptable if it "adds so much value
+                        that it's worth a small learning curve".
+                    </p>
+                    <a href="design.html" style="margin: auto">
+                        <div class="by-button-div">
+                            <div class="black-outline-button"></div>
+                            <button class="yellow-outline-button">Read More</button>
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
         </div>
-    </div>
-</div>
 
+        <div class="rtl-div" id="philosophy-div">
+            <div>
+                <h2 class="landing-h2 sans-serif-font" style="margin-top: -40px">
+                    My Engineering Design Philosophy
+                </h2>
+            </div>
 
-        
+            <div class="intro-text">
+                <p>
+                    The following flow chart showcases my personal design process.
+                    Rather than making a detailed, step-by-step protocol, I start with a
+                    basic outline that I can then build on. This makes it easy to adapt
+                    the design to new requirements.
+                </p>
+                <a href="philosophy.html" style="margin: auto"
+                    ><button class="yellow-button">Read more</button></a
+                >
+            </div>
+        </div>
+
+        <div class="project-div" style="align-items: stretch" id="project-div">
+            <div class="p-hover-img project-hover-img">
+                <img
+                    class="project-img"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/HoverImg/HWR.jpg"
+                />
+            </div>
+
+            <div class="project-list">
+                <h2 class="landing-h2 serif-font project-h2">Featured Projects</h2>
+                <ul>
+                    <li
+                        onmouseover="showProjectImg('Hardware', 0)"
+                        onclick="goToPage('hardware-signout')"
+                    >
+                        <p class="project-group blue-title">UI/UX Design</p>
+                        <p class="project-title">
+                            Hackathon Hardware Sign Out System <sup>2020</sup>
+                        </p>
+                    </li>
+                    <li
+                        onmouseover="showProjectImg('Coda', 0)"
+                        onclick="goToPage('coda')"
+                    >
+                        <p class="project-group purple-title">Engineering Experience</p>
+                        <p class="project-title">Coda <sup>2019</sup></p>
+                    </li>
+                    <li
+                        onmouseover="showProjectImg('Aweary', 0)"
+                        onclick="goToPage('aweary')"
+                    >
+                        <p class="project-group blue-title">UI/UX Design</p>
+                        <p class="project-title">Aweary <sup>2019</sup></p>
+                    </li>
+                    <li
+                        onmouseover="showProjectImg('HWR', 0)"
+                        onclick="goToPage('hwr')"
+                    >
+                        <p class="project-group blue-title">UI/UX Design</p>
+                        <p class="project-title">
+                            Health and Wellness Resource (HWR) Website <sup>2018</sup>
+                        </p>
+                    </li>
+                    <li
+                        onmouseover="showProjectImg('AMS', 0)"
+                        onclick="goToPage('ams')"
+                    >
+                        <p class="project-group blue-title">UI/UX Design</p>
+                        <p class="project-title">AMS Helpdesk Portal <sup>2018</sup></p>
+                    </li>
+                    <li
+                        onmouseover="showProjectImg('QuicKnife', 1)"
+                        onclick="goToPage('quicknife')"
+                    >
+                        <p class="project-group purple-title">Engineering Experience</p>
+                        <p class="project-title">
+                            Timing the Throw in a Quick Knife Draw Competition
+                            <sup>2018</sup>
+                        </p>
+                    </li>
+                    <li
+                        onmouseover="showProjectImg('StepRight', 2)"
+                        onclick="goToPage('stepright')"
+                    >
+                        <p class="project-group blue-title">UI/UX Design</p>
+                        <p class="project-title">StepRight App <sup>2017</sup></p>
+                    </li>
+                </ul>
+
+                <div
+                    class="by-button-div"
+                    style="margin-bottom: 50px; align-self: center"
+                >
+                    <a href="projects.html">
+                        <div class="by-button-div">
+                            <div class="black-outline-button"></div>
+                            <button class="yellow-outline-button">View all</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
         <footer>
             <div class="footer-container">
-                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <img class="logo" src="/Assets/Images/Logo/White.png" />
                 <div class="creds">
-                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p>
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p>
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email"
+                        >lisasa.li@mail.utoronto.ca</a
+                    >
                 </div>
                 <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
         </footer>
-        
 
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="/Assets/script/script.js"></script>
-        
     </body>
 </html>
