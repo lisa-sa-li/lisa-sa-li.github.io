@@ -60,17 +60,16 @@ function preloadImg() {
 }
 
 function downloadResume(resumeType) {
-    if (!["UX", "Software"].includes(resumeType)) {
-        return;
-    }
-
-    let url = `/Assets/Lisa Li Resume - ${resumeType}.pdf`;
-    let a = document.createElement("a");
-    a.href = url;
-    a.setAttribute("Download", `Lisa Li ${resumeType} Resume`);
-    let b = document.createEvent("MouseEvents");
-    b.initEvent("click", false, true);
-    a.dispatchEvent(b);
+    // if (!["UX", "Software"].includes(resumeType)) {
+    //     return;
+    // }
+    // let url = `/Assets/Lisa Li Resume - ${resumeType}.pdf`;
+    // let a = document.createElement("a");
+    // a.href = url;
+    // a.setAttribute("Download", `Lisa Li ${resumeType} Resume`);
+    // let b = document.createEvent("MouseEvents");
+    // b.initEvent("click", false, true);
+    // a.dispatchEvent(b);
 }
 
 function goToPage(name) {
