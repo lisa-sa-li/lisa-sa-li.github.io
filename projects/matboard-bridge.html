@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-180967281-1');
+            gtag("config", "UA-180967281-1");
         </script>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/Assets/Images/favicon.ico"
+        />
 
         <title>Matboard Bridge — Lisa Li</title>
-        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
-        <meta property="og:type" content="website" /> 
+        <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+            rel="stylesheet"
+        />
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" />
+        <!-- Thumbnail img -->
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="www.lisali.me" />
         <meta property="og:title" content="Lisa Li" />
-        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
-
-        
-        
+        <meta
+            property="og:description"
+            content="I'm a engineering student by day, and a slightly more stressed engineering student by night."
+        />
     </head>
-    <body id="to-top" >
-        
+    <body id="to-top">
         <header>
             <div class="header-container">
                 <div class="logo-anim">
@@ -39,11 +52,14 @@
                     <div class="yellow-circle"></div>
                     <p class="sans-serif-font logo-Li">Li.</p>
                 </div>
-    
+
                 <div class="wrap-collabsible">
-                    <input id="collapsible" class="toggle" type="checkbox">
+                    <input id="collapsible" class="toggle" type="checkbox" />
                     <label for="collapsible" class="lbl-toggle">
-                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                        <img
+                            src="/Assets/Images/menu.png"
+                            style="height: 24px; margin: auto"
+                        />
                     </label>
                     <div class="collapsible-content">
                         <div class="content-inner">
@@ -56,107 +72,176 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="menu-content nav-container" id="menu-button">
                     <a class="nav-a" href="/index.html">Me</a>
                     <a class="nav-a" href="/design.html">Design</a>
                     <a class="nav-a" href="/philosophy.html">Philosophy</a>
                     <a class="nav-a" href="/projects.html">Projects</a>
                 </div>
-    
-                <div class="resume-button-div">
+
+                <!-- <div class="resume-button-div">
                     <div class="black-outline-button"></div>
                     <button class="yellow-outline-button">Resume</button>
                     <div class="dropdown-content">
                         <a href="#" onclick="downloadResume('Software')">Software</a>
                         <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
-        
 
-    
-        
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
-
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/HoverImg/Matboard.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-header" id="article-div">
-            <h1 class="sans-serif-font article-title">Matboard Bridge</h1>
-            <div><p class="article-date">November 2017</p></div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
         </div>
 
-        <div class="article-content" id="article-div">
-            
-<p>My second bridge project was similar to the first, however, the biggest different was that we actually built a physical, scaled prototype out of mat-board, a cardboard-like material and contact cement, an adhesive made from elastic polymers.</p>
-<br>
-<p>The bridge was to be marked based on strength, aesthetics, and had a restriction on weight and dimensions. While performing our calculations, my team had to go with several revisions of our design to balance the aforementioned elements of our bridge. There were several designs that would have increased the maximum load the bridge could hold, such as increased height of the bridge or width. However, due to the limitation of materials, this would have resulted in either a lack of matboard available for construction and/or compromise the strength in various parts of the bridge.</p>
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/HoverImg/Matboard.jpg"
+                />
+            </div>
 
-<h2 class="serif-font article-h2">Accompanying Files</h2>
-<nav class="article-files sans-serif-font">
-    <a href="/Assets/Images/Projects/matboard/matboard-report.pdf" download="Lisa Li - Matboard Bridge Report">Report</a>
-</nav>
-<br>
+            <div class="article-div">
+                <div class="article-header" id="article-div">
+                    <h1 class="sans-serif-font article-title">Matboard Bridge</h1>
+                    <div><p class="article-date">November 2017</p></div>
+                </div>
 
-<h2 class="serif-font article-h2">Engineering Design Decisions</h2>
-<ul>
-    <li><strong>Having Two Cross-Sections:</strong> Roughly half our bridge is purely a pi-shaped cross section (region A) with a high centroid, resulting in a good performance in resisting compression on the top. The other half, region B, layer of Matboard beneath it with an attempt to increase I and lower the centroid. Such a design reduces the compressive stresses at the bottom and increases the predicted loading as a result. Due to the positions along the bridge where the loads were being placed, region A and region B would rotate in opposite directions, increasing its chances of breaking. Therefore, it is necessary to customize the cross-sections are for different region</li>
-    <li><strong>Bending the Matboard deck rather than gluing the web:</strong> The amount of cuts and gluing were minimized in order to prevent as many human errors as possible during construction. The bottom layer of the deck and the sides of the bridge are one piece of matboard bent into a pi shape. This design avoids the procedure to glue separate pieces of webs onto the flange, which improves the ease of construction and lowers the possibly of a failure mode. As the maximum shear stress (amount of force it can resist without breaking) of cement glue is less than the maximum shear stress of matboard, gluing the web on will increase the possibility of another failure mode of the bridge.</li>
-    <li><strong>Having Two Layers on the Top Deck:</strong> A single layered top deck is not strong enough to withstand the loads being placed on top it. After careful consideration over several designs, we found that two layers on the top deck strikes a balance between material use and maximum loading.</li>
-</ul>
-<br>
-<p>To test the quality of our bridge, four 100 N loads with wheels were rolled across the bridge. As shown in the video, our bridge cracked under the pressure due to a poor reinforcement. This was the first prototype we built for a course and it taught me the importance of testing and refining. For this project however, we were given a specific amount of mat-board, that did not allow us to do any testing by making several iterations of our bridge. Even though all of our math was correct and we felt that the bridge was well constructed, only through testing did we see that there were issues. It was a new experience to prototype and test, and this video of the most heart shattering moment of first semester is a constant reminder to me of testing and refinement.</p>    
+                <div class="article-content" id="article-div">
+                    <p>
+                        My second bridge project was similar to the first, however, the
+                        biggest different was that we actually built a physical, scaled
+                        prototype out of mat-board, a cardboard-like material and
+                        contact cement, an adhesive made from elastic polymers.
+                    </p>
+                    <br />
+                    <p>
+                        The bridge was to be marked based on strength, aesthetics, and
+                        had a restriction on weight and dimensions. While performing our
+                        calculations, my team had to go with several revisions of our
+                        design to balance the aforementioned elements of our bridge.
+                        There were several designs that would have increased the maximum
+                        load the bridge could hold, such as increased height of the
+                        bridge or width. However, due to the limitation of materials,
+                        this would have resulted in either a lack of matboard available
+                        for construction and/or compromise the strength in various parts
+                        of the bridge.
+                    </p>
 
-<div class="video-container">
-    <div class="video-div">
-        <label for="showcase-video">Our Bridge Being Tested</label>
-        <video class="article-video sans-serif-font" id="showcase-video" controls>
-            <source src="/Assets/Video/matboard/bridge.mp4" type="video/mp4">
-        </video>
-    </div>
-</div>
+                    <h2 class="serif-font article-h2">Accompanying Files</h2>
+                    <nav class="article-files sans-serif-font">
+                        <a
+                            href="/Assets/Images/Projects/matboard/matboard-report.pdf"
+                            download="Lisa Li - Matboard Bridge Report"
+                            >Report</a
+                        >
+                    </nav>
+                    <br />
 
-<a href="/projects.html"><button class="yellow-button">Back to Projects</button></a>
+                    <h2 class="serif-font article-h2">Engineering Design Decisions</h2>
+                    <ul>
+                        <li>
+                            <strong>Having Two Cross-Sections:</strong> Roughly half our
+                            bridge is purely a pi-shaped cross section (region A) with a
+                            high centroid, resulting in a good performance in resisting
+                            compression on the top. The other half, region B, layer of
+                            Matboard beneath it with an attempt to increase I and lower
+                            the centroid. Such a design reduces the compressive stresses
+                            at the bottom and increases the predicted loading as a
+                            result. Due to the positions along the bridge where the
+                            loads were being placed, region A and region B would rotate
+                            in opposite directions, increasing its chances of breaking.
+                            Therefore, it is necessary to customize the cross-sections
+                            are for different region
+                        </li>
+                        <li>
+                            <strong
+                                >Bending the Matboard deck rather than gluing the
+                                web:</strong
+                            >
+                            The amount of cuts and gluing were minimized in order to
+                            prevent as many human errors as possible during
+                            construction. The bottom layer of the deck and the sides of
+                            the bridge are one piece of matboard bent into a pi shape.
+                            This design avoids the procedure to glue separate pieces of
+                            webs onto the flange, which improves the ease of
+                            construction and lowers the possibly of a failure mode. As
+                            the maximum shear stress (amount of force it can resist
+                            without breaking) of cement glue is less than the maximum
+                            shear stress of matboard, gluing the web on will increase
+                            the possibility of another failure mode of the bridge.
+                        </li>
+                        <li>
+                            <strong>Having Two Layers on the Top Deck:</strong> A single
+                            layered top deck is not strong enough to withstand the loads
+                            being placed on top it. After careful consideration over
+                            several designs, we found that two layers on the top deck
+                            strikes a balance between material use and maximum loading.
+                        </li>
+                    </ul>
+                    <br />
+                    <p>
+                        To test the quality of our bridge, four 100 N loads with wheels
+                        were rolled across the bridge. As shown in the video, our bridge
+                        cracked under the pressure due to a poor reinforcement. This was
+                        the first prototype we built for a course and it taught me the
+                        importance of testing and refining. For this project however, we
+                        were given a specific amount of mat-board, that did not allow us
+                        to do any testing by making several iterations of our bridge.
+                        Even though all of our math was correct and we felt that the
+                        bridge was well constructed, only through testing did we see
+                        that there were issues. It was a new experience to prototype and
+                        test, and this video of the most heart shattering moment of
+                        first semester is a constant reminder to me of testing and
+                        refinement.
+                    </p>
 
+                    <div class="video-container">
+                        <div class="video-div">
+                            <label for="showcase-video">Our Bridge Being Tested</label>
+                            <video
+                                class="article-video sans-serif-font"
+                                id="showcase-video"
+                                controls
+                            >
+                                <source
+                                    src="/Assets/Video/matboard/bridge.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+
+                    <a href="/projects.html"
+                        ><button class="yellow-button">Back to Projects</button></a
+                    >
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-
-
-
-
-        
         <footer>
             <div class="footer-container">
-                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <img class="logo" src="/Assets/Images/Logo/White.png" />
                 <div class="creds">
-                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p>
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p>
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email"
+                        >lisasa.li@mail.utoronto.ca</a
+                    >
                 </div>
                 <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
         </footer>
-        
 
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="/Assets/script/script.js"></script>
-        
     </body>
 </html>

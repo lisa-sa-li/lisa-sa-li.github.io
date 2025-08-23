@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-180967281-1');
+            gtag("config", "UA-180967281-1");
         </script>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/Assets/Images/favicon.ico"
+        />
 
         <title>Hardware Sign — Lisa Li</title>
-        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
-        <meta property="og:type" content="website" /> 
+        <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+            rel="stylesheet"
+        />
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" />
+        <!-- Thumbnail img -->
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="www.lisali.me" />
         <meta property="og:title" content="Lisa Li" />
-        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
-
-        
-        
+        <meta
+            property="og:description"
+            content="I'm a engineering student by day, and a slightly more stressed engineering student by night."
+        />
     </head>
-    <body id="to-top" >
-        
+    <body id="to-top">
         <header>
             <div class="header-container">
                 <div class="logo-anim">
@@ -39,11 +52,14 @@
                     <div class="yellow-circle"></div>
                     <p class="sans-serif-font logo-Li">Li.</p>
                 </div>
-    
+
                 <div class="wrap-collabsible">
-                    <input id="collapsible" class="toggle" type="checkbox">
+                    <input id="collapsible" class="toggle" type="checkbox" />
                     <label for="collapsible" class="lbl-toggle">
-                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                        <img
+                            src="/Assets/Images/menu.png"
+                            style="height: 24px; margin: auto"
+                        />
                     </label>
                     <div class="collapsible-content">
                         <div class="content-inner">
@@ -56,432 +72,889 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="menu-content nav-container" id="menu-button">
                     <a class="nav-a" href="/index.html">Me</a>
                     <a class="nav-a" href="/design.html">Design</a>
                     <a class="nav-a" href="/philosophy.html">Philosophy</a>
                     <a class="nav-a" href="/projects.html">Projects</a>
                 </div>
-    
-                <div class="resume-button-div">
+
+                <!-- <div class="resume-button-div">
                     <div class="black-outline-button"></div>
                     <button class="yellow-outline-button">Resume</button>
                     <div class="dropdown-content">
                         <a href="#" onclick="downloadResume('Software')">Software</a>
                         <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
-        
 
-    
-        
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
-
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/Hardware/hardware-main1.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-header" id="article-div">
-            <h1 class="sans-serif-font article-title">Hackathon Hardware Sign Out System</h1>
-            <div><p class="article-date">April 2020 - Present</p></div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
         </div>
 
-        <div class="article-content" id="article-div">
-             
-<h2 class="serif-font article-h2">View My Prototype</h2>
-<nav class="article-files sans-serif-font">
-    <a href="https://www.figma.com/proto/1bYQy6ioaZwxPD9w6D47jW/Hardware-signout-site?node-id=810%3A10548&viewport=242%2C327%2C0.02515229769051075&scaling=min-zoom" target="_blank">Desktop</a>
-</nav>
-
-<h2 class="serif-font article-h2">Background</h2>
-<p>I had the honor of being the lead director of MakeUofT 2020, a hardware hackathon (“makeathon”) at the University of Toronto. We hosted 300 students over a weekend and provided these hackers with 5000+ items of hardware, as well as mentors and workshops to help them use it. After working with MakeUofT for the last 2 years, I saw the inefficient process we distributed hardware, and I wanted to fix it. </p>
-<br>
-
-<h2 class="serif-font article-h2">The Problem</h2>
-<p>We used a standard system in the hackathon industry to allow hackers to sign out hardware. I knew it was no longer sustainable for us to use the product as we plan on expanding our hardware inventory and the number of attendees every year.</p>
-<br>
-<p>These were the initial issues we noticed with the hardware signout process:</p>
-<ul>
-    <li>Up to 2+ hour wait during the initial rush</li>
-    <li>Participants making unreasonable requests
-        <ul>
-            <li>“I need 5 webcams!”</li>
-        </ul>
-    </li>
-    <li>Unable to update the database on the fly on the standard hackathon system we were using</li>
-</ul>
-<br>
-<p>These issues affected both the hackers, and the team team, which is our in-club group of students trained to mentor hackers on various software and hardware pieces. During the event, they are in charge of packing the hardware orders and providing mentorship.</p>
-<br>
-<p>The hacker and the Tech Team were the main stakeholders. Secondary stakeholders consisted of the organizing team as well as the university. After I conducted research with both the hackers and Tech Team members, I gained a lot of insight on the specific causing the above pain points.</p>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main2.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Research</h2>
-            <p>I wanted to gage how the hardware signout experience impacted the hacker’s overall experience at MakeUofT. The initial hardware rush is one of the landmark moments of the event. As well, we want positive experiences by hackers so they can spread the word and allow our event to grow every year.</p>
-            <br>
-            <p>I conducted one-on-one interviews with each person and asked them:</p>
-            <ol>
-                <li>Describe your experience signing out and picking up hardware the day-of</li>
-                <li>Were there any steps in the process you felt were unnecessary?</li>
-                <li>Were there any steps you felt were missing?</li>
-                <li>Did this experience bring a positive or negative experience for you?</li>
-                <li>How has this experience impacted your overall experience at MakeUofT?</li>
-            </ol>
-            <br>
-            <p>From this, I sorted the issues and comments my interviewees brought up, split by the hacker experience and tech team experience.                </p>
-            <br>
-            <p>Hacker Side</p>
-            <ul>
-                <li>Long wait times cut into limited hacking time</li>
-                <li>Splits up team as one waits in line and the others brainstorm</li>
-                <li>Less inclined to listen to the opening ceremonies - want to get into line ASAP</li>
-                <li>False sense of certainty that they'll get all they ask for</li>
-                <li>Frustration of experience negatively affects their thought about MakeUofT</li>
-            </ul>
-            <br>
-            <p>Tech Team Side</p>
-            <ul>
-                <li>Teams requesting more hardware than they actually need</li>
-                <li>Need to add new components to the database on the fly </li>
-                <li>System allowed individuals to sign out hardware - made returns harder and longer</li>
-                <li>Needed to track broken and lost items</li>
-            </ul>
-            <br>
-            <p>With this, I generated a user persona for each stakeholder. </p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-1.jpg">
-
-            <h2 class="serif-font article-h2">Goal</h2>
-            <p>Shorten the time of the initial hardware rush as much as possible while still providing teams with a reasonable amount of hardware.</p>
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main7.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Outcome</h2>
-            <p>Time was the most valuable to all parties. I knew that the underlying issue was with our hardware flow. No amount of additional technical tools and resources could speed up the process if everyone ordered right as hacking began. Step one was to redesign our hardware pickup flow.</p>
-            <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-2.jpg">
-            <br>
-            <p>My first idea was what I called the “Fast Food Flow”. It feels like the experience one has at McDonald’s. They go up to the cashier, the cashier enters info onto their interface, and once the order is complete in the back, the customer picks it up.</p>
-            <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-3.jpg">
-            
-            <p>After consulting with both the tech team and the web development team, the following pros and cons were decided upon</p>
-            <br>
-            <p>Pros</p>
-            <ul>
-                <li>Encourages hackers to arrive earlier due to first-come-first-serve system</li>
-                <li>Tech team becomes the “middle-man” to reject outlandish orders before they’re made</li>
-                <li>More time for tech team to package orders</li>
-                <li> Simpler code architecture</li>
-            </ul>
-            <br>
-            <p>Cons</p>
-            <ul>
-                <li>Rejecting outlandish orders is due to human error and subjectiveness</li>
-                <li>Hacker has no front-end to view their checked out items</li>
-            </ul>
-            <br>
-
-            <p>My second, and final, idea was what I called the “eCommerceFlow”. Both sides have a front end. The hacker is able to view inventory on the site and add to their cart. The tech team then views orders, and is able to reject and accept parts of orders. </p>
-            <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-4.jpg">
-            <br>
-            <p>Pros</p>
-            <ul>
-                <li>12AM drop sets an even playing field</li>
-                <li>Hard-coded restraints to prevent hogging hardware and outlandish requests</li>
-            </ul>
-            <br>
-            <p>Cons</p>
-            <ul>
-                <li>Complex code architecture</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main5.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <p>Ultimately, it was the web team that pushed for the eCommerce Flow. Despite the fact that there was a lot more work for them, they wanted to put in the work at the beginning so we could use the product for years to come. </p>
-            <br>
-            <p>The final design aimed to alleviate all the issues that we faced in the last 2 years. The hacker flow was aimed to give participants sufficient time to check out a fair amount of hardware. The admin side aimed to condense all the tasks our team had to do onto one page so that more time could be spent packaging hardware.</p>
-            <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-5.jpg">
-            <p>I decided to make my wireframes the final product! It made sense as we planned on making the site open source, and branding is very specific and important for hackathons. The site was designed with Material-UI elements, as we used React to develop the front-end and Django template for the backend. This allowed us to set variables that those forking our website could alter. Sass was used to control colors, fonts, and sizes. Material UI allows for even finer design details, such as button styles, shadows, and much more.</p>
-            <img class="article-img md-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-6.jpg">
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main4.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Hacker Flow</h2>
-            <p>Below is the typical flow that the hacker will go through once they create an account.</p>
-            <ol>
-                <li>Land on dashboard</li>
-                <li>Join a team using a team code shared by a team member</li>
-                <li>View the inventory page and add an Arduino to their team’s cart</li>
-                <li>Check out the items in their team’s cart</li>
-                <li>Get redirected to the dashboard, where they see their order is pending</li>
-                <li>Get notified that Tech Team has completed their order along with the granted quantity per item</li>
-                <li>Once they pick up their order at the Tech Station, their items will be moved to the “Checked out items” table</li>
-                <li>When they go back to the Tech Station to their order, their items will be moved to the “Returned items” table</li>
-            </ol>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video"></label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Hacker Flow Final.mov" type="video/mp4">
-                </video>
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main1.jpg"
+                />
             </div>
-        </div>
-    </div>
-</div>
 
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main8.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Problem 1: Check out limits on hardware</h2>
-            <p>I aimed to achieve the following to solve the issues we currently faced:</p>
-            <ul>
-                <li>Limits amount of specific hardware someone could check out</li>
-                <li>Set a fair playing ground amongst hackers</li>
-                <li>Increase ratio of orders that will get approved</li>
-            </ul>
-            <br>
-            <p>My first design iterations tried to use color coding to indicate limits on groups of or individual hardware. Items with predetermined limits had a colored bulb next to their name. The meaning of the color is indicated by a legend on the inventory page, and also written under the “Constraints” section on the product overview card.</p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-7.jpg">
-            <p>In my initial user test, 100% of users found the color coding and legend to be confusing. 60% did not connect the associate of the color to the legend at all. I decided to scrap this idea and instead focus on the “Tags” heading I placed on the card. </p>
-            <br>
-            <p>In the new design, “Tags” were renamed to “Categories”. Items with certain limits on them will be under a category such as “MCU_limit_3”. Categories can also be filtered on the inventory page for a quicker glimpse of what a team is able to check out.</p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-8.jpg">
-            <p>In the video below, you can see the flow for checking out the Arduino again. Note that the Arduino has 2 constraints: “Max 1 of this item” and “Max 3 of items under the category ‘MCU_limit_3’”. The quantity dropdown will only show quantities that they team is allowed to check out. In this case, the team has not checked out an Arduino yet and so the dropdown only allows them to select a quantity on 1.</p>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Checking out an item with limits</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Hacker Item Limit.mov" type="video/mp4">
-                </video>
-            </div>
-            <p>On the Tech Team side, I still wanted to give them an ability to reject items within an order that may be within the item limits we set. In the video below, I’ll take you through the flow of how Tech Team views orders in its queue and fulfills them.</p>
-            <br>
-            <ol>
-                <li>Go from landing to the Order page</li>
-                <li>View their first pending order for Team 3</li>
-                <li>Find the team’s order under the “Requested items” table</li>
-                <li>Check the requested quantity per item in the table</li>
-                <li>Indicate how many items they will grant to the team
+            <div class="article-div">
+                <div class="article-header" id="article-div">
+                    <h1 class="sans-serif-font article-title">
+                        Hackathon Hardware Sign Out System
+                    </h1>
+                    <div><p class="article-date">April 2020 - Present</p></div>
+                </div>
+
+                <div class="article-content" id="article-div">
+                    <h2 class="serif-font article-h2">View My Prototype</h2>
+                    <nav class="article-files sans-serif-font">
+                        <a
+                            href="https://www.figma.com/proto/1bYQy6ioaZwxPD9w6D47jW/Hardware-signout-site?node-id=810%3A10548&viewport=242%2C327%2C0.02515229769051075&scaling=min-zoom"
+                            target="_blank"
+                            >Desktop</a
+                        >
+                    </nav>
+
+                    <h2 class="serif-font article-h2">Background</h2>
+                    <p>
+                        I had the honor of being the lead director of MakeUofT 2020, a
+                        hardware hackathon (“makeathon”) at the University of Toronto.
+                        We hosted 300 students over a weekend and provided these hackers
+                        with 5000+ items of hardware, as well as mentors and workshops
+                        to help them use it. After working with MakeUofT for the last 2
+                        years, I saw the inefficient process we distributed hardware,
+                        and I wanted to fix it.
+                    </p>
+                    <br />
+
+                    <h2 class="serif-font article-h2">The Problem</h2>
+                    <p>
+                        We used a standard system in the hackathon industry to allow
+                        hackers to sign out hardware. I knew it was no longer
+                        sustainable for us to use the product as we plan on expanding
+                        our hardware inventory and the number of attendees every year.
+                    </p>
+                    <br />
+                    <p>
+                        These were the initial issues we noticed with the hardware
+                        signout process:
+                    </p>
                     <ul>
-                        <li>There is a shortcut button to give the None</li>
-                        <li>There is a drop down for Tech Team to give a lesser quantity than desired</li>
-                        <li>There is a “Cancel Order” button to cancel the entire order</li>
-                    </ul>   
-                </li>
-                <li>Press the “Complete Order” button once they package all the items.</li>
-            </ol>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Flow of fulfilling hardware order</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Admin Pending Order.mov" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main9.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Problem 2: Handling broken/lost items</h2>
-            <p>This was something that the current system does not handle. I aimed to achieve the following: </p>
-            <ul>
-                <li>Help Tech Team to keep track of inventory - before, during, and after event</li>
-                <li>Want to gain insight on items broken frequently to prepare for future years</li>
-            </ul>
-            <br>
-            <p>I gave the hackers the ability to self report broken or lost items. The video below follows the flow to self report:</p>
-            <ol>
-                <li>For each item they checked out, they can report that item by clicking the “Report Broken/Lost” button on the same row.</li>
-                <li>It leads them to a form where they fill out information about the incidence</li>
-                <li>After submitting the form, the item(s) in question are moved to a “Reported broken/lost item” table</li>
-                <li>They are notified to visit the Tech Station in order to resolve the issue</li>
-            </ol>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Hacker self reporting broken item</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Hacker Broken.mov" type="video/mp4">
-                </video>
-            </div>
-            <br>
-            <p>On Tech Team’s end:</p>
-            <ol>
-                <li>They get notified when a form is submitted</li>
-                <li>They can view the team’s page to see which items were reported</li>
-                <li>They’re able to read the report</li>
-                <li>Once the team arrives to the Tech Station, Tech Team must fill out another form confirming the quantity and condition of the item</li>
-            </ol>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Tech Team confirming and resolving broken item issue</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Admin Confirm Broken.mov" type="video/mp4">
-                </video>
-            </div>
-            <br>
-            <p>When performing user testing with members of testing, they pointed out that we can’t always trust people to self report. Additionally, members of Tech Team may have a keener eye in detecting damaged items.</p>
-            <br>
-            <p>To resolve this, I added one final layer to confirming the condition of every item. When teams return their items, Tech Team can indicate the item's condition, either “Good”, “Heavily used” or “Not sure if it works”. The condition is set to “Good” as default but is able to be changed by discretion of the Tech Team member who is handling the return.</p>
-            <br>
-            <p>In the flow below:</p>
-            <ol>
-                <li>Team 3 comes to the Tech Station to return their items</li>
-                <li>Tech Team find their team page</li>
-                <li>Tech Team selects the quantity of each item Team 3 is returning
-                    <ul>
-                        <li>Here, Tech Team is able to change the condition of the item being returned</li>
+                        <li>Up to 2+ hour wait during the initial rush</li>
+                        <li>
+                            Participants making unreasonable requests
+                            <ul>
+                                <li>“I need 5 webcams!”</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Unable to update the database on the fly on the standard
+                            hackathon system we were using
+                        </li>
                     </ul>
-                </li>
-                <li>The return goes through</li>
-            </ol>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Tech Team confirming returned items</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Admin Broken Check.mov" type="video/mp4">
-                </video>
-            </div>
-            <br>
-            <p>In my final usability test, Tech Team was pleased and confident that we will be able to flag a majority of broken items using this system.</p>
-        </div>
-    </div>
-</div>
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main10.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Extra Site Features</h2>
-            <br>
-            <p>I envisioned this site to be a hub overlooking the entire hackathon. I wanted live insight on all the data we have. I wanted to create a graph of where items are and where they were. I added a couple of features on this website to provide more insight.</p>
-            <br>
-            <p>First, I wanted to track the history of those who checked out each item. This creates a breadcrumb trail of how the item was passed along. Second, I created a reports page which summarizes the data insights I was interested in collecting. The top of the Reports page primarily focuses on items that were reported broken or lost, as well as the reasons for it happening. There is further insight on an item level. There is a breakdown of the conditions and reasons that hackers submitted on their form. The bottom of the Reports page provides graphs that highlight numbers over time, such as components checked out over time. I see these resources being beneficial as it gives us greater control to manage the event.</p>
-            <br>
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Tech Team insights</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Insights Final.mov" type="video/mp4">
-                </video>
+                    <br />
+                    <p>
+                        These issues affected both the hackers, and the team team, which
+                        is our in-club group of students trained to mentor hackers on
+                        various software and hardware pieces. During the event, they are
+                        in charge of packing the hardware orders and providing
+                        mentorship.
+                    </p>
+                    <br />
+                    <p>
+                        The hacker and the Tech Team were the main stakeholders.
+                        Secondary stakeholders consisted of the organizing team as well
+                        as the university. After I conducted research with both the
+                        hackers and Tech Team members, I gained a lot of insight on the
+                        specific causing the above pain points.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" alt="" src="/Assets/Images/Projects/Hardware/hardware-main3.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Site Development</h2>
-            <br>
-            <p>I finished the designs in late April and the team was dedicated to spending the rest of the year developing the site, with myself personally contributing to front end development. While we started developing the site, I made minor edits to the design, either helping make a developer’s work easier or because through development I realized small flaws in the design.</p>
-            <br>
-            <p>One flaw I discovered was on the inventory page which I myself was developing. My design featured the filter on a sticky card next to the items. However, I discovered that if the card exceeded the height of the screen, an area of the card would be hidden below the screen. I revised page design in which the filter takes up a full height on the screen and the cart is scrollable if there is overflow.</p>
-            <br>
-            <p class="video-label">Old inventory filter</p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-9.jpg">
-
-            <div class="video-div">
-                <label for="prototype-video" class="video-label">Updated inventory filter (in production)</label>
-                <video class="article-video sans-serif-font" id="prototype-video" controls>
-                    <source src="/Assets/Images/Projects/Hardware/Videos/Filter change.mov" type="video/mp4">
-                </video>
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main2.jpg"
+                />
             </div>
-            <br>
-            <p>One change I made specifically to make the developer’s life easier was the modifying the text structure of the product overview card. My initial design was in a two-column grid system in order to condense the information on the card. As development began, I realized that this design isn't fully responsive as it may look too squished on smaller screens. And although the difference in work wasn't too big, I didn't want the developer to set up the grid. I then revised the design such that all all the text was in one column. I ended up preferring this layout because the addition of white space made it easier to take in all the information on the card.</p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Hardware/hardware-10.jpg">
 
-            <h2 class="serif-font article-h2">What's next?</h2>
-            <p>I’m excited to hold usability tests with the final product. Originally, the plan was that members of our team would hold a mock hackathon in order to test the system.</p>
-            <br>
-            <p>Sadly, due to COVID19, MakeUofT 2021 has been moved to an online format and there is no longer a need for the sign out system. Regardless, the web dev team is diligently working on it as we are enjoying working on the project and see its value. I hope that by the time I am a senior, I can be there when MakeUofT 2022 uses our product.</p>
-            <br>
-            <a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Research</h2>
+                    <p>
+                        I wanted to gage how the hardware signout experience impacted
+                        the hacker’s overall experience at MakeUofT. The initial
+                        hardware rush is one of the landmark moments of the event. As
+                        well, we want positive experiences by hackers so they can spread
+                        the word and allow our event to grow every year.
+                    </p>
+                    <br />
+                    <p>
+                        I conducted one-on-one interviews with each person and asked
+                        them:
+                    </p>
+                    <ol>
+                        <li>
+                            Describe your experience signing out and picking up hardware
+                            the day-of
+                        </li>
+                        <li>
+                            Were there any steps in the process you felt were
+                            unnecessary?
+                        </li>
+                        <li>Were there any steps you felt were missing?</li>
+                        <li>
+                            Did this experience bring a positive or negative experience
+                            for you?
+                        </li>
+                        <li>
+                            How has this experience impacted your overall experience at
+                            MakeUofT?
+                        </li>
+                    </ol>
+                    <br />
+                    <p>
+                        From this, I sorted the issues and comments my interviewees
+                        brought up, split by the hacker experience and tech team
+                        experience.
+                    </p>
+                    <br />
+                    <p>Hacker Side</p>
+                    <ul>
+                        <li>Long wait times cut into limited hacking time</li>
+                        <li>
+                            Splits up team as one waits in line and the others
+                            brainstorm
+                        </li>
+                        <li>
+                            Less inclined to listen to the opening ceremonies - want to
+                            get into line ASAP
+                        </li>
+                        <li>
+                            False sense of certainty that they'll get all they ask for
+                        </li>
+                        <li>
+                            Frustration of experience negatively affects their thought
+                            about MakeUofT
+                        </li>
+                    </ul>
+                    <br />
+                    <p>Tech Team Side</p>
+                    <ul>
+                        <li>Teams requesting more hardware than they actually need</li>
+                        <li>Need to add new components to the database on the fly</li>
+                        <li>
+                            System allowed individuals to sign out hardware - made
+                            returns harder and longer
+                        </li>
+                        <li>Needed to track broken and lost items</li>
+                    </ul>
+                    <br />
+                    <p>With this, I generated a user persona for each stakeholder.</p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-1.jpg"
+                    />
+
+                    <h2 class="serif-font article-h2">Goal</h2>
+                    <p>
+                        Shorten the time of the initial hardware rush as much as
+                        possible while still providing teams with a reasonable amount of
+                        hardware.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main7.jpg"
+                />
+            </div>
 
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Outcome</h2>
+                    <p>
+                        Time was the most valuable to all parties. I knew that the
+                        underlying issue was with our hardware flow. No amount of
+                        additional technical tools and resources could speed up the
+                        process if everyone ordered right as hacking began. Step one was
+                        to redesign our hardware pickup flow.
+                    </p>
+                    <img
+                        class="article-img md-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-2.jpg"
+                    />
+                    <br />
+                    <p>
+                        My first idea was what I called the “Fast Food Flow”. It feels
+                        like the experience one has at McDonald’s. They go up to the
+                        cashier, the cashier enters info onto their interface, and once
+                        the order is complete in the back, the customer picks it up.
+                    </p>
+                    <img
+                        class="article-img md-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-3.jpg"
+                    />
 
+                    <p>
+                        After consulting with both the tech team and the web development
+                        team, the following pros and cons were decided upon
+                    </p>
+                    <br />
+                    <p>Pros</p>
+                    <ul>
+                        <li>
+                            Encourages hackers to arrive earlier due to
+                            first-come-first-serve system
+                        </li>
+                        <li>
+                            Tech team becomes the “middle-man” to reject outlandish
+                            orders before they’re made
+                        </li>
+                        <li>More time for tech team to package orders</li>
+                        <li>Simpler code architecture</li>
+                    </ul>
+                    <br />
+                    <p>Cons</p>
+                    <ul>
+                        <li>
+                            Rejecting outlandish orders is due to human error and
+                            subjectiveness
+                        </li>
+                        <li>Hacker has no front-end to view their checked out items</li>
+                    </ul>
+                    <br />
 
-        
+                    <p>
+                        My second, and final, idea was what I called the
+                        “eCommerceFlow”. Both sides have a front end. The hacker is able
+                        to view inventory on the site and add to their cart. The tech
+                        team then views orders, and is able to reject and accept parts
+                        of orders.
+                    </p>
+                    <img
+                        class="article-img md-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-4.jpg"
+                    />
+                    <br />
+                    <p>Pros</p>
+                    <ul>
+                        <li>12AM drop sets an even playing field</li>
+                        <li>
+                            Hard-coded restraints to prevent hogging hardware and
+                            outlandish requests
+                        </li>
+                    </ul>
+                    <br />
+                    <p>Cons</p>
+                    <ul>
+                        <li>Complex code architecture</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main5.jpg"
+                />
+            </div>
+
+            <div class="article-div">
+                <div class="article-content">
+                    <p>
+                        Ultimately, it was the web team that pushed for the eCommerce
+                        Flow. Despite the fact that there was a lot more work for them,
+                        they wanted to put in the work at the beginning so we could use
+                        the product for years to come.
+                    </p>
+                    <br />
+                    <p>
+                        The final design aimed to alleviate all the issues that we faced
+                        in the last 2 years. The hacker flow was aimed to give
+                        participants sufficient time to check out a fair amount of
+                        hardware. The admin side aimed to condense all the tasks our
+                        team had to do onto one page so that more time could be spent
+                        packaging hardware.
+                    </p>
+                    <img
+                        class="article-img md-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-5.jpg"
+                    />
+                    <p>
+                        I decided to make my wireframes the final product! It made sense
+                        as we planned on making the site open source, and branding is
+                        very specific and important for hackathons. The site was
+                        designed with Material-UI elements, as we used React to develop
+                        the front-end and Django template for the backend. This allowed
+                        us to set variables that those forking our website could alter.
+                        Sass was used to control colors, fonts, and sizes. Material UI
+                        allows for even finer design details, such as button styles,
+                        shadows, and much more.
+                    </p>
+                    <img
+                        class="article-img md-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-6.jpg"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main4.jpg"
+                />
+            </div>
+
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Hacker Flow</h2>
+                    <p>
+                        Below is the typical flow that the hacker will go through once
+                        they create an account.
+                    </p>
+                    <ol>
+                        <li>Land on dashboard</li>
+                        <li>Join a team using a team code shared by a team member</li>
+                        <li>
+                            View the inventory page and add an Arduino to their team’s
+                            cart
+                        </li>
+                        <li>Check out the items in their team’s cart</li>
+                        <li>
+                            Get redirected to the dashboard, where they see their order
+                            is pending
+                        </li>
+                        <li>
+                            Get notified that Tech Team has completed their order along
+                            with the granted quantity per item
+                        </li>
+                        <li>
+                            Once they pick up their order at the Tech Station, their
+                            items will be moved to the “Checked out items” table
+                        </li>
+                        <li>
+                            When they go back to the Tech Station to their order, their
+                            items will be moved to the “Returned items” table
+                        </li>
+                    </ol>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video"></label>
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Hacker Flow Final.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main8.jpg"
+                />
+            </div>
+
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">
+                        Problem 1: Check out limits on hardware
+                    </h2>
+                    <p>
+                        I aimed to achieve the following to solve the issues we
+                        currently faced:
+                    </p>
+                    <ul>
+                        <li>
+                            Limits amount of specific hardware someone could check out
+                        </li>
+                        <li>Set a fair playing ground amongst hackers</li>
+                        <li>Increase ratio of orders that will get approved</li>
+                    </ul>
+                    <br />
+                    <p>
+                        My first design iterations tried to use color coding to indicate
+                        limits on groups of or individual hardware. Items with
+                        predetermined limits had a colored bulb next to their name. The
+                        meaning of the color is indicated by a legend on the inventory
+                        page, and also written under the “Constraints” section on the
+                        product overview card.
+                    </p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-7.jpg"
+                    />
+                    <p>
+                        In my initial user test, 100% of users found the color coding
+                        and legend to be confusing. 60% did not connect the associate of
+                        the color to the legend at all. I decided to scrap this idea and
+                        instead focus on the “Tags” heading I placed on the card.
+                    </p>
+                    <br />
+                    <p>
+                        In the new design, “Tags” were renamed to “Categories”. Items
+                        with certain limits on them will be under a category such as
+                        “MCU_limit_3”. Categories can also be filtered on the inventory
+                        page for a quicker glimpse of what a team is able to check out.
+                    </p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-8.jpg"
+                    />
+                    <p>
+                        In the video below, you can see the flow for checking out the
+                        Arduino again. Note that the Arduino has 2 constraints: “Max 1
+                        of this item” and “Max 3 of items under the category
+                        ‘MCU_limit_3’”. The quantity dropdown will only show quantities
+                        that they team is allowed to check out. In this case, the team
+                        has not checked out an Arduino yet and so the dropdown only
+                        allows them to select a quantity on 1.
+                    </p>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Checking out an item with limits</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Hacker Item Limit.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <p>
+                        On the Tech Team side, I still wanted to give them an ability to
+                        reject items within an order that may be within the item limits
+                        we set. In the video below, I’ll take you through the flow of
+                        how Tech Team views orders in its queue and fulfills them.
+                    </p>
+                    <br />
+                    <ol>
+                        <li>Go from landing to the Order page</li>
+                        <li>View their first pending order for Team 3</li>
+                        <li>Find the team’s order under the “Requested items” table</li>
+                        <li>Check the requested quantity per item in the table</li>
+                        <li>
+                            Indicate how many items they will grant to the team
+                            <ul>
+                                <li>There is a shortcut button to give the None</li>
+                                <li>
+                                    There is a drop down for Tech Team to give a lesser
+                                    quantity than desired
+                                </li>
+                                <li>
+                                    There is a “Cancel Order” button to cancel the
+                                    entire order
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Press the “Complete Order” button once they package all the
+                            items.
+                        </li>
+                    </ol>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Flow of fulfilling hardware order</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Admin Pending Order.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main9.jpg"
+                />
+            </div>
+
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">
+                        Problem 2: Handling broken/lost items
+                    </h2>
+                    <p>
+                        This was something that the current system does not handle. I
+                        aimed to achieve the following:
+                    </p>
+                    <ul>
+                        <li>
+                            Help Tech Team to keep track of inventory - before, during,
+                            and after event
+                        </li>
+                        <li>
+                            Want to gain insight on items broken frequently to prepare
+                            for future years
+                        </li>
+                    </ul>
+                    <br />
+                    <p>
+                        I gave the hackers the ability to self report broken or lost
+                        items. The video below follows the flow to self report:
+                    </p>
+                    <ol>
+                        <li>
+                            For each item they checked out, they can report that item by
+                            clicking the “Report Broken/Lost” button on the same row.
+                        </li>
+                        <li>
+                            It leads them to a form where they fill out information
+                            about the incidence
+                        </li>
+                        <li>
+                            After submitting the form, the item(s) in question are moved
+                            to a “Reported broken/lost item” table
+                        </li>
+                        <li>
+                            They are notified to visit the Tech Station in order to
+                            resolve the issue
+                        </li>
+                    </ol>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Hacker self reporting broken item</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Hacker Broken.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <br />
+                    <p>On Tech Team’s end:</p>
+                    <ol>
+                        <li>They get notified when a form is submitted</li>
+                        <li>
+                            They can view the team’s page to see which items were
+                            reported
+                        </li>
+                        <li>They’re able to read the report</li>
+                        <li>
+                            Once the team arrives to the Tech Station, Tech Team must
+                            fill out another form confirming the quantity and condition
+                            of the item
+                        </li>
+                    </ol>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Tech Team confirming and resolving broken item issue</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Admin Confirm Broken.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <br />
+                    <p>
+                        When performing user testing with members of testing, they
+                        pointed out that we can’t always trust people to self report.
+                        Additionally, members of Tech Team may have a keener eye in
+                        detecting damaged items.
+                    </p>
+                    <br />
+                    <p>
+                        To resolve this, I added one final layer to confirming the
+                        condition of every item. When teams return their items, Tech
+                        Team can indicate the item's condition, either “Good”, “Heavily
+                        used” or “Not sure if it works”. The condition is set to “Good”
+                        as default but is able to be changed by discretion of the Tech
+                        Team member who is handling the return.
+                    </p>
+                    <br />
+                    <p>In the flow below:</p>
+                    <ol>
+                        <li>Team 3 comes to the Tech Station to return their items</li>
+                        <li>Tech Team find their team page</li>
+                        <li>
+                            Tech Team selects the quantity of each item Team 3 is
+                            returning
+                            <ul>
+                                <li>
+                                    Here, Tech Team is able to change the condition of
+                                    the item being returned
+                                </li>
+                            </ul>
+                        </li>
+                        <li>The return goes through</li>
+                    </ol>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Tech Team confirming returned items</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Admin Broken Check.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <br />
+                    <p>
+                        In my final usability test, Tech Team was pleased and confident
+                        that we will be able to flag a majority of broken items using
+                        this system.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main10.jpg"
+                />
+            </div>
+
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Extra Site Features</h2>
+                    <br />
+                    <p>
+                        I envisioned this site to be a hub overlooking the entire
+                        hackathon. I wanted live insight on all the data we have. I
+                        wanted to create a graph of where items are and where they were.
+                        I added a couple of features on this website to provide more
+                        insight.
+                    </p>
+                    <br />
+                    <p>
+                        First, I wanted to track the history of those who checked out
+                        each item. This creates a breadcrumb trail of how the item was
+                        passed along. Second, I created a reports page which summarizes
+                        the data insights I was interested in collecting. The top of the
+                        Reports page primarily focuses on items that were reported
+                        broken or lost, as well as the reasons for it happening. There
+                        is further insight on an item level. There is a breakdown of the
+                        conditions and reasons that hackers submitted on their form. The
+                        bottom of the Reports page provides graphs that highlight
+                        numbers over time, such as components checked out over time. I
+                        see these resources being beneficial as it gives us greater
+                        control to manage the event.
+                    </p>
+                    <br />
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Tech Team insights</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Insights Final.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    alt=""
+                    src="/Assets/Images/Projects/Hardware/hardware-main3.jpg"
+                />
+            </div>
+
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Site Development</h2>
+                    <br />
+                    <p>
+                        I finished the designs in late April and the team was dedicated
+                        to spending the rest of the year developing the site, with
+                        myself personally contributing to front end development. While
+                        we started developing the site, I made minor edits to the
+                        design, either helping make a developer’s work easier or because
+                        through development I realized small flaws in the design.
+                    </p>
+                    <br />
+                    <p>
+                        One flaw I discovered was on the inventory page which I myself
+                        was developing. My design featured the filter on a sticky card
+                        next to the items. However, I discovered that if the card
+                        exceeded the height of the screen, an area of the card would be
+                        hidden below the screen. I revised page design in which the
+                        filter takes up a full height on the screen and the cart is
+                        scrollable if there is overflow.
+                    </p>
+                    <br />
+                    <p class="video-label">Old inventory filter</p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-9.jpg"
+                    />
+
+                    <div class="video-div">
+                        <label for="prototype-video" class="video-label"
+                            >Updated inventory filter (in production)</label
+                        >
+                        <video
+                            class="article-video sans-serif-font"
+                            id="prototype-video"
+                            controls
+                        >
+                            <source
+                                src="/Assets/Images/Projects/Hardware/Videos/Filter change.mov"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <br />
+                    <p>
+                        One change I made specifically to make the developer’s life
+                        easier was the modifying the text structure of the product
+                        overview card. My initial design was in a two-column grid system
+                        in order to condense the information on the card. As development
+                        began, I realized that this design isn't fully responsive as it
+                        may look too squished on smaller screens. And although the
+                        difference in work wasn't too big, I didn't want the developer
+                        to set up the grid. I then revised the design such that all all
+                        the text was in one column. I ended up preferring this layout
+                        because the addition of white space made it easier to take in
+                        all the information on the card.
+                    </p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Hardware/hardware-10.jpg"
+                    />
+
+                    <h2 class="serif-font article-h2">What's next?</h2>
+                    <p>
+                        I’m excited to hold usability tests with the final product.
+                        Originally, the plan was that members of our team would hold a
+                        mock hackathon in order to test the system.
+                    </p>
+                    <br />
+                    <p>
+                        Sadly, due to COVID19, MakeUofT 2021 has been moved to an online
+                        format and there is no longer a need for the sign out system.
+                        Regardless, the web dev team is diligently working on it as we
+                        are enjoying working on the project and see its value. I hope
+                        that by the time I am a senior, I can be there when MakeUofT
+                        2022 uses our product.
+                    </p>
+                    <br />
+                    <a href="/projects.html" style="margin: auto"
+                        ><button class="yellow-button">Back to Projects</button></a
+                    >
+                </div>
+            </div>
+        </div>
+
         <footer>
             <div class="footer-container">
-                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <img class="logo" src="/Assets/Images/Logo/White.png" />
                 <div class="creds">
-                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p>
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p>
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email"
+                        >lisasa.li@mail.utoronto.ca</a
+                    >
                 </div>
                 <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
         </footer>
-        
 
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="/Assets/script/script.js"></script>
-        
     </body>
 </html>

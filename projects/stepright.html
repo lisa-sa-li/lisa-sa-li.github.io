@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-180967281-1');
+            gtag("config", "UA-180967281-1");
         </script>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/Assets/Images/favicon.ico"
+        />
 
         <title>StepRight — Lisa Li</title>
-        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
-        <meta property="og:type" content="website" /> 
+        <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+            rel="stylesheet"
+        />
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" />
+        <!-- Thumbnail img -->
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="www.lisali.me" />
         <meta property="og:title" content="Lisa Li" />
-        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
-
-        
-        
+        <meta
+            property="og:description"
+            content="I'm a engineering student by day, and a slightly more stressed engineering student by night."
+        />
     </head>
-    <body id="to-top" >
-        
+    <body id="to-top">
         <header>
             <div class="header-container">
                 <div class="logo-anim">
@@ -39,11 +52,14 @@
                     <div class="yellow-circle"></div>
                     <p class="sans-serif-font logo-Li">Li.</p>
                 </div>
-    
+
                 <div class="wrap-collabsible">
-                    <input id="collapsible" class="toggle" type="checkbox">
+                    <input id="collapsible" class="toggle" type="checkbox" />
                     <label for="collapsible" class="lbl-toggle">
-                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                        <img
+                            src="/Assets/Images/menu.png"
+                            style="height: 24px; margin: auto"
+                        />
                     </label>
                     <div class="collapsible-content">
                         <div class="content-inner">
@@ -56,99 +72,126 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="menu-content nav-container" id="menu-button">
                     <a class="nav-a" href="/index.html">Me</a>
                     <a class="nav-a" href="/design.html">Design</a>
                     <a class="nav-a" href="/philosophy.html">Philosophy</a>
                     <a class="nav-a" href="/projects.html">Projects</a>
                 </div>
-    
-                <div class="resume-button-div">
+
+                <!-- <div class="resume-button-div">
                     <div class="black-outline-button"></div>
                     <button class="yellow-outline-button">Resume</button>
                     <div class="dropdown-content">
                         <a href="#" onclick="downloadResume('Software')">Software</a>
                         <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
-        
 
-    
-        
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
-
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/stepright/stepright-main1.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-header" id="article-div">
-            <h1 class="sans-serif-font article-title">StepRight App</h1>
-            <div><p class="article-date">June 2017</p></div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
         </div>
 
-        <div class="article-content" id="article-div">
-            
-<p>StepRight is a passion project that I worked on over the summer 2017 after experiencing UI problems I had with my personal pedometer app. I decided to design my own with the goal addressing the issues from my current pedometer app that hindered my user experience with it. What started as just a small pedometer design evolved into a water, sleep, and heart beat tracker, which was also based off of my frustration with my experience with the respected apps.</p>
-<br>
-<p>I conducted user testing such as going around the office and asking employees to use the "app" to see how intuitive it was. This experience showed me the insight of others, as I found it frustrating when people did not use the app in the way I intended, such as tapping or swiping incorrect areas or not understanding certain features I designed. This changed my definition of intuitive as I realized how simple I had to make my app if I wanted a large variety of people to use it. It also helped my skills as a UI designer and my experience with sunk cost fallacy, as I had to delete multiple screens and redesign the interface of my app to increase the experience that people had with it.</p>
-<br>
-<h2 class="sans-serif-font article-h2">View My Prototype</h2>
-<nav class="article-files sans-serif-font">
-    <a href="https://invis.io/ZEGRGFJ4KPY" target="_blank">Mobile</a>
-</nav>
-<br>
-<h2 class="sans-serif-font article-h2">Info Flow</h2>
-<img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/stepright/stepright-flow.jpg">
-<br>
-<h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
-<ul>
-    <li>
-        Have four unique brands, all interconnected to one. 
-        <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/stepright/stepright-header.jpg"> 
-    </li>
-</ul>
-<br>
-<a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/stepright/stepright-main1.jpg"
+                />
+            </div>
 
+            <div class="article-div">
+                <div class="article-header" id="article-div">
+                    <h1 class="sans-serif-font article-title">StepRight App</h1>
+                    <div><p class="article-date">June 2017</p></div>
+                </div>
+
+                <div class="article-content" id="article-div">
+                    <p>
+                        StepRight is a passion project that I worked on over the summer
+                        2017 after experiencing UI problems I had with my personal
+                        pedometer app. I decided to design my own with the goal
+                        addressing the issues from my current pedometer app that
+                        hindered my user experience with it. What started as just a
+                        small pedometer design evolved into a water, sleep, and heart
+                        beat tracker, which was also based off of my frustration with my
+                        experience with the respected apps.
+                    </p>
+                    <br />
+                    <p>
+                        I conducted user testing such as going around the office and
+                        asking employees to use the "app" to see how intuitive it was.
+                        This experience showed me the insight of others, as I found it
+                        frustrating when people did not use the app in the way I
+                        intended, such as tapping or swiping incorrect areas or not
+                        understanding certain features I designed. This changed my
+                        definition of intuitive as I realized how simple I had to make
+                        my app if I wanted a large variety of people to use it. It also
+                        helped my skills as a UI designer and my experience with sunk
+                        cost fallacy, as I had to delete multiple screens and redesign
+                        the interface of my app to increase the experience that people
+                        had with it.
+                    </p>
+                    <br />
+                    <h2 class="sans-serif-font article-h2">View My Prototype</h2>
+                    <nav class="article-files sans-serif-font">
+                        <a href="https://invis.io/ZEGRGFJ4KPY" target="_blank"
+                            >Mobile</a
+                        >
+                    </nav>
+                    <br />
+                    <h2 class="sans-serif-font article-h2">Info Flow</h2>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/stepright/stepright-flow.jpg"
+                    />
+                    <br />
+                    <h2 class="sans-serif-font article-h2">UI Design Decisions</h2>
+                    <ul>
+                        <li>
+                            Have four unique brands, all interconnected to one.
+                            <img
+                                class="article-img"
+                                onclick="modalImage(this)"
+                                alt=""
+                                src="/Assets/Images/Projects/stepright/stepright-header.jpg"
+                            />
+                        </li>
+                    </ul>
+                    <br />
+                    <a href="/projects.html" style="margin: auto"
+                        ><button class="yellow-button">Back to Projects</button></a
+                    >
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-
-
-
-
-        
         <footer>
             <div class="footer-container">
-                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <img class="logo" src="/Assets/Images/Logo/White.png" />
                 <div class="creds">
-                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p>
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p>
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email"
+                        >lisasa.li@mail.utoronto.ca</a
+                    >
                 </div>
                 <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
         </footer>
-        
 
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="/Assets/script/script.js"></script>
-        
     </body>
 </html>

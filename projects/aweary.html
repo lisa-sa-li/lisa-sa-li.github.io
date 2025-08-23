@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"></script>
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-180967281-1"
+        ></script>
         <script>
             window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-            gtag('config', 'UA-180967281-1');
+            gtag("config", "UA-180967281-1");
         </script>
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-        <link rel="shortcut icon" type="image/x-icon" href="/Assets/Images/favicon.ico" />
-
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1.0"
+        />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/Assets/Images/favicon.ico"
+        />
 
         <title>Aweary — Lisa Li</title>
-        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="/Assets/css/style.css" />
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" /> <!-- Thumbnail img -->
-        <meta property="og:type" content="website" /> 
+        <link
+            href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Playfair+Display:400,400i,700,700i,900,900i"
+            rel="stylesheet"
+        />
+        <meta property="og:image" content="/Assets/Images/Logo/Normalx3.png" />
+        <!-- Thumbnail img -->
+        <meta property="og:type" content="website" />
         <meta property="og:url" content="www.lisali.me" />
         <meta property="og:title" content="Lisa Li" />
-        <meta property="og:description" content="I'm a engineering student by day, and a slightly more stressed engineering student by night." />
-
-        
-        
+        <meta
+            property="og:description"
+            content="I'm a engineering student by day, and a slightly more stressed engineering student by night."
+        />
     </head>
-    <body id="to-top" >
-        
+    <body id="to-top">
         <header>
             <div class="header-container">
                 <div class="logo-anim">
@@ -39,11 +52,14 @@
                     <div class="yellow-circle"></div>
                     <p class="sans-serif-font logo-Li">Li.</p>
                 </div>
-    
+
                 <div class="wrap-collabsible">
-                    <input id="collapsible" class="toggle" type="checkbox">
+                    <input id="collapsible" class="toggle" type="checkbox" />
                     <label for="collapsible" class="lbl-toggle">
-                        <img src="/Assets/Images/menu.png" style="height: 24px; margin: auto;">
+                        <img
+                            src="/Assets/Images/menu.png"
+                            style="height: 24px; margin: auto"
+                        />
                     </label>
                     <div class="collapsible-content">
                         <div class="content-inner">
@@ -56,193 +72,356 @@
                         </div>
                     </div>
                 </div>
-    
+
                 <div class="menu-content nav-container" id="menu-button">
                     <a class="nav-a" href="/index.html">Me</a>
                     <a class="nav-a" href="/design.html">Design</a>
                     <a class="nav-a" href="/philosophy.html">Philosophy</a>
                     <a class="nav-a" href="/projects.html">Projects</a>
                 </div>
-    
-                <div class="resume-button-div">
+
+                <!-- <div class="resume-button-div">
                     <div class="black-outline-button"></div>
                     <button class="yellow-outline-button">Resume</button>
                     <div class="dropdown-content">
                         <a href="#" onclick="downloadResume('Software')">Software</a>
                         <a href="#" onclick="downloadResume('UX')">UX</a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </header>
-        
 
-    
-        
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-</div>
-
-
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/Aweary/Aweary-main1.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-header" id="article-div">
-            <h1 class="sans-serif-font article-title">Aweary - Commuter Alarm</h1>
-            <div><p class="article-date">September 2019</p></div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01" />
+            <div id="caption"></div>
         </div>
 
-        <div class="article-content" id="article-div">
-             
-<h2 class="serif-font article-h2">View My Prototype</h2>
-<nav class="article-files sans-serif-font">
-    <a href="https://www.figma.com/proto/HAoMJcZ6ltxwtDBIHOPKoK/Aweary-Prototype?node-id=8%3A5126&viewport=2263%2C52%2C0.678956925868988&scaling=min-zoom" target="_blank">Mobile</a>
-    <a href="https://www.youtube.com/watch?v=d1QkbY9nM5Q&feature=youtu.be" target="_blank">Video</a>
-</nav>
-<br>
-<h2 class="serif-font article-h2">Background</h2>
-<p>This was a project created by my team at RBC’s hackathon AmpHacks 2019. We designed and analyzed an app meant to notify commuters as they approach their destination. Our app placed <b>3rd overall</b> in the competition with over 200 participants!</p>
-<br>
-<p>The team consisted of 2 business analysts, 1 developer, and 1 UX designer (me). I created/developed user research, user personas, journey mapping, iterative prototyping, and usability testing, all within the 24 hour hackathon.</p>
-<br>
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/Aweary/Aweary-main1.jpg"
+                />
+            </div>
 
-<h2 class="serif-font article-h2">The Problem</h2>
-<p>At RBC’s hackathon AmpHacks, they challenged us with the prompt <u>“How can you improve Canadian lives?”</u>.</p>
-<br>
-<p>In the summer of 2019, after waking up to an empty GO train and getting off seconds before the doors shut, I had trouble falling asleep during my commute for the rest of summer for a fear of that happening again. That sucked because that 45 minute commute would have been a great way to catch up on sleep.</p>
-<br>
-<p>This experience came to me when I heard this prompt, leading my team to deliver Aweary, a proof-of-concept mobile app to wake users up, and not those sitting next to them, on their commute.</p>
-<br>
-<p>With further Googling, we found a UK study showed that people missed their stop 29 million times in 2013 due to distraction. Torontonians on average spend 96 minutes commuting everyday. Our team discovered that this is an issue that truly affects Canadian lives.</p>
+            <div class="article-div">
+                <div class="article-header" id="article-div">
+                    <h1 class="sans-serif-font article-title">
+                        Aweary - Commuter Alarm
+                    </h1>
+                    <div><p class="article-date">September 2019</p></div>
+                </div>
 
+                <div class="article-content" id="article-div">
+                    <h2 class="serif-font article-h2">View My Prototype</h2>
+                    <nav class="article-files sans-serif-font">
+                        <a
+                            href="https://www.figma.com/proto/HAoMJcZ6ltxwtDBIHOPKoK/Aweary-Prototype?node-id=8%3A5126&viewport=2263%2C52%2C0.678956925868988&scaling=min-zoom"
+                            target="_blank"
+                            >Mobile</a
+                        >
+                        <a
+                            href="https://www.youtube.com/watch?v=d1QkbY9nM5Q&feature=youtu.be"
+                            target="_blank"
+                            >Video</a
+                        >
+                    </nav>
+                    <br />
+                    <h2 class="serif-font article-h2">Background</h2>
+                    <p>
+                        This was a project created by my team at RBC’s hackathon
+                        AmpHacks 2019. We designed and analyzed an app meant to notify
+                        commuters as they approach their destination. Our app placed
+                        <b>3rd overall</b> in the competition with over 200
+                        participants!
+                    </p>
+                    <br />
+                    <p>
+                        The team consisted of 2 business analysts, 1 developer, and 1 UX
+                        designer (me). I created/developed user research, user personas,
+                        journey mapping, iterative prototyping, and usability testing,
+                        all within the 24 hour hackathon.
+                    </p>
+                    <br />
+
+                    <h2 class="serif-font article-h2">The Problem</h2>
+                    <p>
+                        At RBC’s hackathon AmpHacks, they challenged us with the prompt
+                        <u>“How can you improve Canadian lives?”</u>.
+                    </p>
+                    <br />
+                    <p>
+                        In the summer of 2019, after waking up to an empty GO train and
+                        getting off seconds before the doors shut, I had trouble falling
+                        asleep during my commute for the rest of summer for a fear of
+                        that happening again. That sucked because that 45 minute commute
+                        would have been a great way to catch up on sleep.
+                    </p>
+                    <br />
+                    <p>
+                        This experience came to me when I heard this prompt, leading my
+                        team to deliver Aweary, a proof-of-concept mobile app to wake
+                        users up, and not those sitting next to them, on their commute.
+                    </p>
+                    <br />
+                    <p>
+                        With further Googling, we found a UK study showed that people
+                        missed their stop 29 million times in 2013 due to distraction.
+                        Torontonians on average spend 96 minutes commuting everyday. Our
+                        team discovered that this is an issue that truly affects
+                        Canadian lives.
+                    </p>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/Aweary/Aweary-main3.jpg"
+                />
+            </div>
 
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/Aweary/Aweary-main3.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Research</h2>
-            <p>My team did a round of interviews with people at the hackathon. This ranged from students we were competing against to employees of RBC who were on site mentors.</p>
-            <br>
-            <p>We asked a short set of question:</p>
-            <ol>
-                <li>In the last 6 months, what forms of public transportation did you take and where did you go?</li>
-                <li>What do you do to pass time on your commutes?</li>
-                <li>In the last 6 months, how often have you missed or nearly missed exiting at your destination? If yes, what contributed to this?</li>
-                <li>Do you face challenges when approaching or arriving at your destination?</li>
-                <li>How do these challenges affect your commute and daily life?</li>
-                <li>Are there certain apps you tend to use or associate with your commute?
-                    <ul>
-                        <li>What is the app(s)?</li>
-                        <li>Are there any limitations to them?</li>
-                    </ul>
-                </li>
-            </ol>
-            <br>
-            <p>From this, we gathered the following key points:</p>
-            <ol>
-                <li>Main reason for missing their stop is distraction (phone, daydreaming, conversations)</li>
-                <li>Fear of sleeping past their stop causes poor sleep</li>
-                <li>Unfamiliarity with area causes anxiety of missing stop</li>
-                <li>Don’t want to bother other commuters</li>
-                <li>Need to be notified about reaching stop much earlier in advance due to impairment</li>
-                <li>Google Maps doesn’t work underground in subways</li>
-            </ol>  
-            <br>
-            <p>This showed us the different ways our app could help commuters. The problem was so much larger than just falling asleep. </p>  
-            <br>
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Research</h2>
+                    <p>
+                        My team did a round of interviews with people at the hackathon.
+                        This ranged from students we were competing against to employees
+                        of RBC who were on site mentors.
+                    </p>
+                    <br />
+                    <p>We asked a short set of question:</p>
+                    <ol>
+                        <li>
+                            In the last 6 months, what forms of public transportation
+                            did you take and where did you go?
+                        </li>
+                        <li>What do you do to pass time on your commutes?</li>
+                        <li>
+                            In the last 6 months, how often have you missed or nearly
+                            missed exiting at your destination? If yes, what contributed
+                            to this?
+                        </li>
+                        <li>
+                            Do you face challenges when approaching or arriving at your
+                            destination?
+                        </li>
+                        <li>
+                            How do these challenges affect your commute and daily life?
+                        </li>
+                        <li>
+                            Are there certain apps you tend to use or associate with
+                            your commute?
+                            <ul>
+                                <li>What is the app(s)?</li>
+                                <li>Are there any limitations to them?</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <br />
+                    <p>From this, we gathered the following key points:</p>
+                    <ol>
+                        <li>
+                            Main reason for missing their stop is distraction (phone,
+                            daydreaming, conversations)
+                        </li>
+                        <li>Fear of sleeping past their stop causes poor sleep</li>
+                        <li>Unfamiliarity with area causes anxiety of missing stop</li>
+                        <li>Don’t want to bother other commuters</li>
+                        <li>
+                            Need to be notified about reaching stop much earlier in
+                            advance due to impairment
+                        </li>
+                        <li>Google Maps doesn’t work underground in subways</li>
+                    </ol>
+                    <br />
+                    <p>
+                        This showed us the different ways our app could help commuters.
+                        The problem was so much larger than just falling asleep.
+                    </p>
+                    <br />
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/Aweary/Aweary-main2.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Framing</h2>
-            <p>Based off the needs of people that we discovered during research, we grouped our target demographic into 3 groups of people:</p>
-            <ol>
-                <li>Impulsive: e.g. tourists, they’re unfamiliar to the area and must be cautious the entire ride for their stop</li>
-                <li>Habitual: provide them a relaxing ride so they can get distracted in reading a book or take a nap</li>
-                <li>People with disabilities such as vision or hearing impairment</li>
-            </ol>
-            <br>
-            <p>Members of my team have personally lived the experiences of each of these groups. I set the user personas around us and the needs/goals that we each wanted while commuting.</p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-1.jpg">
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/Aweary/Aweary-main2.jpg"
+                />
+            </div>
 
-            <h2 class="serif-font article-h2">Goal</h2>
-            <p>We aimed to reduce <b>FOMYS (Fear of Missing Your Stop)</b> amongst commuters and maximize use of their time. The 96 minutes that Torontonians spend on average commuting could be put to better use. We envisioned the time being put into being productive and catching up on sleep all so we could spend more time with our loved ones at the end of the day</p>
-            <br>
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Framing</h2>
+                    <p>
+                        Based off the needs of people that we discovered during
+                        research, we grouped our target demographic into 3 groups of
+                        people:
+                    </p>
+                    <ol>
+                        <li>
+                            Impulsive: e.g. tourists, they’re unfamiliar to the area and
+                            must be cautious the entire ride for their stop
+                        </li>
+                        <li>
+                            Habitual: provide them a relaxing ride so they can get
+                            distracted in reading a book or take a nap
+                        </li>
+                        <li>
+                            People with disabilities such as vision or hearing
+                            impairment
+                        </li>
+                    </ol>
+                    <br />
+                    <p>
+                        Members of my team have personally lived the experiences of each
+                        of these groups. I set the user personas around us and the
+                        needs/goals that we each wanted while commuting.
+                    </p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-1.jpg"
+                    />
+
+                    <h2 class="serif-font article-h2">Goal</h2>
+                    <p>
+                        We aimed to reduce
+                        <b>FOMYS (Fear of Missing Your Stop)</b> amongst commuters and
+                        maximize use of their time. The 96 minutes that Torontonians
+                        spend on average commuting could be put to better use. We
+                        envisioned the time being put into being productive and catching
+                        up on sleep all so we could spend more time with our loved ones
+                        at the end of the day
+                    </p>
+                    <br />
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="article">
-    <div class="p-hover-img img-div">
-        <img class="project-img img-div" id="project-img" alt="" src="/Assets/Images/Projects/Aweary/Aweary-main4.jpg"> 
-    </div>
-    
-    <div class="article-div">
-        <div class="article-content">
-            <h2 class="serif-font article-h2">Outcome</h2>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-2.jpg">
-            <p>Journey mapping with the user personas allowed me to hone in on the features that would really help this app affect Canadian lives as well as create a smooth flow that the user would go through to set an alarm.</p>
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-3.jpg">
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-4.jpg">
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-5.jpg">
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-6.jpg">
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-7.jpg">
-            <img class="article-img" onclick="modalImage(this)" alt="" src="/Assets/Images/Projects/Aweary/Aweary-8.jpg">
+        <div class="article">
+            <div class="p-hover-img img-div">
+                <img
+                    class="project-img img-div"
+                    id="project-img"
+                    alt=""
+                    src="/Assets/Images/Projects/Aweary/Aweary-main4.jpg"
+                />
+            </div>
 
-            <h2 class="serif-font article-h2">Outcome</h2>
-            <p>Our application used a combination of GPS location tracking and accelerometer to track your vehicle’s position relative to your destination. Why an accelerometer? We know GPS tracking is an issue in Toronto subways.  By tracking forward acceleration in a moving vehicle, the algorithm will determine whether the vehicle has stopped moving as well as the total distance travelled. The application will use this information to notify you once you’ve reached your destination.</p>
-            <br>
-            <h2 class="serif-font article-h2">Business Implications</h2>
-            <p>It is a huge benefit for RBC to know the travelling patterns of their customers. By tracking users’ travelling routes, we are able to create user behavioral patterns to help design innovative banking products.</p>
-            <br>
-            <p>Our company is also able to sell location based data and key data insights to companies in areas we operate in.</p>
-            <br>
-            <a href="/projects.html" style="margin: auto;"><button class="yellow-button">Back to Projects</button></a>
+            <div class="article-div">
+                <div class="article-content">
+                    <h2 class="serif-font article-h2">Outcome</h2>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-2.jpg"
+                    />
+                    <p>
+                        Journey mapping with the user personas allowed me to hone in on
+                        the features that would really help this app affect Canadian
+                        lives as well as create a smooth flow that the user would go
+                        through to set an alarm.
+                    </p>
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-3.jpg"
+                    />
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-4.jpg"
+                    />
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-5.jpg"
+                    />
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-6.jpg"
+                    />
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-7.jpg"
+                    />
+                    <img
+                        class="article-img"
+                        onclick="modalImage(this)"
+                        alt=""
+                        src="/Assets/Images/Projects/Aweary/Aweary-8.jpg"
+                    />
+
+                    <h2 class="serif-font article-h2">Outcome</h2>
+                    <p>
+                        Our application used a combination of GPS location tracking and
+                        accelerometer to track your vehicle’s position relative to your
+                        destination. Why an accelerometer? We know GPS tracking is an
+                        issue in Toronto subways. By tracking forward acceleration in a
+                        moving vehicle, the algorithm will determine whether the vehicle
+                        has stopped moving as well as the total distance travelled. The
+                        application will use this information to notify you once you’ve
+                        reached your destination.
+                    </p>
+                    <br />
+                    <h2 class="serif-font article-h2">Business Implications</h2>
+                    <p>
+                        It is a huge benefit for RBC to know the travelling patterns of
+                        their customers. By tracking users’ travelling routes, we are
+                        able to create user behavioral patterns to help design
+                        innovative banking products.
+                    </p>
+                    <br />
+                    <p>
+                        Our company is also able to sell location based data and key
+                        data insights to companies in areas we operate in.
+                    </p>
+                    <br />
+                    <a href="/projects.html" style="margin: auto"
+                        ><button class="yellow-button">Back to Projects</button></a
+                    >
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-
-
-
-        
         <footer>
             <div class="footer-container">
-                <img class="logo" src="/Assets/Images/Logo/White.png">
+                <img class="logo" src="/Assets/Images/Logo/White.png" />
                 <div class="creds">
-                    <p class="hear-from-you serif-font">I'd love to hear from you</p> 
-                    <p class="creds-email">FOR BUSINESS INQUIRIES</p> 
-                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email">lisasa.li@mail.utoronto.ca</a>
+                    <p class="hear-from-you serif-font">I'd love to hear from you</p>
+                    <p class="creds-email">FOR BUSINESS INQUIRIES</p>
+                    <a href="mailto:lisasa.li@mail.utoronto.ca" class="creds-email"
+                        >lisasa.li@mail.utoronto.ca</a
+                    >
                 </div>
                 <a href="#to-top"><u class="sans-serif-font to-top">Back to top</u></a>
             </div>
         </footer>
-        
 
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="/Assets/script/script.js"></script>
-        
     </body>
 </html>
